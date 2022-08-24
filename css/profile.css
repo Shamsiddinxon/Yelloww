@@ -760,6 +760,8 @@ option:checked {
   border-radius: 8px;
   box-sizing: border-box;
   transition: all 0.3s;
+  padding-left: 17px;
+  padding-right: 25px;
 }
 
 .profile .parcles-content .parcles-row .new-parcels-button:hover {
@@ -3559,9 +3561,11 @@ th {
   align-items: center;
   text-decoration: none;
   border-top: none;
+  justify-content: space-between;
 }
 
 .profile-row {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -3661,8 +3665,30 @@ td .create-btn {
   justify-content: center;
 }
 
+td .info-btn {
+  background: rgba(243, 164, 33, 0.1);
+  border-radius: 100px;
+  width: 34px;
+  height: 34px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+td div .camera-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 100px;
+  text-align: center;
+  color: #09bb3b;
+  background: rgba(53, 210, 97, 0.1);
+}
+
 td.table-td-chekbox {
-  
 }
 
 td label {
@@ -3711,36 +3737,39 @@ td input {
 }
 
 .th-link {
-  width: 13%; min-width: 111px
+  width: 13%;
+  min-width: 111px;
 }
 .th-name {
-  width: 18%; min-width: 161px
+  width: 18%;
+  min-width: 161px;
 }
 .th-price {
-  width: 9%; min-width: 91px
+  width: 9%;
+  min-width: 91px;
 }
 .th-free {
-  width: 8%; min-width: 81px
+  width: 8%;
+  min-width: 81px;
 }
 .th-total {
-  width: 9%; min-width: 91px
+  width: 9%;
+  min-width: 91px;
 }
 .th-data {
-  width: 13%; min-width: 121px
+  width: 13%;
+  min-width: 121px;
 }
 th.th-paymet {
   width: 120px;
   min-width: 120px;
 }
 .th-action {
-  width: 99px
+  width: 99px;
 }
 .th-servis {
   width: 70px;
 }
-
-
-
 
 /* *** ** MOY BALANSE *** ** */
 

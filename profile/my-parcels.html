@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="../test.css" />
- 
+
     <title>Yellow - My Profile</title>
   </head>
   <body>
@@ -147,7 +147,10 @@
                 >
               </li>
               <li>
-                <a class="sidebar-item" style="margin-bottom: 317px;" href="/profile/my-balance.html"
+                <a
+                  class="sidebar-item"
+                  style="margin-bottom: 317px"
+                  href="/profile/my-balance.html"
                   ><i class="ri-wallet-3-line"></i> Mой баланс</a
                 >
               </li>
@@ -218,7 +221,7 @@
                 data-bs-toggle="modal"
                 data-bs-target="#parcelsListAddModal"
               >
-                <i class="ri-add-line"></i> Новый заказ
+                <i class="ri-add-line"></i>Новый заказ
               </button>
             </div>
 
@@ -236,15 +239,15 @@
                   <li class="nav-item text-nowrap" role="presentation">
                     <button
                       class="nav-link menu-btn active"
-                      id="pills-home-tab"
+                      id="pills-pending-tab"
                       data-bs-toggle="pill"
-                      data-bs-target="#pills-home"
+                      data-bs-target="#pills-pending"
                       type="button"
                       role="tab"
-                      aria-controls="pills-home"
+                      aria-controls="pills-pending"
                       aria-selected="true"
                     >
-                    Process
+                      Pending
                       <span class="tab-counter">(0)</span>
                     </button>
                   </li>
@@ -252,15 +255,15 @@
                   <li class="nav-item" role="presentation">
                     <button
                       class="nav-link"
-                      id="pills-profile-tab"
+                      id="pills-send-tab"
                       data-bs-toggle="pill"
-                      data-bs-target="#pills-profile"
+                      data-bs-target="#pills-send"
                       type="button"
                       role="tab"
-                      aria-controls="pills-profile"
+                      aria-controls="pills-send"
                       aria-selected="false"
                     >
-                    Bought
+                      Send
                       <span class="tab-counter unread">5</span>
                     </button>
                   </li>
@@ -276,7 +279,7 @@
                       aria-controls="pills-contact"
                       aria-selected="false"
                     >
-                    Verified
+                      Arrived
                       <span class="tab-counter">(0)</span>
                     </button>
                   </li>
@@ -292,7 +295,7 @@
                       aria-controls="pills-contact"
                       aria-selected="false"
                     >
-                    Accepted
+                      Delivered
                       <span class="tab-counter unread">1</span>
                     </button>
                   </li>
@@ -301,9 +304,9 @@
                 <div class="tab-content" id="pills-tabContent">
                   <div
                     class="tab-pane fade show active"
-                    id="pills-home"
+                    id="pills-pending"
                     role="tabpanel"
-                    aria-labelledby="pills-home-tab"
+                    aria-labelledby="pills-pending-tab"
                   >
                     <div
                       class="parcles-list table-responsive mt-4 mb-5"
@@ -314,20 +317,472 @@
                     >
                       <table class="table">
                         <thead class="table-body">
+                          <th class="th-link">Order ID</th>
+                          <th class="th-name">Weight</th>
+                          <th class="th-price">Sent date</th>
+                          <th class="th-free">Total</th>
+                          <th class="th-total">Payment status</th>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1600</td>
+                            <td>2.2 lb / 1 kg</td>
+                            <td>03/22/2022</td>
+                            <td>$ 46</td>
+
+                            <td class="flex-ro" style="height: 100%">
+                              <div class="flex-row">
+                                <button class="btn payment-btn-active">
+                                  Paid
+                                </button>
+                                <button
+                                  class="btn info-btn"
+                                  style="display: inline-bock"
+                                >
+                                  <img
+                                    src="../images/new/info-btn.svg"
+                                    alt=""
+                                    width="14"
+                                    height="14"
+                                  />
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>1600</td>
+                            <td>2.2 lb / 1 kg</td>
+                            <td>03/22/2022</td>
+                            <td>$ 46</td>
+
+                            <td class="flex-ro" style="height: 100%">
+                              <div class="flex-row">
+                                <button class="btn payment-btn-active">
+                                  Paid
+                                </button>
+                                <button
+                                  class="btn info-btn"
+                                  style="display: inline-bock"
+                                >
+                                  <img
+                                    src="../images/new/info-btn.svg"
+                                    alt=""
+                                    width="14"
+                                    height="14"
+                                  />
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>1600</td>
+                            <td>2.2 lb / 1 kg</td>
+                            <td>03/22/2022</td>
+                            <td>$ 46</td>
+
+                            <td class="flex-ro" style="height: 100%">
+                              <div class="flex-row">
+                                <button class="btn payment-btn-active">
+                                  Paid
+                                </button>
+                                <button
+                                  class="btn info-btn"
+                                  style="display: inline-bock"
+                                >
+                                  <img
+                                    src="../images/new/info-btn.svg"
+                                    alt=""
+                                    width="14"
+                                    height="14"
+                                  />
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <!-- Bought -->
+
+                  <div
+                    class="tab-pane fade"
+                    id="pills-send"
+                    role="tabpanel"
+                    aria-labelledby="pills-send-tab"
+                  >
+                    <!-- ?    -->
+                    <div
+                      class="parcles-list table-responsive mt-4 mb-5"
+                      style="
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                      "
+                    >
+                      <table class="table">
+                        <thead class="table-body">
+                          <th class="th-link">Order ID</th>
+                          <th class="th-name">Weight</th>
+                          <th class="th-price">Sent date</th>
+                          <th class="th-free">Total</th>
+                          <th class="th-total">Payment status</th>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1600</td>
+                            <td>2.2 lb / 1 kg</td>
+                            <td>03/22/2022</td>
+                            <td>$ 46</td>
+
+                            <td class="flex-ro" style="height: 100%">
+                              <div class="flex-row">
+                                <button class="btn payment-btn-active">
+                                  Paid
+                                </button>
+                                <button
+                                  class="btn info-btn"
+                                  style="display: inline-bock"
+                                >
+                                  <img
+                                    src="../images/new/info-btn.svg"
+                                    alt=""
+                                    width="14"
+                                    height="14"
+                                  />
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>1600</td>
+                            <td>2.2 lb / 1 kg</td>
+                            <td>03/22/2022</td>
+                            <td>$ 46</td>
+
+                            <td class="flex-ro" style="height: 100%">
+                              <div class="flex-row">
+                                <button class="btn payment-btn-active">
+                                  Paid
+                                </button>
+                                <button
+                                  class="btn info-btn"
+                                  style="display: inline-bock"
+                                >
+                                  <img
+                                    src="../images/new/info-btn.svg"
+                                    alt=""
+                                    width="14"
+                                    height="14"
+                                  />
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>1600</td>
+                            <td>2.2 lb / 1 kg</td>
+                            <td>03/22/2022</td>
+                            <td>$ 46</td>
+
+                            <td class="flex-ro" style="height: 100%">
+                              <div class="flex-row">
+                                <button class="btn payment-btn-active">
+                                  Paid
+                                </button>
+                                <button
+                                  class="btn info-btn"
+                                  style="display: inline-bock"
+                                >
+                                  <img
+                                    src="../images/new/info-btn.svg"
+                                    alt=""
+                                    width="14"
+                                    height="14"
+                                  />
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div
+                    class="tab-pane fade"
+                    id="pills-contact"
+                    role="tabpanel"
+                    aria-labelledby="pills-contact-tab"
+                  >
+                    <div
+                      class="parcles-list table-responsive mt-4 mb-5"
+                      style="
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                      "
+                    >
+                      <table class="table">
+                        <thead class="table-body">
+                          <th class="th-link">Order ID</th>
+                          <th class="th-name">Weight</th>
+                          <th class="th-price">Sent date</th>
+                          <th class="th-free">Total</th>
+                          <th class="th-total">Payment status</th>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1600</td>
+                            <td>2.2 lb / 1 kg</td>
+                            <td>03/22/2022</td>
+                            <td>$ 46</td>
+
+                            <td class="flex-ro" style="height: 100%">
+                              <div class="flex-row">
+                                <button class="btn payment-btn-active">
+                                  Paid
+                                </button>
+                                <button
+                                class="btn info-btn"
+                                style="display: inline-bock"
+                              >
+                              <img src="../images/new/info-btn.svg" alt="" width="14" height="14" />
+                              </button>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>1600</td>
+                            <td>2.2 lb / 1 kg</td>
+                            <td>03/22/2022</td>
+                            <td>$ 46</td>
+
+                            <td class="flex-ro" style="height: 100%">
+                              <div class="flex-row">
+                                <button class="btn payment-btn-active">
+                                  Paid
+                                </button>
+                                <button
+                                class="btn info-btn"
+                                style="display: inline-bock"
+                              >
+                              <img src="../images/new/info-btn.svg" alt="" width="14" height="14" />
+                              </button>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>1600</td>
+                            <td>2.2 lb / 1 kg</td>
+                            <td>03/22/2022</td>
+                            <td>$ 46</td>
+
+                            <td class="flex-ro" style="height: 100%">
+                              <div class="flex-row">
+                                <button class="btn payment-btn-active">
+                                  Paid
+                                </button>
+                                <button
+                                class="btn info-btn"
+                                style="display: inline-bock"
+                              >
+                              <img src="../images/new/info-btn.svg" alt="" width="14" height="14" />
+                              </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-contact2"
+                    role="tabpanel"
+                    aria-labelledby="pills-contact-tab2"
+                  >
+                    <div
+                      class="parcles-list table-responsive mt-4 mb-5"
+                      style="
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                      "
+                    >
+                      <table class="table">
+                        <thead class="table-body">
+                          <th class="th-link">Order ID</th>
+                          <th class="th-name">Weight</th>
+                          <th class="th-price">Sent date</th>
+                          <th class="th-free">Total</th>
+                          <th class="th-total">Payment status</th>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1600</td>
+                            <td>2.2 lb / 1 kg</td>
+                            <td>03/22/2022</td>
+                            <td>$ 46</td>
+
+                            <td class="flex-ro" style="height: 100%">
+                              <div class="flex-row">
+                                <button class="btn payment-btn-active">
+                                  Paid
+                                </button>
+                                <button
+                                class="btn info-btn"
+                                style="display: inline-bock"
+                              >
+                              <img src="../images/new/info-btn.svg" alt="" width="14" height="14" />
+                              </button>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>1600</td>
+                            <td>2.2 lb / 1 kg</td>
+                            <td>03/22/2022</td>
+                            <td>$ 46</td>
+
+                            <td class="flex-ro" style="height: 100%">
+                              <div class="flex-row">
+                                <button class="btn payment-btn-active">
+                                  Paid
+                                </button>
+                                <button
+                                class="btn info-btn"
+                                style="display: inline-bock"
+                              >
+                              <img src="../images/new/info-btn.svg" alt="" width="14" height="14" />
+                              </button>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>1600</td>
+                            <td>2.2 lb / 1 kg</td>
+                            <td>03/22/2022</td>
+                            <td>$ 46</td>
+
+                            <td class="flex-ro" style="height: 100%">
+                              <div class="flex-row">
+                                <button class="btn payment-btn-active">
+                                  Paid
+                                </button>
+                                <button
+                                class="btn info-btn"
+                                style="display: inline-bock"
+                              >
+                              <img src="../images/new/info-btn.svg" alt="" width="14" height="14" />
+                              </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--                ********* tab bottom end ***************-->
+
+              <div
+                class="tab-pane fade"
+                id="parcles-help"
+                role="tabpanel"
+                aria-labelledby="parcles-help-tab"
+              >
+                <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="pills-process-tab2"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-process"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-process"
+                      aria-selected="true"
+                    >
+                      Process
+                      <span class="tab-counter">(0)</span>
+                    </button>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-bought-tab2"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-bought"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-bought"
+                      aria-selected="false"
+                    >
+                      Bought
+                      <span class="tab-counter unread">1</span>
+                    </button>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-verified-tab2"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-verified"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-verified"
+                      aria-selected="false"
+                    >
+                      Verified
+                      <span class="tab-counter">(0)</span>
+                    </button>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-Accepted-tab2"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-Accepted"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-Accepted"
+                      aria-selected="false"
+                    >
+                      Accepted
+                      <span class="tab-counter unread">1</span>
+                    </button>
+                  </li>
+                </ul>
+
+                <div class="tab-content" id="pills-tabContent2">
+                  <!-- Process -->
+                  <div
+                    class="tab-pane fade show active"
+                    id="pills-process"
+                    role="tabpanel"
+                    aria-labelledby="pills-process-tab"
+                  >
+                    <div class="parcles-list table-responsive mt-3">
+                      <table class="table">
+                        <thead class="table-body">
                           <th class="th-link">Link</th>
-                          <th class="th-name">
-                            Product name
-                          </th>
+                          <th class="th-name">Product name</th>
                           <th class="th-price">Price</th>
-                          <th class="th-free">
-                            Yellow fee 5%
-                          </th>
-                          <th class="th-total">
-                            Total payment
-                          </th>
-                          <th class="th-data">
-                            Creted date
-                          </th>
+                          <th class="th-free">Yellow fee 5%</th>
+                          <th class="th-total">Total payment</th>
+                          <th class="th-data">Creted date</th>
                           <th class="th-paymet">Payment option</th>
                           <th class="th-action">Actions</th>
                           <th class="th-servis">Special service</th>
@@ -338,7 +793,7 @@
                             <td>iphone 13 ProMax</td>
                             <td>$1500.00</td>
                             <td>$75.00</td>
-                            <td >$1575.00</td>
+                            <td>$1575.00</td>
                             <td>Март 12,2022</td>
                             <td>
                               <button class="btn payment-btn-active">
@@ -504,872 +959,70 @@
                       </table>
                     </div>
                   </div>
+
+                  <!-- Bought -->
                   <div
                     class="tab-pane fade"
-                    id="pills-profile"
+                    id="pills-bought"
                     role="tabpanel"
-                    aria-labelledby="pills-profile-tab"
-                  >
-                    <!-- ?    -->
-                    <div
-                      class="parcles-list table-responsive mt-4 mb-5"
-                      style="
-                        border-top-left-radius: 10px;
-                        border-top-right-radius: 10px;
-                      "
-                    >
-                      <table class="table">
-                        <thead class="table-body">
-                          <th style="width: 11%; min-width: 111px">Link</th>
-                          <th style="width: 16%; min-width: 161px">
-                            Product name
-                          </th>
-                          <th style="width: 9%; min-width: 91px">Price</th>
-                          <th style="width: 8%; min-width: 81px">
-                            Yellow fee 5%
-                          </th>
-                          <th style="width: 9%; min-width: 91px">
-                            Total payment
-                          </th>
-                          <th style="width: 12%; min-width: 121px">
-                            Creted date
-                          </th>
-                          <th style="min-width: 131px">Payment option</th>
-                          <th style="width: 12%; min-width: 121px">Actions</th>
-                          <th style="min-width: 100px">Special service</th>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>https:/sdhg</td>
-                            <td>iphone 13 ProMax</td>
-                            <td>$1500.00</td>
-                            <td>$75.00</td>
-                            <td class="total-price">$1575.00</td>
-                            <td>Март 12,2022</td>
-                            <td>
-                              <button class="btn payment-btn-active">
-                                Paid
-                              </button>
-                            </td>
-                            <td class="flex-ro" style="height: 100%">
-                              <div class="flex-row">
-                                <button
-                                  class="btn create-btn"
-                                  style="display: inline-bock"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#parcelsEdit"
-                                >
-                                  <img src="../images/qalam.svg" alt="" />
-                                </button>
-                                <button
-                                  style="display: inline-bock"
-                                  class="btn btn-delete"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#deleteModal"
-                                >
-                                  <img
-                                    src="../images/delet-a-ctive.svg"
-                                    alt=""
-                                    width="16"
-                                  />
-                                </button>
-                              </div>
-                            </td>
-                            <td>
-                              <input type="checkbox" id="html" />
-                              <label for="html"></label>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>https:/sdhg</td>
-                            <td>iphone 13 ProMax</td>
-                            <td>$1500.00</td>
-                            <td>$75.00</td>
-                            <td class="total-price">$1575.00</td>
-                            <td>Март 12,2022</td>
-                            <td>
-                              <button class="btn payment-btn-active">
-                                Paid
-                              </button>
-                            </td>
-                            <td class="flex-ro" style="height: 100%">
-                              <div class="flex-row">
-                                <button
-                                  class="btn create-btn"
-                                  style="display: inline-bock"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#parcelsEdit"
-                                >
-                                  <img src="../images/qalam.svg" alt="" />
-                                </button>
-                                <button
-                                  style="display: inline-bock"
-                                  class="btn btn-delete"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#deleteModal"
-                                >
-                                  <img
-                                    src="../images/delet-a-ctive.svg"
-                                    alt=""
-                                    width="16"
-                                  />
-                                </button>
-                              </div>
-                            </td>
-                            <td>
-                              <input type="checkbox" id="html" />
-                              <label for="html"></label>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>https:/sdhg</td>
-                            <td>iphone 13 ProMax</td>
-                            <td>$1500.00</td>
-                            <td>$75.00</td>
-                            <td class="total-price">$1575.00</td>
-                            <td>Март 12,2022</td>
-                            <td>
-                              <button class="btn payment-btn-active">
-                                Paid
-                              </button>
-                            </td>
-                            <td class="flex-ro" style="height: 100%">
-                              <div class="flex-row">
-                                <button
-                                  class="btn create-btn"
-                                  style="display: inline-bock"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#parcelsEdit"
-                                >
-                                  <img src="../images/qalam.svg" alt="" />
-                                </button>
-                                <button
-                                  style="display: inline-bock"
-                                  class="btn btn-delete"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#deleteModal"
-                                >
-                                  <img
-                                    src="../images/delet-a-ctive.svg"
-                                    alt=""
-                                    width="16"
-                                  />
-                                </button>
-                              </div>
-                            </td>
-                            <td>
-                              <input type="checkbox" id="html" />
-                              <label for="html"></label>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>https:/sdhg</td>
-                            <td>iphone 13 ProMax</td>
-                            <td>$1500.00</td>
-                            <td>$75.00</td>
-                            <td class="total-price">$1575.00</td>
-                            <td>Март 12,2022</td>
-                            <td>
-                              <button class="btn payment-btn-active">
-                                Paid
-                              </button>
-                            </td>
-                            <td class="flex-ro" style="height: 100%">
-                              <div class="flex-row">
-                                <button
-                                  class="btn create-btn"
-                                  style="display: inline-bock"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#parcelsEdit"
-                                >
-                                  <img src="../images/qalam.svg" alt="" />
-                                </button>
-                                <button
-                                  style="display: inline-bock"
-                                  class="btn btn-delete"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#deleteModal"
-                                >
-                                  <img
-                                    src="../images/delet-a-ctive.svg"
-                                    alt=""
-                                    width="16"
-                                  />
-                                </button>
-                              </div>
-                            </td>
-                            <td>
-                              <input type="checkbox" id="html" />
-                              <label for="html"></label>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                  <div
-                    class="tab-pane fade"
-                    id="pills-contact"
-                    role="tabpanel"
-                    aria-labelledby="pills-contact-tab"
-                  >
-                    <div
-                      class="parcles-list table-responsive mt-4 mb-5"
-                      style="
-                        border-top-left-radius: 10px;
-                        border-top-right-radius: 10px;
-                      "
-                    >
-                      <table class="table">
-                        <thead class="table-body">
-                          <th style="width: 11%; min-width: 111px">Link</th>
-                          <th style="width: 16%; min-width: 161px">
-                            Product name
-                          </th>
-                          <th style="width: 9%; min-width: 91px">Price</th>
-                          <th style="width: 8%; min-width: 81px">
-                            Yellow fee 5%
-                          </th>
-                          <th style="width: 9%; min-width: 91px">
-                            Total payment
-                          </th>
-                          <th style="width: 12%; min-width: 121px">
-                            Creted date
-                          </th>
-                          <th style="min-width: 131px">Payment option</th>
-                          <th style="width: 12%; min-width: 121px">Actions</th>
-                          <th style="min-width: 100px">Special service</th>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>https:/sdhg</td>
-                            <td>iphone 13 ProMax</td>
-                            <td>$1500.00</td>
-                            <td>$75.00</td>
-                            <td class="total-price">$1575.00</td>
-                            <td>Март 12,2022</td>
-                            <td>
-                              <button class="btn payment-btn-active">
-                                Paid
-                              </button>
-                            </td>
-                            <td class="flex-ro" style="height: 100%">
-                              <div class="flex-row">
-                                <button
-                                  class="btn create-btn"
-                                  style="display: inline-bock"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#parcelsEdit"
-                                >
-                                  <img src="../images/qalam.svg" alt="" />
-                                </button>
-                                <button
-                                  style="display: inline-bock"
-                                  class="btn btn-delete"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#deleteModal"
-                                >
-                                  <img
-                                    src="../images/delet-a-ctive.svg"
-                                    alt=""
-                                    width="16"
-                                  />
-                                </button>
-                              </div>
-                            </td>
-                            <td>
-                              <input type="checkbox" id="html" />
-                              <label for="html"></label>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>https:/sdhg</td>
-                            <td>iphone 13 ProMax</td>
-                            <td>$1500.00</td>
-                            <td>$75.00</td>
-                            <td class="total-price">$1575.00</td>
-                            <td>Март 12,2022</td>
-                            <td>
-                              <button class="btn payment-btn-active">
-                                Paid
-                              </button>
-                            </td>
-                            <td class="flex-ro" style="height: 100%">
-                              <div class="flex-row">
-                                <button
-                                  class="btn create-btn"
-                                  style="display: inline-bock"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#parcelsEdit"
-                                >
-                                  <img src="../images/qalam.svg" alt="" />
-                                </button>
-                                <button
-                                  style="display: inline-bock"
-                                  class="btn btn-delete"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#deleteModal"
-                                >
-                                  <img
-                                    src="../images/delet-a-ctive.svg"
-                                    alt=""
-                                    width="16"
-                                  />
-                                </button>
-                              </div>
-                            </td>
-                            <td>
-                              <input type="checkbox" id="html" />
-                              <label for="html"></label>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>https:/sdhg</td>
-                            <td>iphone 13 ProMax</td>
-                            <td>$1500.00</td>
-                            <td>$75.00</td>
-                            <td class="total-price">$1575.00</td>
-                            <td>Март 12,2022</td>
-                            <td>
-                              <button class="btn payment-btn-active">
-                                Paid
-                              </button>
-                            </td>
-                            <td class="flex-ro" style="height: 100%">
-                              <div class="flex-row">
-                                <button
-                                  class="btn create-btn"
-                                  style="display: inline-bock"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#parcelsEdit"
-                                >
-                                  <img src="../images/qalam.svg" alt="" />
-                                </button>
-                                <button
-                                  style="display: inline-bock"
-                                  class="btn btn-delete"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#deleteModal"
-                                >
-                                  <img
-                                    src="../images/delet-a-ctive.svg"
-                                    alt=""
-                                    width="16"
-                                  />
-                                </button>
-                              </div>
-                            </td>
-                            <td>
-                              <input type="checkbox" id="html" />
-                              <label for="html"></label>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>https:/sdhg</td>
-                            <td>iphone 13 ProMax</td>
-                            <td>$1500.00</td>
-                            <td>$75.00</td>
-                            <td class="total-price">$1575.00</td>
-                            <td>Март 12,2022</td>
-                            <td>
-                              <button class="btn payment-btn-active">
-                                Paid
-                              </button>
-                            </td>
-                            <td class="flex-ro" style="height: 100%">
-                              <div class="flex-row">
-                                <button
-                                  class="btn create-btn"
-                                  style="display: inline-bock"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#parcelsEdit"
-                                >
-                                  <img src="../images/qalam.svg" alt="" />
-                                </button>
-                                <button
-                                  style="display: inline-bock"
-                                  class="btn btn-delete"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#deleteModal"
-                                >
-                                  <img
-                                    src="../images/delet-a-ctive.svg"
-                                    alt=""
-                                    width="16"
-                                  />
-                                </button>
-                              </div>
-                            </td>
-                            <td>
-                              <input type="checkbox" id="html" />
-                              <label for="html"></label>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <!-- <div class="parcles-list table-responsive mt-3">
-                      <table class="table">
-                        <thead>
-                          <th>Trucking number</th>
-                          <th>Box ID</th>
-                          <th>дата загрузки</th>
-                          <th></th>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>54657544</td>
-                            <td>FG45462</td>
-                            <td>Март 12, 2022</td>
-                            <td class="table-actions">
-                              <button
-                                class="btn btn-view"
-                                data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop"
-                              >
-                                <i class="ri-error-warning-line"></i>
-                              </button>
-                              <button class="btn btn-edit">
-                                <i class="ri-pencil-line"></i>
-                              </button>
-                              <button class="btn btn-delete">
-                                <i class="ri-delete-bin-line"></i>
-                              </button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>54657544</td>
-                            <td>FG45462</td>
-                            <td>Март 16, 2022</td>
-                            <td class="table-actions">
-                              <button class="btn btn-view">
-                                <i class="ri-error-warning-line"></i>
-                              </button>
-                              <button class="btn btn-edit">
-                                <i class="ri-pencil-line"></i>
-                              </button>
-                              <button class="btn btn-delete">
-                                <i class="ri-delete-bin-line"></i>
-                              </button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>54657544</td>
-                            <td>FG45462</td>
-                            <td>Март 18, 2022</td>
-                            <td class="table-actions">
-                              <button class="btn btn-view">
-                                <i class="ri-error-warning-line"></i>
-                              </button>
-                              <button class="btn btn-edit">
-                                <i class="ri-pencil-line"></i>
-                              </button>
-                              <button class="btn btn-delete">
-                                <i class="ri-delete-bin-line"></i>
-                              </button>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div> -->
-                  </div>
-                  <div
-                    class="tab-pane fade"
-                    id="pills-contact2"
-                    role="tabpanel"
-                    aria-labelledby="pills-contact-tab2"
-                  >
-                    <div
-                      class="parcles-list table-responsive mt-4 mb-5"
-                      style="
-                        border-top-left-radius: 10px;
-                        border-top-right-radius: 10px;
-                      "
-                    >
-                      <table class="table">
-                        <thead class="table-body">
-                          <th style="width: 11%; min-width: 111px">Link</th>
-                          <th style="width: 16%; min-width: 161px">
-                            Product name
-                          </th>
-                          <th style="width: 9%; min-width: 91px">Price</th>
-                          <th style="width: 8%; min-width: 81px">
-                            Yellow fee 5%
-                          </th>
-                          <th style="width: 9%; min-width: 91px">
-                            Total payment
-                          </th>
-                          <th style="width: 12%; min-width: 121px">
-                            Creted date
-                          </th>
-                          <th style="min-width: 131px">Payment option</th>
-                          <th style="width: 12%; min-width: 121px">Actions</th>
-                          <th style="min-width: 100px">Special service</th>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>https:/sdhg</td>
-                            <td>iphone 13 ProMax</td>
-                            <td>$1500.00</td>
-                            <td>$75.00</td>
-                            <td class="total-price">$1575.00</td>
-                            <td>Март 12,2022</td>
-                            <td>
-                              <button class="btn payment-btn-active">
-                                Paid
-                              </button>
-                            </td>
-                            <td class="flex-ro" style="height: 100%">
-                              <div class="flex-row">
-                                <button
-                                  class="btn create-btn"
-                                  style="display: inline-bock"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#parcelsEdit"
-                                >
-                                  <img src="../images/qalam.svg" alt="" />
-                                </button>
-                                <button
-                                  style="display: inline-bock"
-                                  class="btn btn-delete"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#deleteModal"
-                                >
-                                  <img
-                                    src="../images/delet-a-ctive.svg"
-                                    alt=""
-                                    width="16"
-                                  />
-                                </button>
-                              </div>
-                            </td>
-                            <td>
-                              <input type="checkbox" id="html" />
-                              <label for="html"></label>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>https:/sdhg</td>
-                            <td>iphone 13 ProMax</td>
-                            <td>$1500.00</td>
-                            <td>$75.00</td>
-                            <td class="total-price">$1575.00</td>
-                            <td>Март 12,2022</td>
-                            <td>
-                              <button class="btn payment-btn-active">
-                                Paid
-                              </button>
-                            </td>
-                            <td class="flex-ro" style="height: 100%">
-                              <div class="flex-row">
-                                <button
-                                  class="btn create-btn"
-                                  style="display: inline-bock"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#parcelsEdit"
-                                >
-                                  <img src="../images/qalam.svg" alt="" />
-                                </button>
-                                <button
-                                  style="display: inline-bock"
-                                  class="btn btn-delete"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#deleteModal"
-                                >
-                                  <img
-                                    src="../images/delet-a-ctive.svg"
-                                    alt=""
-                                    width="16"
-                                  />
-                                </button>
-                              </div>
-                            </td>
-                            <td>
-                              <input type="checkbox" id="html" />
-                              <label for="html"></label>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>https:/sdhg</td>
-                            <td>iphone 13 ProMax</td>
-                            <td>$1500.00</td>
-                            <td>$75.00</td>
-                            <td class="total-price">$1575.00</td>
-                            <td>Март 12,2022</td>
-                            <td>
-                              <button class="btn payment-btn-active">
-                                Paid
-                              </button>
-                            </td>
-                            <td class="flex-ro" style="height: 100%">
-                              <div class="flex-row">
-                                <button
-                                  class="btn create-btn"
-                                  style="display: inline-bock"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#parcelsEdit"
-                                >
-                                  <img src="../images/qalam.svg" alt="" />
-                                </button>
-                                <button
-                                  style="display: inline-bock"
-                                  class="btn btn-delete"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#deleteModal"
-                                >
-                                  <img
-                                    src="../images/delet-a-ctive.svg"
-                                    alt=""
-                                    width="16"
-                                  />
-                                </button>
-                              </div>
-                            </td>
-                            <td>
-                              <input type="checkbox" id="html" />
-                              <label for="html"></label>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>https:/sdhg</td>
-                            <td>iphone 13 ProMax</td>
-                            <td>$1500.00</td>
-                            <td>$75.00</td>
-                            <td class="total-price">$1575.00</td>
-                            <td>Март 12,2022</td>
-                            <td>
-                              <button class="btn payment-btn-active">
-                                Paid
-                              </button>
-                            </td>
-                            <td class="flex-ro" style="height: 100%">
-                              <div class="flex-row">
-                                <button
-                                  class="btn create-btn"
-                                  style="display: inline-bock"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#parcelsEdit"
-                                >
-                                  <img src="../images/qalam.svg" alt="" />
-                                </button>
-                                <button
-                                  style="display: inline-bock"
-                                  class="btn btn-delete"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#deleteModal"
-                                >
-                                  <img
-                                    src="../images/delet-a-ctive.svg"
-                                    alt=""
-                                    width="16"
-                                  />
-                                </button>
-                              </div>
-                            </td>
-                            <td>
-                              <input type="checkbox" id="html" />
-                              <label for="html"></label>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <!-- <div class="parcles-list table-responsive mt-3">
-                      <table class="table">
-                        <thead bgcolor="#F4F4F4">
-                          <th>Trucking number</th>
-                          <th>Box ID</th>
-                          <th>дата загрузки</th>
-                          <th></th>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>54657544</td>
-                            <td>FG45462</td>
-                            <td>Март 12, 2022</td>
-                            <td class="table-actions">
-                              <button
-                                class="btn btn-view"
-                                data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop"
-                              >
-                                <i class="ri-error-warning-line"></i>
-                              </button>
-                              <button class="btn btn-edit">
-                                <i class="ri-pencil-line"></i>
-                              </button>
-                              <button class="btn btn-delete">
-                                <i class="ri-delete-bin-line"></i>
-                              </button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>54657544</td>
-                            <td>FG45462</td>
-                            <td>Март 16, 2022</td>
-                            <td class="table-actions">
-                              <button class="btn btn-view">
-                                <i class="ri-error-warning-line"></i>
-                              </button>
-                              <button class="btn btn-edit">
-                                <i class="ri-pencil-line"></i>
-                              </button>
-                              <button class="btn btn-delete">
-                                <i class="ri-delete-bin-line"></i>
-                              </button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>54657544</td>
-                            <td>FG45462</td>
-                            <td>Март 18, 2022</td>
-                            <td class="table-actions">
-                              <button class="btn btn-view">
-                                <i class="ri-error-warning-line"></i>
-                              </button>
-                              <button class="btn btn-edit">
-                                <i class="ri-pencil-line"></i>
-                              </button>
-                              <button class="btn btn-delete">
-                                <i class="ri-delete-bin-line"></i>
-                              </button>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div> -->
-                  </div>
-                </div>
-              </div>
-
-              <!--                ********* tab bottom end ***************-->
-
-              <div
-                class="tab-pane fade"
-                id="parcles-help"
-                role="tabpanel"
-                aria-labelledby="parcles-help-tab"
-              >
-                <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button
-                      class="nav-link active"
-                      id="pills-home-tab2"
-                      data-bs-toggle="pill"
-                      data-bs-target="#pills-home2"
-                      type="button"
-                      role="tab"
-                      aria-controls="pills-home"
-                      aria-selected="true"
-                    >
-                      На рассмотрении
-                      <span class="tab-counter">(0)</span>
-                    </button>
-                  </li>
-
-                  <li class="nav-item" role="presentation">
-                    <button
-                      class="nav-link"
-                      id="pills-profile-tab2"
-                      data-bs-toggle="pill"
-                      data-bs-target="#pills-profile2"
-                      type="button"
-                      role="tab"
-                      aria-controls="pills-profile"
-                      aria-selected="false"
-                    >
-                      Ожидание оплаты
-                      <span class="tab-counter unread">1</span>
-                    </button>
-                  </li>
-
-                  <li class="nav-item" role="presentation">
-                    <button
-                      class="nav-link"
-                      id="pills-contact-tab2"
-                      data-bs-toggle="pill"
-                      data-bs-target="#pills-contact2"
-                      type="button"
-                      role="tab"
-                      aria-controls="pills-contact"
-                      aria-selected="false"
-                    >
-                      В ожидании
-                      <span class="tab-counter">(0)</span>
-                    </button>
-                  </li>
-
-                  <li class="nav-item" role="presentation">
-                    <button
-                      class="nav-link"
-                      id="pills-contact-tab2"
-                      data-bs-toggle="pill"
-                      data-bs-target="#pills-contact2"
-                      type="button"
-                      role="tab"
-                      aria-controls="pills-contact"
-                      aria-selected="false"
-                    >
-                      Отмененные
-                      <span class="tab-counter unread">1</span>
-                    </button>
-                  </li>
-
-                  <li class="nav-item" role="presentation">
-                    <button
-                      class="nav-link"
-                      id="pills-contact-tab2"
-                      data-bs-toggle="pill"
-                      data-bs-target="#pills-contact2"
-                      type="button"
-                      role="tab"
-                      aria-controls="pills-contact"
-                      aria-selected="false"
-                    >
-                      Выполненные
-                      <span class="tab-counter unread">1</span>
-                    </button>
-                  </li>
-                </ul>
-
-                <div class="tab-content" id="pills-tabContent2">
-                  <div
-                    class="tab-pane fade show active"
-                    id="pills-home2"
-                    role="tabpanel"
-                    aria-labelledby="pills-home-tab"
+                    aria-labelledby="pills-bought-tab"
                   >
                     <div class="parcles-list table-responsive mt-3">
                       <table class="table">
                         <thead class="table-body">
-                          <th style="width: 11%; min-width: 111px">Link</th>
-                          <th style="width: 16%; min-width: 161px">
-                            Product name
-                          </th>
-                          <th style="width: 9%; min-width: 91px">Price</th>
-                          <th style="width: 8%; min-width: 81px">
-                            Yellow fee 5%
-                          </th>
-                          <th style="width: 9%; min-width: 91px">
-                            Total payment
-                          </th>
-                          <th style="width: 12%; min-width: 121px">
-                            Creted date
-                          </th>
-                          <th style="min-width: 131px">Payment option</th>
-                          <th style="width: 12%; min-width: 121px">Actions</th>
-                          <th style="min-width: 100px">Special service</th>
+                          <th class="th-link">Link</th>
+                          <th class="th-name">Product name</th>
+                          <th class="th-price">Price</th>
+                          <th class="th-free">Yellow fee 5%</th>
+                          <th class="th-total">Total payment</th>
+                          <th class="th-data">Creted date</th>
+                          <th class="th-paymet">Payment option</th>
+                          <th class="th-action">Actions</th>
+                          <th class="th-servis">Special service</th>
                         </thead>
                         <tbody>
+                          <tr>
+                            <td>https:/sdhg</td>
+                            <td>iphone 13 ProMax</td>
+                            <td>$1500.00</td>
+                            <td>$75.00</td>
+                            <td>$1575.00</td>
+                            <td>Март 12,2022</td>
+                            <td>
+                              <button class="btn payment-btn-active">
+                                Paid
+                              </button>
+                            </td>
+                            <td class="flex-ro" style="height: 100%">
+                              <div class="flex-row">
+                                <button
+                                  class="btn camera-btn"
+                                  style="display: inline-bock"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#parcelsEdit"
+                                >
+                                <i class="ri-camera-fill"></i>
+                                </button>
+                                <button
+                                  style="display: inline-bock"
+                                  class="btn btn-delete "
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#deleteModal"
+                                >
+                                  <img
+                                    src="../images/delet-a-ctive.svg"
+                                    alt=""
+                                    width="16"
+                                  />
+                                </button>
+                              </div>
+                            </td>
+                            <td class="table-td-chekbox">
+                              <input type="checkbox" id="html" />
+                              <label for="html"></label>
+                            </td>
+                          </tr>
+
                           <tr>
                             <td>https:/sdhg</td>
                             <td>iphone 13 ProMax</td>
@@ -1407,6 +1060,350 @@
                               </div>
                             </td>
                             <td>
+                              <input type="checkbox" id="html" />
+                              <label for="html"></label>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>https:/sdhg</td>
+                            <td>iphone 13 ProMax</td>
+                            <td>$1500.00</td>
+                            <td>$75.00</td>
+                            <td class="total-price">$1575.00</td>
+                            <td>Март 12,2022</td>
+                            <td>
+                              <button class="btn payment-btn-active">
+                                Paid
+                              </button>
+                            </td>
+                            <td class="flex-ro" style="height: 100%">
+                              <div class="flex-row">
+                                <button
+                                  class="btn create-btn"
+                                  style="display: inline-bock"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#parcelsEdit"
+                                >
+                                  <img src="../images/qalam.svg" alt="" />
+                                </button>
+                                <button
+                                  style="display: inline-bock"
+                                  class="btn btn-delete"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#deleteModal"
+                                >
+                                  <img
+                                    src="../images/delet-a-ctive.svg"
+                                    alt=""
+                                    width="16"
+                                  />
+                                </button>
+                              </div>
+                            </td>
+                            <td>
+                              <input type="checkbox" id="html" />
+                              <label for="html"></label>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>https:/sdhg</td>
+                            <td>iphone 13 ProMax</td>
+                            <td>$1500.00</td>
+                            <td>$75.00</td>
+                            <td class="total-price">$1575.00</td>
+                            <td>Март 12,2022</td>
+                            <td>
+                              <button class="btn payment-btn-active">
+                                Paid
+                              </button>
+                            </td>
+                            <td class="flex-ro" style="height: 100%">
+                              <div class="flex-row">
+                                <button
+                                  class="btn create-btn"
+                                  style="display: inline-bock"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#parcelsEdit"
+                                >
+                                  <img src="../images/qalam.svg" alt="" />
+                                </button>
+                                <button
+                                  style="display: inline-bock"
+                                  class="btn btn-delete"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#deleteModal"
+                                >
+                                  <img
+                                    src="../images/delet-a-ctive.svg"
+                                    alt=""
+                                    width="16"
+                                  />
+                                </button>
+                              </div>
+                            </td>
+                            <td>
+                              <input type="checkbox" id="html" />
+                              <label for="html"></label>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <!-- Bought -->
+                  <div
+                    class="tab-pane fade"
+                    id="pills-verified"
+                    role="tabpanel"
+                    aria-labelledby="pills-verified-tab"
+                  >
+                    <div class="parcles-list table-responsive mt-3">
+                      <table class="table">
+                        <thead class="table-body">
+                          <th class="th-link">Link</th>
+                          <th class="th-name">Product name</th>
+                          <th class="th-price">Price</th>
+                          <th class="th-free">Yellow fee 5%</th>
+                          <th class="th-total">Total payment</th>
+                          <th class="th-data">Creted date</th>
+                          <th class="th-paymet">Payment option</th>
+                          <th class="th-action">Actions</th>
+                          <th class="th-servis">Special service</th>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>https:/sdhg</td>
+                            <td>iphone 13 ProMax</td>
+                            <td>$1500.00</td>
+                            <td>$75.00</td>
+                            <td>$1575.00</td>
+                            <td>Март 12,2022</td>
+                            <td>
+                              <button class="btn payment-btn-active">
+                                Paid
+                              </button>
+                            </td>
+                            <td class="flex-ro" style="height: 100%">
+                              <div class="flex-row">
+                                <button
+                                  class="btn create-btn"
+                                  style="display: inline-bock"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#parcelsEdit"
+                                >
+                                  <img src="../images/qalam.svg" alt="" />
+                                </button>
+                                <button
+                                  style="display: inline-bock"
+                                  class="btn btn-delete"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#deleteModal"
+                                >
+                                  <img
+                                    src="../images/delet-a-ctive.svg"
+                                    alt=""
+                                    width="16"
+                                  />
+                                </button>
+                              </div>
+                            </td>
+                            <td class="table-td-chekbox">
+                              <input type="checkbox" id="html" />
+                              <label for="html"></label>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>https:/sdhg</td>
+                            <td>iphone 13 ProMax</td>
+                            <td>$1500.00</td>
+                            <td>$75.00</td>
+                            <td class="total-price">$1575.00</td>
+                            <td>Март 12,2022</td>
+                            <td>
+                              <button class="btn payment-btn-active">
+                                Paid
+                              </button>
+                            </td>
+                            <td class="flex-ro" style="height: 100%">
+                              <div class="flex-row">
+                                <button
+                                  class="btn create-btn"
+                                  style="display: inline-bock"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#parcelsEdit"
+                                >
+                                  <img src="../images/qalam.svg" alt="" />
+                                </button>
+                                <button
+                                  style="display: inline-bock"
+                                  class="btn btn-delete"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#deleteModal"
+                                >
+                                  <img
+                                    src="../images/delet-a-ctive.svg"
+                                    alt=""
+                                    width="16"
+                                  />
+                                </button>
+                              </div>
+                            </td>
+                            <td>
+                              <input type="checkbox" id="html" />
+                              <label for="html"></label>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>https:/sdhg</td>
+                            <td>iphone 13 ProMax</td>
+                            <td>$1500.00</td>
+                            <td>$75.00</td>
+                            <td class="total-price">$1575.00</td>
+                            <td>Март 12,2022</td>
+                            <td>
+                              <button class="btn payment-btn-active">
+                                Paid
+                              </button>
+                            </td>
+                            <td class="flex-ro" style="height: 100%">
+                              <div class="flex-row">
+                                <button
+                                  class="btn create-btn"
+                                  style="display: inline-bock"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#parcelsEdit"
+                                >
+                                  <img src="../images/qalam.svg" alt="" />
+                                </button>
+                                <button
+                                  style="display: inline-bock"
+                                  class="btn btn-delete"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#deleteModal"
+                                >
+                                  <img
+                                    src="../images/delet-a-ctive.svg"
+                                    alt=""
+                                    width="16"
+                                  />
+                                </button>
+                              </div>
+                            </td>
+                            <td>
+                              <input type="checkbox" id="html" />
+                              <label for="html"></label>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>https:/sdhg</td>
+                            <td>iphone 13 ProMax</td>
+                            <td>$1500.00</td>
+                            <td>$75.00</td>
+                            <td class="total-price">$1575.00</td>
+                            <td>Март 12,2022</td>
+                            <td>
+                              <button class="btn payment-btn-active">
+                                Paid
+                              </button>
+                            </td>
+                            <td class="flex-ro" style="height: 100%">
+                              <div class="flex-row">
+                                <button
+                                  class="btn create-btn"
+                                  style="display: inline-bock"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#parcelsEdit"
+                                >
+                                  <img src="../images/qalam.svg" alt="" />
+                                </button>
+                                <button
+                                  style="display: inline-bock"
+                                  class="btn btn-delete"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#deleteModal"
+                                >
+                                  <img
+                                    src="../images/delet-a-ctive.svg"
+                                    alt=""
+                                    width="16"
+                                  />
+                                </button>
+                              </div>
+                            </td>
+                            <td>
+                              <input type="checkbox" id="html" />
+                              <label for="html"></label>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <!-- Bought -->
+                  <div
+                    class="tab-pane fade"
+                    id="pills-Accepted"
+                    role="tabpanel"
+                    aria-labelledby="pills-Accepted-tab"
+                  >
+                    <div class="parcles-list table-responsive mt-3">
+                      <table class="table">
+                        <thead class="table-body">
+                          <th class="th-link">Link</th>
+                          <th class="th-name">Product name</th>
+                          <th class="th-price">Price</th>
+                          <th class="th-free">Yellow fee 5%</th>
+                          <th class="th-total">Total payment</th>
+                          <th class="th-data">Creted date</th>
+                          <th class="th-paymet">Payment option</th>
+                          <th class="th-action">Actions</th>
+                          <th class="th-servis">Special service</th>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>https:/sdhg</td>
+                            <td>iphone 13 ProMax</td>
+                            <td>$1500.00</td>
+                            <td>$75.00</td>
+                            <td>$1575.00</td>
+                            <td>Март 12,2022</td>
+                            <td>
+                              <button class="btn payment-btn-active">
+                                Paid
+                              </button>
+                            </td>
+                            <td class="flex-ro" style="height: 100%">
+                              <div class="flex-row">
+                                <button
+                                  class="btn create-btn"
+                                  style="display: inline-bock"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#parcelsEdit"
+                                >
+                                  <img src="../images/qalam.svg" alt="" />
+                                </button>
+                                <button
+                                  style="display: inline-bock"
+                                  class="btn btn-delete"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#deleteModal"
+                                >
+                                  <img
+                                    src="../images/delet-a-ctive.svg"
+                                    alt=""
+                                    width="16"
+                                  />
+                                </button>
+                              </div>
+                            </td>
+                            <td class="table-td-chekbox">
                               <input type="checkbox" id="html" />
                               <label for="html"></label>
                             </td>
