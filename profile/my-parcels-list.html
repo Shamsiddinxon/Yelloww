@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts CDN -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap"
+    />
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/css/profile.css" />
+    <!-- RemixIcon link -->
+    <link rel="stylesheet" href="../fonts/remixicon.css" />
+    <!-- Custo  m links -->
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+    <title>Yellow - My Profile</title>
+  </head>
+  <body>
+    <!-- Section Navbar Start -->
+    <section id="navbar" class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light container">
+        <!-- navbar logo -->
+        <a class="navbar-brand" href="../index.html"
+          ><img src="/images/logo.svg" alt="logo"
+        /></a>
+        <button
+          class="me-auto navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleButton"
+          aria-controls="navbarToggleButton"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- navbar -->
+        <div class="collapse navbar-collapse" id="navbarToggleButton">
+          <!-- navbar left -->
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/plans.html">Тарифы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/services.html">Услуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/shop.html">Магазины</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/about-us.html">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/contact.html">Контакты</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/help.html">Помощь</a>
+            </li>
+          </ul>
+          <!-- navbar-right -->
+          <ul class="navbar-nav navbar-right">
+            <li class="nav-item">
+              <div class="nav-link">
+                <button class="search-button">
+                  <i class="ri-search-line"></i>
+                </button>
+                <input
+                  type="search"
+                  class="search-input"
+                  placeholder="search.."
+                />
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="ri-calculator-line"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <select class="nav-link btn-lang">
+                <option value="uzb">Uzb</option>
+                <option value="rus">Rus</option>
+                <option value="eng">Eng</option>
+              </select>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-profile-icon" href="#">
+                <img
+                  class="profile_avatar"
+                  src="/images/profil_avatar.png"
+                  alt="profile"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- navbar end -->
+      </nav>
+    </section>
+    <!-- Section Navbar End -->
+    <!-- Section Breadcrumb Start -->
+    <section id="breadcrumbs" class="container-fluid">
+      <nav aria-label="breadcrumb" class="breadcrumbs container">
+        <h1 class="breadcrumb-title">Профил</h1>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="/pages/main-uz.html">Главная</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="/profile/my-profile.html">Профил</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Мои посылки
+          </li>
+        </ol>
+      </nav>
+    </section>
+    <!-- Section Breadcrumb End -->
+    <!-- Section Profile Start -->
+    <section id="profile" class="container-fluid">
+      <div class="profile container">
+        <div class="profile-row row">
+          <div class="sidebar col-sm-12 col-md-3">
+            <ul class="sidebar-list">
+              <li>
+                <a class="sidebar-item" href="/profile/my-profile.html"
+                  ><i class="ri-user-line"></i> Профиль</a
+                >
+              </li>
+              <li>
+                <a class="sidebar-item active" href="/profile/my-parcels.html"
+                  ><i class="ri-archive-line"></i> Мои посылки</a
+                >
+              </li>
+              <li>
+                <a class="sidebar-item" href="/profile/my-address.html"
+                  ><i class="ri-map-pin-line"></i> Мои адреса</a
+                >
+              </li>
+              <li>
+                <a class="sidebar-item" href="/profile/my-balance.html"
+                  ><i class="ri-wallet-3-line"></i> Mой баланс</a
+                >
+              </li>
+              <li>
+                <a class="sidebar-item" href="/index.html"
+                  ><i class="ri-logout-circle-line"></i> Выйти</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Profile Dinamic Contents -->
+          <div class="parcles-content col">
+            <div class="parcles-row">
+              <ul class="nav nav-pills" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="parcles-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#parcles"
+                    type="button"
+                    role="tab"
+                    aria-controls="parcles"
+                    aria-selected="true"
+                  >
+                    Посылки
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="parcles-help-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#parcles-help"
+                    type="button"
+                    role="tab"
+                    aria-controls="parcles-help"
+                    aria-selected="false"
+                  >
+                    Помощь в покупке
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="parcles-archive-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#parcles-archive"
+                    type="button"
+                    role="tab"
+                    aria-controls="parcles-archive"
+                    aria-selected="false"
+                  >
+                    Архив
+                  </button>
+                </li>
+              </ul>
+              <button class="new-parcels-button btn"><i class="ri-add-line"></i> Новый заказ</button>
+            </div>
+            <div class="tab-content">
+              <div
+                class="tab-pane fade show active"
+                id="parcles"
+                role="tabpanel"
+                aria-labelledby="parcles-tab"
+              >
+                <div class="parcles-group">
+                  <div class="parcles-item active">
+                    <div class="parcles-item__head">
+                        <a class="head-link" href="/profile/my-parcels-list.html"><h1 class="head-title">Доставленные посылки</h1></a>
+                      <span class="head-counter unread">2</span>
+                    </div>
+                  </div>
+                  <div class="parcles-item">
+                    <div class="parcles-item__head">
+                      <a class="head-link" href="/profile/my-parcels-list.html"><h1 class="head-title">Ожидаемые в покупке</h1></a>
+                      <span class="head-counter unread">9</span>
+                    </div>
+                  </div>
+                  <div class="parcles-item">
+                    <div class="parcles-item__head">
+                      <a class="head-link" href="/profile/my-parcels-list.html"><h1 class="head-title">На складе</h1></a>
+                      <span class="head-counter">(0)</span>
+                    </div>
+                  </div>
+                  <div class="parcles-item">
+                    <div class="parcles-item__head">
+                      <a class="head-link" href="/profile/my-parcels-list.html"><h1 class="head-title">Отправленные посылки</h1></a>
+                      <span class="head-counter">(0)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade show"
+                id="parcles-help"
+                role="tabpanel"
+                aria-labelledby="parcles-help-tab"
+              >
+                <div class="parcles-group">
+                  <div class="parcles-item">
+                    <div class="parcles-item__head">
+                      <a class="head-link" href="/profile/my-parcels-list.html"><h1 class="head-title">На рассмотрении</h1></a>
+                      <span class="head-counter">(0)</span>
+                    </div>
+                  </div>
+                  <div class="parcles-item">
+                    <div class="parcles-item__head">
+                      <a class="head-link" href="/profile/my-parcels-list.html"><h1 class="head-title">Ожидание оплаты</h1></a>
+                      <span class="head-counter">(0)</span>
+                    </div>
+                  </div>
+                  <div class="parcles-item">
+                    <div class="parcles-item__head">
+                      <a class="head-link" href="/profile/my-parcels-list.html"><h1 class="head-title">В ожидании</h1></a>
+                      <span class="head-counter">(0)</span>
+                    </div>
+                  </div>
+                  <div class="parcles-item">
+                    <div class="parcles-item__head">
+                      <a class="head-link" href="/profile/my-parcels-list.html"><h1 class="head-title">Отмененные</h1></a>
+                      <span class="head-counter unread">1</span>
+                    </div>
+                  </div>
+                  <div class="parcles-item">
+                    <div class="parcles-item__head">
+                      <a class="head-link" href="/profile/my-parcels-list.html"><h1 class="head-title">Выполненные</h1></a>
+                      <span class="head-counter">(0)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="parcles-archive"
+                role="tabpanel"
+                aria-labelledby="parcles-archive-tab"
+              >
+                <div class="parcles-empty-item">
+                  <h1 class="item-title">У вас нет архив</h1>
+                  <img
+                    class="item-icon"
+                    src="/images/parcles_suggestion.png"
+                    alt="icon"
+                  />
+                  <button class="item-button btn"><i class="ri-add-line"></i> Новый заказ</button>
+                </div>
+              </div>
+            </div>
+            <div class="parcles-list mt-3">
+              <table class="table">
+                <thead bgcolor="#F4F4F4">
+                  <th>Trucking number</th>
+                  <th>Box ID</th>
+                  <th>дата загрузки</th>
+                  <th></th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>54657544</td>
+                    <td>FG45462</td>
+                    <td>Март 12, 2022</td>
+                    <td class="table-actions">
+
+                        <button class="btn btn-view" data-bs-toggle="modal" data-bs-target="#staticBackdrop" ><i class="ri-error-warning-line"></i></button>
+                        <button class="btn btn-edit"><i class="ri-pencil-line"></i></button>
+                        <button class="btn btn-delete"><i class="ri-delete-bin-line"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>54657544</td>
+                    <td>FG45462</td>
+                    <td>Март 16, 2022</td>
+                    <td class="table-actions">
+                        <button class="btn btn-view"><i class="ri-error-warning-line"></i></button>
+                        <button class="btn btn-edit"><i class="ri-pencil-line"></i></button>
+                        <button class="btn btn-delete"><i class="ri-delete-bin-line"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>54657544</td>
+                    <td>FG45462</td>
+                    <td>Март 18, 2022</td>
+                    <td class="table-actions">
+                        <button class="btn btn-view"><i class="ri-error-warning-line"></i></button>
+                        <button class="btn btn-edit"><i class="ri-pencil-line"></i></button>
+                        <button class="btn btn-delete"><i class="ri-delete-bin-line"></i></button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Contacts Start-->
+    <section id="contacsUs" class="container-fluid">
+      <div class="contact-us container">
+        <h3 class="contact-title">Звоните, если есть вопросы</h3>
+        <button class="btn contact-button">
+          <i class="ri-phone-line">&nbsp;</i>+998 71 200 34 33
+        </button>
+      </div>
+    </section>
+    <!-- Section Contacts End -->
+    <!-- Section FooterNav Mobile Start-->
+    <section id="footer-nav">
+      <nav class="footer-nav phoneContent">
+          <ul class="footer-nav-list">
+            <li><a class="footer-nav-item" href="/profile/my-profile.html"><i class="ri-home-4-line"></i> Main</a></li>
+            <li><a class="footer-nav-item active" href="/profile/my-parcels.html"><i class="ri-archive-line"></i> My parcels</a></li>
+            <li><a class="footer-nav-item" href="#"><i class="ri-add-line"></i></a></li>
+            <li><a class="footer-nav-item" href="/profile/my-address.html"><i class="ri-map-pin-line"></i> Address</a></li>
+            <li><a class="footer-nav-item" href="/profile/my-balance.html"><i class="ri-wallet-3-line"></i> Balance</a></li>
+          </ul>
+        </nav>
+    </section>
+    <!-- Section FooterNav Mobile End -->
+
+
+                          <!-- Modal -->
+<div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Информация посилок</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <div class="modal-body">
+        ...
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </body>
+  <!-- Bootstrap Js -->
+  <script src="/js/jquery-3.6.0.min.js"></script>
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script>
+    jQuery(document).ready(function ($) {
+      $(".search-button").click(function () {
+        $(".search-input").val("").toggle();
+      });
+    });
+  </script>
+</html>
+

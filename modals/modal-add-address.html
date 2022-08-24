@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Google Fonts CDN -->
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap"
+    />
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/css/profile.css"/>
+    <!-- RemixIcon link -->
+    <link rel="stylesheet" href="../fonts/remixicon.css"/>
+    <title>Yellow - Modals</title>
+</head>
+<body>
+
+<!-- Button trigger modal -->
+<div class="container mt-3">
+    <button class="item-button btn"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#parcelsModal">
+        Новый адрес
+    </button>
+</div>
+
+
+
+
+
+<!-- Parcles Modal -->
+<div class="modal fade" id="parcelsModal" tabindex="-1" aria-labelledby="parcelsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="parcelsModalLabel">
+                    Добавить получателя
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="parcels-body">
+                    <div class="body-item">
+                        <p>Если у вас нет данных получателя, <br/>
+                            вы можете запросить необходимые данные по SMS</p>
+                        <button class="parcels-request-btn btn">
+                            <i class="ri-mail-line"></i> Запросить данные
+                        </button>
+                    </div>
+                    <div class="body-item">
+                        <p>Ф.И.О необходимо заполнять латинскими буквами. Поля со *
+                            звёздочками обязательны для заполнения.</p>
+                    </div>
+                </div>
+                <form class="row g-2 parcels-form">
+                    <div class="col-12 my-4">
+                        <h1>Данные</h1>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <label for="firstName" class="form-label">Имя</label>
+                        <input type="text" class="form-control" name="first-name" id="name"/>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <label for="lastName" class="form-label">Фамилия</label>
+                        <input type="text" class="form-control" name="lastName" id="lastName"/>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <label for="secondName" class="form-label">Отчество</label>
+                        <input type="text" class="form-control" name="secondName" id="secondName"/>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <label for="serialNumber" class="form-label">Серия и номер паспорта</label>
+                        <input type="text" class="form-control" name="serialNumber" id="serialNumber"/>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <label for="phone" class="form-label">Номер телефона</label>
+                        <input type="text" class="form-control" name="phone" id="phone"/>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <label for="primaryPhone" class="form-label">Дополнительный номер</label>
+                        <input type="text" class="form-control" name="primaryPhone" id="primaryPhone"/>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <label for="zipCode" class="form-label">ZIP-код</label>
+                        <input type="text" class="form-control" name="zipCode" id="zipCode"/>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="text" class="form-control" name="email" id="email"/>
+                    </div>
+                    <div class="col-md-12 my-4"><h1>Адрес</h1>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <label for="country" class="form-label">Страна</label>
+                        <select class="form-select" id="country" aria-label="Default select example">
+                            <option selected>Выберите страну</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <label for="region" class="form-label">Регион</label>
+                        <select class="form-select" id="region" aria-label="Default select example">
+                            <option selected>Выберите регион</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <label for="province" class="form-label">Город / Район</label>
+                        <select class="form-select" id="province" aria-label="Default select example">
+                            <option selected>Выберите город / район</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <label for="address" class="form-label">Улица</label>
+                        <input
+                                type="text"
+                                class="form-control"
+                                name="address"
+                                id="address"
+                        />
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-2 ">
+                        <label for="house" class="form-label">Дом</label>
+                        <input
+                                type="number"
+                                class="form-control"
+                                name="house"
+                                id="house"
+                        />
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-2 ">
+                        <label for="apartment" class="form-label">Квартира</label>
+                        <input
+                                type="number"
+                                class="form-control"
+                                name="apartment"
+                                id="apartment"
+                        />
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-2 ">
+                        <label for="entrance" class="form-label">Подъезд</label>
+                        <input
+                                type="number"
+                                class="form-control"
+                                name="entrance"
+                                id="entrance"
+                        />
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-2 ">
+                        <label for="floor" class="form-label">Этаж</label>
+                        <input
+                                type="number"
+                                class="form-control"
+                                name="floor"
+                                id="floor"
+                        />
+                    </div>
+                    <div class="col-12  text-end mt-3 mb-3">
+                        <button class="btn mt-3 reciever-add-btn" type="submit">Добавить</button>
+                        <button class="btn mt-3 reciever-cancel-btn" type="button" data-bs-dismiss="modal"
+                                aria-label="Close">Отменить
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Parcels List Add Modal -->
+
+
+
+</body>
+<script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
+</html>

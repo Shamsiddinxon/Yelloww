@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts CDN -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap"
+    />
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/css/profile.css" />
+    <link rel="stylesheet" href="../css/fontfase.css">
+    <!-- RemixIcon link -->
+    <link rel="stylesheet" href="/fonts/remixicon.css" />
+    <!-- Custom links -->
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+    <title>Yellow - My Profile</title>
+  </head>
+  <body>
+    <!-- Section Navbar Start -->
+    <section id="navbar" class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light container">
+        <!-- navbar logo -->
+        <a class="navbar-brand" href="../index.html"
+          ><img src="/images/logo.svg" alt="logo"
+        /></a>
+        <button
+          class="me-auto navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleButton"
+          aria-controls="navbarToggleButton"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- navbar -->
+        <div class="collapse navbar-collapse" id="navbarToggleButton">
+          <!-- navbar left -->
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/plans.html">Тарифы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/services.html">Услуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/shop.html">Магазины</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/about-us.html">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/contact.html">Контакты</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/help.html">Помощь</a>
+            </li>
+          </ul>
+          <!-- navbar-right -->
+          <ul class="navbar-nav navbar-right">
+            <li class="nav-item">
+              <div class="nav-link">
+                <button class="search-button">
+                  <i class="ri-search-line"></i>
+                </button>
+                <input
+                  type="search"
+                  class="search-input"
+                  placeholder="search.."
+                />
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="ri-calculator-line"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <!-- <select class="nav-link btn-lang">
+                <option value="uzb"><img src="../images/new/uz-flag.svg" alt=""  width="30">uUzb</option>
+                <option value="rus">Rus</option>
+                <option value="eng">Eng</option>
+              </select> -->
+
+              <!-- <div class="select-lang">
+                <img src="../images/new/us-flag.svg" alt="" width="30">
+                <div></div>
+              </div>
+
+              <a href="#" class="select-lang select-lang-bottom">
+                <img src="../images/new/uz-flag.svg" alt=""  width="30">
+              </a> -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-profile-icon" href="#">
+                <img
+                  class="profile_avatar"
+                  src="/images/profil_avatar.png"
+                  alt="profile"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- navbar end -->
+      </nav>
+    </section>
+    <!-- Section Navbar End -->
+    <!-- Section Breadcrumb Start -->
+    <section id="breadcrumbs" class="container-fluid">
+      <nav aria-label="breadcrumb" class="breadcrumbs container">
+        <h1 class="breadcrumb-title">Профил</h1>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="/pages/main-uz.html">Главная</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Профил</li>
+        </ol>
+      </nav>
+    </section>
+    <!-- Section Breadcrumb End -->
+    <!-- Section Profile Start -->
+    <section id="profile" class="container-fluid">
+      <div class="profile container">
+        <div class="profile-row row">
+          <div class="sidebar col-sm-12 col-md-3">
+            <ul class="sidebar-list">
+              <li>
+                <a class="sidebar-item active" href="/profile/my-profile.html"
+                  ><i class="ri-user-line"></i> Профиль</a
+                >
+              </li>
+              <li>
+                <a class="sidebar-item" href="/profile/my-parcels.html"
+                  ><i class="ri-archive-line"></i> Мои посылки</a
+                >
+              </li>
+              <li>
+                <a class="sidebar-item" href="/profile/my-address.html"
+                  ><i class="ri-map-pin-line"></i> Мои адреса</a
+                >
+              </li>
+              <li>
+                <a class="sidebar-item" href="/profile/my-balance.html"
+                  ><i class="ri-wallet-3-line"></i> Mой баланс</a
+                >
+              </li>
+              <li>
+                <a class="sidebar-item" href="/index.html"
+                  ><i class="ri-logout-circle-line"></i> Выйти</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Profile Dinamic Contents -->
+          <div class="profile-content col">
+            <div class="content-top">
+              <div class="content-top-item">
+                <div class="top-item__head">
+                  <h1 class="head-title">Входящие посылки</h1>
+                  <span class="head-counter">(0)</span>
+                </div>
+                <div class="top-item__body">
+                  <div class="body-icons">
+                    <img
+                      class="body-icon"
+                      src="/images/how-icon1.svg"
+                      alt="avatar"
+                      width="40"
+                      height="40"
+                    />
+                  </div>
+                  <div class="body-group">
+                    <h1 class="body-title">Ожидаемые и на складе</h1>
+                    <p class="body-text">
+                      Wait a minute for your product to arrive and they will
+                      contact you shortly
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="content-top-item">
+                <div class="top-item__head">
+                  <h1 class="head-title">Исходящие посылки</h1>
+                  <span class="head-counter">(0)</span>
+                </div>
+                <div class="top-item__body">
+                  <div class="body-icons">
+                    <img
+                      class="body-icon"
+                      src="/images/how-icon2.svg"
+                      alt="avatar"
+                      width="40"
+                      height="40"
+                    />
+                  </div>
+                  <div class="body-group">
+                    <h1 class="body-title">Отправленные посылки</h1>
+                    <p class="body-text">
+                      Ваш продукт уже в пути и будет связан с вами быстро там
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="content-top-item">
+                <div class="top-item__head">
+                  <h1 class="head-title">Помощь в покупке</h1>
+                  <span class="head-counter">(0)</span>
+                </div>
+                <div class="top-item__body">
+                  <div class="body-icons">
+                    <img
+                      class="body-icon"
+                      src="/images/how-icon3.svg"
+                      alt="avatar"
+                      width="40"
+                      height="40"
+                    />
+                  </div>
+                  <div class="body-group">
+                    <h1 class="body-title">Онлайн покупки</h1>
+                    <p class="body-text">
+                      Покупайте все, что хотите, и они доставят
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-middle">
+              <div class="content-middle-item">
+                <div class="middle-item__head">
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="profile_avatar"
+                      src="/images/profil_avatar_usa.svg"
+                      alt="avatar"
+                      width="36"
+                      height="36"
+                    />
+                    <div class="head-group">
+                      <h1 class="head-title m-0">Your USA address</h1>
+                    </div>
+                  </div>
+
+                  <p class="descs">
+                    Enter your address as address delivery before online buying
+                    from USA
+                  </p>
+                </div>
+                <div class="middle-item__body">
+                  <div class="body-group">
+                    <div class="body-group-top">
+                      <div>
+                        <h4 class="body-group-top-title">Jakob Dias</h4>
+                        <p class="body-group-top-desc">Reciever</p>
+                      </div>
+
+                      <button class="body-group-top-btn">Copy</button>
+                    </div>
+                    <hr class="">
+
+                    <ul class="body-group-main">
+                      <li class="body-group-main-item">
+                        <p class="body-group-main-item-desc">Address 1</p>
+                        <div class="body-group-main-item-2">
+                          <p class="body-group-main-item-desc1">606 Enterchange Boleuvard</p>
+                          <button class="body-group-top-btn">Copy</button>
+                        </div>
+                      </li>
+
+                      <li class="body-group-main-item">
+                        <p class="body-group-main-item-desc">Address 2</p>
+                        <div class="body-group-main-item-2">
+                          <p class="body-group-main-item-desc1">Yellow 16</p>
+                          <button class="body-group-top-btn">Copy</button>
+                        </div>
+                      </li>
+
+                      <li class="body-group-main-item">
+                        <p class="body-group-main-item-desc">City</p>
+                        <div class="body-group-main-item-2">
+                          <p class="body-group-main-item-desc1">New York</p>
+                          <button class="body-group-top-btn">Copy</button>
+                        </div>
+                      </li>
+
+                      <li class="body-group-main-item">
+                        <p class="body-group-main-item-desc">State</p>
+                        <div class="body-group-main-item-2">
+                          <p class="body-group-main-item-desc1">DE</p>
+                          <button class="body-group-top-btn">Copy</button>
+                        </div>
+                      </li>
+
+                      <li class="body-group-main-item">
+                        <p class="body-group-main-item-desc">Zipcode</p>
+                        <div class="body-group-main-item-2">
+                          <p class="body-group-main-item-desc1">15826</p>
+                          <button class="body-group-top-btn">Copy</button>
+                        </div>
+                      </li>
+
+                      <li class="body-group-main-item">
+                        <p class="body-group-main-item-desc">Country</p>
+                        <div class="body-group-main-item-2">
+                          <p class="body-group-main-item-desc1">USA</p>
+                          <button class="body-group-top-btn">Copy</button>
+                        </div>
+                      </li>
+
+                      <li class="body-group-main-item">
+                        <p class="body-group-main-item-desc">Phone number</p>
+                        <div class="body-group-main-item-2">
+                          <p class="body-group-main-item-desc1">+1 929 244 0000</p>
+                          <button class="body-group-top-btn">Copy</button>
+                        </div>
+                      </li>
+
+                      
+                    </ul>
+
+                    <!-- <ul class="body-group__list">
+                      <li class="list-item">
+                        <span class="list-item-left">Имя</span>
+                        <span class="list-item-right">Мансурбек</span>
+                      </li>
+                      <li class="list-item">
+                        <span class="list-item-left">Фамилия</span>
+                        <span class="list-item-right">Толибжанов</span>
+                      </li>
+                      <li class="list-item">
+                        <span class="list-item-left">Телефон</span>
+                        <span class="list-item-right">+998 91 753 65 48</span>
+                      </li>
+                      <li class="list-item">
+                        <span class="list-item-left">Email</span>
+                        <span class="list-item-right">Ali58@gmail.com</span>
+                      </li>
+                      <li class="list-item">
+                        <span class="list-item-left">Состояние</span>
+                        <span class="list-item-right">Uzbekistan</span>
+                      </li>
+                      <li class="list-item">
+                        <span class="list-item-left">Город</span>
+                        <span class="list-item-right">Toshkent</span>
+                      </li>
+                      <li class="list-item">
+                        <span class="list-item-left">Адресная строка</span>
+                        <span class="list-item-right"
+                          >Yakkasaroy t. 24 uy
+                        </span>
+                      </li>
+                      <li class="list-item">
+                        <span class="list-item-left">Почтовый индекс</span>
+                        <span class="list-item-right">15826</span>
+                      </li>
+                    </ul>
+                    <button
+                      class="head-button-edit btn phoneContent"
+                      onclick="location.href='/profile/my-profile-edit.html';"
+                    >
+                      <i class="ri-edit-line"></i> Изминенит
+                    </button> -->
+                  </div>
+                </div>
+              </div>
+              <div class="content-middle-item">
+                <div class="middle-item__head middle-item__headd">
+                  <h1 class="head-title">
+                    <i class="ri-error-warning-line"></i> Внимание!
+                  </h1>
+                </div>
+                <div class="middle-item__body">
+                  <p class="body-text">
+                    Просим обязательно заполнить поле Address Line 2 во время
+                    офо мления заказа в магазине. Поскольку оно является Вашим
+                    иденти- фикационным кодом. Если не найдете соответсвующее
+                    поле, заполните рядом с Вашим именем.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="content-bottom">
+              <div class="accordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseOne"
+                      aria-expanded="true"
+                      aria-controls="panelsStayOpen-collapseOne"
+                    >
+                      Как создать личный кабинет?
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingOne"
+                  >
+                    <div class="accordion-body">
+                      <strong>Первый шаг</strong>
+                      <p>
+                        Вы оформляете заказ на выкуп и добавляете в него все
+                        необходимые товары.
+                      </p>
+                      <strong>Второй шаг</strong>
+                      <p>
+                        Мы принимаем заявку и выставляем счёт на оплату, который
+                        включает доставку и наши услуги.
+                      </p>
+                      <strong>Третий шаг</strong>
+                      <p>
+                        Вы оплатчиваете счёт и мы выкупаем товары из
+                        интернет-магазина.
+                      </p>
+                      <strong>Четвёртый шаг</strong>
+                      <p>Вы получаете свой заказ.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseTwo"
+                    >
+                      Как работает услуга выкупа товаров ?
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo"
+                  >
+                    <div class="accordion-body">
+                      <strong>Первый шаг</strong>
+                      <p>
+                        Вы оформляете заказ на выкуп и добавляете в него все
+                        необходимые товары.
+                      </p>
+                      <strong>Второй шаг</strong>
+                      <p>
+                        Мы принимаем заявку и выставляем счёт на оплату, который
+                        включает доставку и наши услуги.
+                      </p>
+                      <strong>Третий шаг</strong>
+                      <p>
+                        Вы оплатчиваете счёт и мы выкупаем товары из
+                        интернет-магазина.
+                      </p>
+                      <strong>Четвёртый шаг</strong>
+                      <p>Вы получаете свой заказ.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <butto
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseThree"
+                    >
+                      Как зарегистрировать интернет заказ ?
+                    </butto>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree"
+                  >
+                    <div class="accordion-body">
+                      <strong class="mb-2">Первый шаг</strong>
+                      <p>
+                        Вы оформляете заказ на выкуп и добавляете в него все
+                        необходимые товары.
+                      </p>
+                      <strong>Второй шаг</strong>
+                      <p>
+                        Мы принимаем заявку и выставляем счёт на оплату, который
+                        включает доставку и наши услуги.
+                      </p>
+                      <strong>Третий шаг</strong>
+                      <p>
+                        Вы оплатчиваете счёт и мы выкупаем товары из
+                        интернет-магазина.
+                      </p>
+                      <strong>Четвёртый шаг</strong>
+                      <p>Вы получаете свой заказ.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseFour"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseFour"
+                    >
+                      Будет ли склад в безналоговом штате?
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFour"
+                  >
+                    <div class="accordion-body">
+                      <strong>Первый шаг</strong>
+                      <p>
+                        Вы оформляете заказ на выкуп и добавляете в него все
+                        необходимые товары.
+                      </p>
+                      <strong>Второй шаг</strong>
+                      <p>
+                        Мы принимаем заявку и выставляем счёт на оплату, который
+                        включает доставку и наши услуги.
+                      </p>
+                      <strong>Третий шаг</strong>
+                      <p>
+                        Вы оплатчиваете счёт и мы выкупаем товары из
+                        интернет-магазина.
+                      </p>
+                      <strong>Четвёртый шаг</strong>
+                      <p>Вы получаете свой заказ.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Contacts Start-->
+    <section id="contacsUs" class="container-fluid">
+      <div class="contact-us container">
+        <h3 class="contact-title">Звоните, если есть вопросы</h3>
+        <a href="tel:+998712003433" class="btn contact-button">
+          <i class="ri-phone-line">&nbsp;</i>+998 71 200 34 33
+        </a>
+      </div>
+    </section>
+    <!-- Section Contacts End -->
+    <!-- Section FooterNav Mobile Start-->
+    <section id="footer-nav">
+      <nav class="footer-nav phoneContent">
+        <ul class="footer-nav-list">
+          <li>
+            <a class="footer-nav-item active" href="/profile/my-profile.html"
+              ><i class="ri-home-4-line"></i> Main</a
+            >
+          </li>
+          <li>
+            <a class="footer-nav-item" href="/profile/my-parcels.html"
+              ><i class="ri-archive-line"></i> My parcels</a
+            >
+          </li>
+          <li>
+            <a class="footer-nav-item" href="#"><i class="ri-add-line"></i></a>
+          </li>
+          <li>
+            <a class="footer-nav-item" href="/profile/my-address.html"
+              ><i class="ri-map-pin-line"></i> Address</a
+            >
+          </li>
+          <li>
+            <a class="footer-nav-item" href="/profile/my-balance.html"
+              ><i class="ri-wallet-3-line"></i> Balance</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <!-- Section FooterNav Mobile End -->
+  </body>
+  <!-- Bootstrap Js -->
+  <script src="/js/jquery-3.6.0.min.js"></script>
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script>
+    jQuery(document).ready(function ($) {
+      $(".search-button").click(function () {
+        $(".search-input").val("").toggle();
+      });
+    });
+
+    let elSelectLangEng = document.querySelector(".select-lang")
+    let elSelectLangUzb = document.querySelector(".select-lang-bottom")
+
+    elSelectLangEng.addEventListener("click", (evt)=>{
+      elSelectLangEng.classList.toggle("active")
+      // elSelectLangUzb.setAttribute("style", "display:none;")
+    })
+  </script>
+</html>

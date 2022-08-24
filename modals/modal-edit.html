@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Google Fonts CDN -->
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap"
+    />
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/css/profile.css"/>
+    <!-- RemixIcon link -->
+    <link rel="stylesheet" href="../fonts/remixicon.css"/>
+    <title>Yellow - Modals</title>
+</head>
+<body>
+<!-- Button trigger modal -->
+<div class="container mt-3">
+
+    <button class="item-button btn" type="button" data-bs-toggle="modal" data-bs-target="#parcelsListEditModal">
+        Редактировать заказ
+    </button>
+</div>
+
+
+
+<!-- Parcels List Edit Modal -->
+<div class="modal fade" id="parcelsListEditModal" tabindex="-1" aria-labelledby="parcelsListEditModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="parcelsListEditModalLabel">
+                    Редактировать заказ
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="row g-2 parcels-list-form">
+                    <div class="col-md-12">
+                        <label for="productList" class="form-label">Ссылка на товар</label>
+                        <input type="text" class="form-control" name="product-list" id="productList" value="https//:newbalance.com/products/237"/>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="productName" class="form-label"
+                        >Название товара</label
+                        >
+                        <input
+                                type="text"
+                                class="form-control"
+                                name="product-name"
+                                id="productName"
+                                value="T-shirt 1235"
+                        />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="productPrice" class="form-label">Цена за ед</label>
+                        <input
+                                type="text"
+                                class="form-control"
+                                name="product-price"
+                                id="productPrice"
+                                value="10000"
+                        />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="productCount" class="form-label">Количество</label>
+                        <input
+                                type="text"
+                                class="form-control"
+                                name="product-count"
+                                id="productCount"
+                                value="1"
+                        />
+                    </div>
+                    <div class="col-md-4">
+                        <label for="productColor" class="form-label">Цвет</label>
+                        <input
+                                type="text"
+                                class="form-control"
+                                name="product-color"
+                                id="productColor"
+                                value="Black"
+                        />
+                    </div>
+                    <div class="col-md-4">
+                        <label for="productSize" class="form-label">Размер</label>
+                        <input
+                                type="text"
+                                class="form-control"
+                                name="product-size"
+                                id="productSize"
+                                value="XXL"
+                        />
+                    </div>
+                    <div class="col-md-4">
+                        <label for="productWidth" class="form-label">Ширина</label>
+                        <input
+                                type="text"
+                                class="form-control"
+                                name="product-width"
+                                id="productWidth"
+                        />
+                    </div>
+                    <div class="col-md-12">
+                        <label for="productComment">Комментарий для оператора</label>
+                        <textarea id="productComment" rows="3"></textarea>
+                    </div>
+                    <div class="col-12 text-end mt-3 mb-3">
+                        <button type="submit" class="btn parcels-list-update-btn">
+                            OK
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
+</html>

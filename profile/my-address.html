@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts CDN -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;800&display=swap"/>
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../css/profile.css" />
+    <link rel="stylesheet" href="../css/fontfase.css">
+    <!-- RemixIcon link -->
+    <link rel="stylesheet" href="../fonts/remixicon.css" />
+    <!-- Custom links -->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css"/>
+    <title>Yellow - My Profile</title>
+  </head>
+  <body>
+    <!-- Section Navbar Start -->
+    <section id="navbar" class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light container">
+        <!-- navbar logo -->
+        <a class="navbar-brand" href="../index.html"
+          ><img src="/images/logo.svg" alt="logo"
+        /></a>
+        <button
+          class="me-auto navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleButton"
+          aria-controls="navbarToggleButton"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- navbar -->
+        <div class="collapse navbar-collapse" id="navbarToggleButton">
+          <!-- navbar left -->
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/plans.html">Тарифы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/services.html">Услуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/shop.html">Магазины</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/about-us.html">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/contact.html">Контакты</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/help.html">Помощь</a>
+            </li>
+          </ul>
+          <!-- navbar-right -->
+          <ul class="navbar-nav navbar-right">
+            <li class="nav-item">
+                <div class="nav-link">
+                    <button class="search-button"><i class="ri-search-line"></i></button>
+                    <input type="search" class="search-input" placeholder="search..">
+                </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="ri-calculator-line"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <select class="nav-link btn-lang">
+                <option value="uzb">Uzb</option>
+                <option value="rus">Rus</option>
+                <option value="eng">Eng</option>
+              </select>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-profile-icon" href="#">
+                <img class="profile_avatar" src="/images/profil_avatar.png" alt="profile">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- navbar end -->
+      </nav>
+    </section>
+    <!-- Section Navbar End -->
+    <!-- Section Breadcrumb Start -->
+    <section id="breadcrumbs" class="container-fluid">
+      <nav aria- label="breadcrumb" class="breadcrumbs container">
+        <h1 class="breadcrumb-title">Профил</h1>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="/pages/main-uz.html">Главная</a>
+          </li> 
+          <li class="breadcrumb-item active" aria-current="page">
+            Профил
+          </li>
+        </ol>
+      </nav>
+    </section>
+    <!-- Section Breadcrumb End -->
+    <!-- Section Profile Start -->
+    <section id="profile" class="container-fluid">
+    <div id="profile" class="profile container">
+      <div id="profile" class="profile-row row">
+        <div class="sidebar col-sm-12 col-md-3">
+          <ul class="sidebar-list">
+            <li><a class="sidebar-item" href="/profile/my-profile.html"><i class="ri-user-line"></i> Профиль</a></li>
+            <li><a class="sidebar-item" href="/profile/my-parcels.html"><i class="ri-archive-line"></i> Мои посылки</a></li>
+            <li><a class="sidebar-item active" href="/profile/my-address.html"><i class="ri-map-pin-line"></i> Мои адреса</a></li>
+            <li><a class="sidebar-item" href="/profile/my-balance.html"><i class="ri-wallet-3-line"></i> Mой баланс</a></li>
+            <li><a class="sidebar-item" href="/index.html"><i class="ri-logout-circle-line"></i> Выйти</a></li>
+          </ul>
+        </div>
+        <!-- Profile Dinamic Contents -->
+        <div class="profile-content col py-3">
+          <div class="profile-row tab-outside ">
+            <ul class="nav nav-pills" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="my-receives-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#my-receives"
+                    type="button"
+                    role="tab"
+                    aria-controls="my-receives"
+                    aria-selected="true"
+                  >
+                  Мои получатели
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="my-sendings-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#my-sendings"
+                    type="button"
+                    role="tab"
+                    aria-controls="my-sendings"
+                    aria-selected="false"
+                  >
+                  Мои отправители
+                  </button>
+                </li>
+              </ul>
+          </div>
+          <div class="tab-content row">
+              <div
+              class="tab-pane fade show active"
+              id="my-receives"
+              role="tabpanel"
+              aria-labelledby="my-receives-tab"
+              >
+                <div class="address-empty-item">
+                  <img
+                    class="item-icon"
+                    src="/images/user_icon.png"
+                    alt="icon"
+                  />
+                  <p class="item-text">Здесь пока нет ни одного получателя :( <br>
+                    Пожалуйста укажите адреса получателей ваших посылок</p>
+                  <button class="item-button btn" type="button" data-bs-toggle="modal" data-bs-target="#parcelsModal"><i class="ri-add-line"></i> Новый заказ</button>
+                </div>
+              </div>
+              <div
+              class="tab-pane fade show"
+              id="my-sendings"
+              role="tabpanel"
+              aria-labelledby="my-sendings-tab"
+              >
+              <div class="address-empty-item">
+                <img
+                  class="item-icon"
+                  src="/images/user_icon.png"
+                  alt="icon"
+                />
+                <p class="item-text">Здесь пока нет ни одного получателя :( <br>
+                  Пожалуйста укажите адреса получателей ваших посылок</p>
+                  <button class="item-button btn" type="button" data-bs-toggle="modal" data-bs-target="#parcelsModal"><i class="ri-add-line"></i> Новый заказ</button>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- Section Contacts Start-->
+    <section id="contacsUs" class="container-fluid">
+      <div class="contact-us container">
+        <h3 class="contact-title">Звоните, если есть вопросы</h3>
+        <button class="btn contact-button">
+          <i class="ri-phone-line">&nbsp;</i>+998 71 200 34 33
+        </button>
+      </div>
+    </section>
+    <!-- Section Contacts End -->
+    <!-- Section FooterNav Mobile Start-->
+    <section id="footer-nav">
+      <nav class="footer-nav phoneContent">
+          <ul class="footer-nav-list">
+            <li><a class="footer-nav-item" href="/profile/my-profile.html"><i class="ri-home-4-line"></i> Main</a></li>
+            <li><a class="footer-nav-item" href="/profile/my-parcels.html"><i class="ri-archive-line"></i> My parcels</a></li>
+            <li><a class="footer-nav-item" href="#"><i class="ri-add-line"></i></a></li>
+            <li><a class="footer-nav-item active" href="/profile/my-address.html"><i class="ri-map-pin-line"></i> Address</a></li>
+            <li><a class="footer-nav-item" href="/profile/my-balance.html"><i class="ri-wallet-3-line"></i> Balance</a></li>
+          </ul>
+        </nav>
+    </section>
+    <!-- Section FooterNav Mobile End -->
+
+        <!-- Pacles Modal -->
+        <div
+        class="modal fade"
+        id="parcelsModal"
+        tabindex="-1"
+        aria-labelledby="parcelsModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="parcelsModalLabel">
+                Добавить получателя
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="parcels-body">
+                <div class="body-item">
+                  <p>
+                    Если у вас нет данных получателя, <br> вы можете запросить
+                    необходимые данные по SMS
+                  </p>
+                  <button class="parcels-request-btn btn">
+                    <i class="ri-mail-line"></i> Запросить данные
+                  </button>
+                </div>
+                <div class="body-item">
+                  <p>
+                    Ф.И.О необходимо заполнять латинскими буквами. Поля со *
+                    звёздочками обязательны для заполнения.
+                  </p>
+                </div>
+              </div>
+              <form class="row g-2 parcels-form">
+                <div class="col-12">
+                  <h1>Данные</h1>
+                </div>
+                <div class="col-md-4">
+                  <label for="firstName" class="form-label">Имя</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="first-name"
+                    id="name"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label for="lastName" class="form-label">Фамилия</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="lastName"
+                    id="lastName"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label for="secondName" class="form-label">Отчество</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="secondName"
+                    id="secondName"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label for="serialNumber" class="form-label"
+                    >Серия и номер паспорта</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="serialNumber"
+                    id="serialNumber"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label for="phone" class="form-label">Номер телефона</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="phone"
+                    id="phone"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label for="primaryPhone" class="form-label"
+                    >Дополнительный номер</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="primaryPhone"
+                    id="primaryPhone"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label for="zipCode" class="form-label">ZIP-код</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="zipCode"
+                    id="zipCode"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label for="email" class="form-label">E-mail</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                  />
+                </div>
+                <div class="col-md-12">
+                  <h1>Адрес</h1>
+                </div>
+                <div class="col-md-4">
+                  <label for="country" class="form-label">Страна</label>
+                  <select id="country">
+                    <option selected>Выберите страну</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label for="region" class="form-label">Регион</label>
+                  <select id="region">
+                    <option selected>Выберите регион</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label for="province" class="form-label">Город / Район</label>
+                  <select id="province">
+                    <option selected>Выберите город / район</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label for="address" class="form-label">Улица</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="address"
+                    id="address"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <label for="house" class="form-label">Дом</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    name="house"
+                    id="house"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <label for="apartment" class="form-label">Квартира</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    name="apartment"
+                    id="apartment"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <label for="entrance" class="form-label">Подъезд</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    name="entrance"
+                    id="entrance"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <label for="floor" class="form-label">Этаж</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    name="floor"
+                    id="floor"
+                  />
+                </div>
+                <div class="col-12 text-end mt-3 mb-3">
+                  <button type="submit" class="btn reciever-add-btn">
+                    Добавить
+                  </button>
+                  <button type="submit" class="btn reciever-cancel-btn">
+                    Отменить
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+  <!-- Bootstrap Js -->
+  <script src="/js/jquery-3.6.0.min.js"></script>
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script>
+    jQuery(document).ready(function($){
+      $(".search-button").click(function(){
+          $('.search-input').val('').toggle();
+      });
+    });
+  </script>

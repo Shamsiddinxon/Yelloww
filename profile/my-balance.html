@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts CDN -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap"/>
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/css/profile.css" />
+    <!-- RemixIcon link -->
+    <link rel="stylesheet" href="/fonts/remixicon.css" />
+    <!-- Custom links -->
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css"/>
+    <title>Yellow - My Profile</title>
+  </head>
+  <body>
+    <!-- Section Navbar Start -->
+    <section id="navbar" class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light container">
+        <!-- navbar logo -->
+        <a class="navbar-brand" href="../index.html"
+          ><img src="/images/logo.svg" alt="logo"
+        /></a>
+        <button
+          class="me-auto navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleButton"
+          aria-controls="navbarToggleButton"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- navbar -->
+        <div class="collapse navbar-collapse" id="navbarToggleButton">
+          <!-- navbar left -->
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/plans.html">Тарифы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/services.html">Услуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/shop.html">Магазины</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/about-us.html">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/contact.html">Контакты</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/help.html">Помощь</a>
+            </li>
+          </ul>
+          <!-- navbar-right -->
+          <ul class="navbar-nav navbar-right">
+            <li class="nav-item">
+                <div class="nav-link">
+                    <button class="search-button"><i class="ri-search-line"></i></button>
+                    <input type="search" class="search-input" placeholder="search..">
+                </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="ri-calculator-line"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <select class="nav-link btn-lang">
+                <option value="uzb">Uzb</option>
+                <option value="rus">Rus</option>
+                <option value="eng">Eng</option>
+              </select>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-profile-icon" href="#">
+                <img class="profile_avatar" src="/images/profil_avatar.png" alt="profile">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- navbar end -->
+      </nav>
+    </section>
+    <!-- Section Navbar End -->
+    <!-- Section Breadcrumb Start -->
+    <section id="breadcrumbs" class="container-fluid">
+      <nav aria-label="breadcrumb" class="breadcrumbs container">
+        <h1 class="breadcrumb-title">Профил</h1>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="/pages/main-uz.html">Главная</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Профил
+          </li>
+        </ol>
+      </nav>
+    </section>
+    <!-- Section Breadcrumb End -->
+    <!-- Section Profile Start -->
+    <section id="profile" class="container-fluid">
+    <div  id="profile" class="profile container">
+      <div id="profile" class="profile-row row">
+        <div class="sidebar col-sm-12 col-md-3">
+          <ul class="sidebar-list">
+            <li><a class="sidebar-item" href="/profile/my-profile.html"><i class="ri-user-line"></i> Профиль</a></li>
+            <li><a class="sidebar-item" href="/profile/my-parcels.html"><i class="ri-archive-line"></i> Мои посылки</a></li>
+            <li><a class="sidebar-item" href="/profile/my-address.html"><i class="ri-map-pin-line"></i> Мои адреса</a></li>
+            <li><a class="sidebar-item active" href="/profile/my-balance.html"><i class="ri-wallet-3-line"></i> Mой баланс</a></li>
+            <li><a class="sidebar-item" href="/index.html"><i class="ri-logout-circle-line"></i> Выйти</a></li>
+          </ul>
+        </div>
+        <!-- Profile Dinamic Contents -->
+        <div class="profile-content col">
+          <div class="profile-content-row row m-0 p-0 mb-3">
+            <ul class="nav nav-pills" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="my-balance-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#my-balance"
+                    type="button"
+                    role="tab"
+                    aria-controls="my-balance"
+                    aria-selected="true"
+                  >
+                  Мой баланс
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="my-score-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#my-score"
+                    type="button"
+                    role="tab"
+                    aria-controls="my-score"
+                    aria-selected="false"
+                  >
+                  Мои баллы
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="transaction-history-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#transaction-history"
+                    type="button"
+                    role="tab"
+                    aria-controls="transaction-history"
+                    aria-selected="false"
+                  >
+                  История операций
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="my-account-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#my-account"
+                    type="button"
+                    role="tab"
+                    aria-controls="my-account"
+                    aria-selected="false"
+                  >
+                  Мои счета
+                  </button>
+                </li>
+              </ul>
+          </div>
+          <div class="tab-content row mb-4">
+              <div
+              class="tab-pane fade show active"
+              id="my-balance"
+              role="tabpanel"
+              aria-labelledby="my-balance-tab"
+              >
+                <div class="my-balance-group">
+                  <div class="balance-item">
+                      <div class="balance__head">
+                        <h1 class="balance__title">
+                          Текущий остаток
+                        </h1>
+                      </div>
+                      <div class="balance__body">
+                        <div><img src="/images/payment_bank.png" alt="bank"><span class="balance">$ 2.07</span></div>
+                        <div>
+                          <select name="currency" class="currency">
+                            <option value="usd">USD</option>
+                            <option value="uzs">UZS</option>
+                          </select>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="payments-item">
+                    <div class="payments__head">
+                      <h1 class="payments__title">
+                        Мы принимаем
+                      </h1>
+                    </div>
+                    <div class="payments__body">
+                      <div><img src="/images/payment_visa.png" alt="visa"></div>
+                      <div><img src="/images/payment_paypal.png" alt="paypal"></div>
+                      <div><img src="/images/payment_mastercard.png" alt="mastercard"></div>
+                    </div>
+                  </div>
+                  <div class="refill-item">
+                    <div class="refill__head">
+                      <h1 class="refill__title">
+                        Пополнить счет
+                      </h1>
+                    </div>
+                    <div class="refill__body">
+                      <form class="row g-3 p-3" action="#">
+                        <label for="refill-input">Сумма пополнение </label>
+                        <input class="refill-input" type="text" id="refill-input" placeholder="$ 0.00">
+                        <input class="refill-button" type="submit" value="Пополнить счет">
+                      </form>
+                    </div>
+                    <div class="refill__footer">
+                      <h1 class="refill__title"><i class="ri-error-warning-line"></i> Внимание!</h1>
+                      <p class="refill__text">Для оперативной отправки посы-
+                        лок не забывайте своевременно
+                        пополнять баланс вашего счета</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+              class="tab-pane fade show"
+              id="my-score"
+              role="tabpanel"
+              aria-labelledby="my-score-tab"
+              >
+                <div class="my-score-group">
+                  <div class="balance-item">
+                      <div class="balance__head">
+                        <h1 class="balance__title">
+                          Текущий остаток
+                        </h1>
+                      </div>
+                      <div class="balance__body">
+                        <div><img src="/images/payment_bank.png" alt="bank"><span class="balance">$ 2.07</span></div>
+                        <div>
+                          <select name="currency" class="currency">
+                            <option value="usd">USD</option>
+                            <option value="uzs">UZS</option>
+                          </select>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="corin-item">
+                    <img class="coin__icon" src="/images/profile_coin.png" alt="coin">
+                    <h1 class="coin__title">Как получить баллы ?</h1>
+                  </div>
+                  <div class="referral-item">
+                    <div class="referral__head">
+                      <h1 class="referral__title">
+                        Пригласить друга
+                      </h1>
+                    </div>
+                    <div class="referral__body">
+                      <form class="row g-3 p-3" action="#">
+                        <label class="referral_label" for="referral_input">Номер телефона</label>
+                        <input class="referral_input" type="text" placeholder="+998 71 200 34 33">
+                        <input class="referral-button" type="submit" value="Отправить приглашение">
+                      </form>
+                    </div>
+                  </div>  
+                  <div class="referral-link-item">
+                    <div class="referral-link__head">
+                      <h1 class="referral-link__title">
+                        Ваша реферальная ссылка
+                      </h1>
+                    </div>
+                    <div class="referral-link__body">
+                      <div class="row g-3 p-3">
+                        <label class="referral-link__label" for="referral-link__texarea">
+                          Пригласите друзей и получайте
+                          бонусы от их заказов</label>
+                        <textarea name="referral-link__value" id="referral-link__texarea" rows="1">https://my.turonexpress.com/invite/6922</textarea>
+                        <button class="referral-link-copy" onclick="referralLinkCopy()" title="copy">Скопировать ссылку</button>
+                        <a class="referral-link-detail" href="#">Подробности</a>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+              class="tab-pane fade show"
+              id="transaction-history"
+              role="tabpanel"
+              aria-labelledby="transaction-history-tab"
+              >
+                <div class="history-empty-item">
+                    <img class="item__icon" src="/images/payment_history.png" alt="history">
+                    <p class="item__text">Никаких операций пока нет. <br> Отличный повод пополнить баланс</p>
+                    <button class="item__button"><i class="ri-add-line"></i> Пополнить баланс</button>
+                </div>
+              </div>
+              <div
+              class="tab-pane fade show"
+              id="my-account"
+              role="tabpanel"
+              aria-labelledby="my-account-tab"
+              >
+                <div class="my-account-group">
+                  <div class="my-account-item">
+                      <div class="account__head">
+                        <h1 class="account__title">
+                          Счет
+                        </h1>
+                      </div>
+                      <div class="account__body">
+                        <p class="account_text">Пополнение баланса № 6922</p>
+                        <form action="#" class="row g-3 p-3">
+                          <label for="payment-card">Банковской картой</label>
+                          <div class="input-group">
+                            <span class="input-group-text">
+                              <input class="form-check-input mt-0" type="radio" name="payment_type" value="card" id="payment-card">
+                            </span>
+                            <input type="text" class="form-control">
+                            <span class="input-group-text">
+                              <img src="/images/payment_visa.png" alt="visa">
+                            </span>
+                            <span class="input-group-text">
+                              <img src="/images/payment_mastercard.png" alt="mastercard">
+                            </span>
+                          </div>
+                          <label for="payment-paypal">Paypal</label>
+                          <div class="input-group">
+                            <span class="input-group-text">
+                              <input class="form-check-input mt-0" type="radio" name="payment_type" value="paypal" id="payment-paypal">
+                            </span>
+                            <input type="text" class="form-control">
+                            <span class="input-group-text">
+                              <img src="/images/payment_paypal.png" alt="paypal">
+                            </span>
+                          </div>
+                          <div class="amount-group">
+                            <div class="title">Сумма оплаты</div>
+                            <h1 class="amount">$ 1.05</h1>
+                          </div>
+                          <input class="account-button" type="submit">
+                        </form>
+                      </div>
+                      <div class="account__footer">
+                        <p class="account_text">В случае каких-либо проблем с оплатой, пожалуйс-
+                          та обратитесь в отдел по <a href="#">работе с клиентами</a></p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Contacts Start-->
+    <section id="contacsUs" class="container-fluid">
+      <div class="contact-us container">
+        <h3 class="contact-title">Звоните, если есть вопросы</h3>
+        <button class="btn contact-button">
+          <i class="ri-phone-line">&nbsp;</i>+998 71 200 34 33
+        </button>
+      </div>
+    </section>
+    <!-- Section Contacts End -->
+     <!-- Section FooterNav Mobile Start-->
+     <section id="footer-nav">
+      <nav class="footer-nav phoneContent">
+          <ul class="footer-nav-list">
+            <li><a class="footer-nav-item" href="/profile/my-profile.html"><i class="ri-home-4-line"></i> Main</a></li>
+            <li><a class="footer-nav-item" href="/profile/my-parcels.html"><i class="ri-archive-line"></i> My parcels</a></li>
+            <li><a class="footer-nav-item" href="#"><i class="ri-add-line"></i></a></li>
+            <li><a class="footer-nav-item" href="/profile/my-address.html"><i class="ri-map-pin-line"></i> Address</a></li>
+            <li><a class="footer-nav-item active" href="/profile/my-balance.html"><i class="ri-wallet-3-line"></i> Balance</a></li>
+          </ul>
+        </nav>
+    </section>
+    <!-- Section FooterNav Mobile End -->
+  </body>
+  <!-- Bootstrap Js -->
+  <script src="/js/jquery-3.6.0.min.js"></script>
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function referralLinkCopy() {
+      var copyText = document.getElementById("referral-link__texarea");
+      navigator.clipboard.writeText(copyText.value);
+    }
+    jQuery(document).ready(function($){
+      $(".search-button").click(function(){
+          $('.search-input').val('').toggle();
+      });
+    });
+  </script>

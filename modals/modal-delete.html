@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Google Fonts CDN -->
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap"
+    />
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/css/profile.css"/>
+    <!-- RemixIcon link -->
+    <link rel="stylesheet" href="../fonts/remixicon.css"/>
+    <title>Yellow - Modals</title>
+</head>
+<body>
+<!-- Button trigger modal -->
+<div class="container mt-3">
+    <button class="item-button btn" type="button" data-bs-toggle="modal" data-bs-target="#deleteModal">удалить</button>
+</div>
+
+<!--delete modal-->
+<div class="modal fade "
+     id="deleteModal"
+     tabindex="-1"
+     aria-labelledby="deleteModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered " style="max-width:450px ">
+        <div class="modal-content">
+            <div class="modal-header   border-0"><h5 class="modal-title mx-auto" id="deleteModalLabel">удалить?</h5></div>
+            <div class="modal-body text-center">
+                <div class="col-12">
+                    <p class="logout-text text-muted">Вы действительно хотите удалить ?</p></div>
+                <div class="col-12 mt-3">
+                    <button  class="btn modal-delete-btn m-1">удалить</button>
+                    <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn cancel-btn  m-1">Отменить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Google Fonts CDN -->
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap"
+    />
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/css/profile.css"/>
+    <!-- RemixIcon link -->
+    <link rel="stylesheet" href="../fonts/remixicon.css"/>
+    <title>Yellow - Modals</title>
+</head>
+<body>
+<!-- Button trigger modal -->
+<div class="container mt-3">
+    <br/>
+    <a class="btn " data-bs-toggle="modal" href="#exampleModalToggle" role="button">Оформит посылку</a>
+    <br/>
+</div>
+
+
+<div class="modal fade parcels-order" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title" id="exampleModalToggleLabel">Оформит посылку</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="parcels-steps-group" >
+                    <div class="parcels-modal-steps">
+                        <!--                        <span class="step active" data-step="one"><span>1</span></span>-->
+                        <!--                        <span class="step finish" data-step="one"><span>1</span></span>-->
+                        <span class="step "><span>1</span></span>
+                        <span class="step "><span>2</span></span>
+                        <span class="step "><span>3</span></span>
+                        <span class="step"><span>4</span></span>
+                    </div>
+                    <div class="parcles-modal-arrows">
+                        <!--                        <button   class="btn-prev disabled"><i class="ri-arrow-left-s-line"></i></button>-->
+                        <button   class="btn-prev"><i class="ri-arrow-left-s-line"></i></button>
+                        <button  class="btn-next"><i class="ri-arrow-right-s-line"></i></button>
+                    </div>
+                </div>
+                <div class="parcels-order d-flex flex-column">
+                    <div class="col-12 mt-3"><h1 class="parcels-list-title">Выберите тип заказа *</h1></div>
+                    <a class="parcels-select mt-3" ><i class="ri-mail-send-line"></i>Помощь в покупке</a>
+                    <a class="parcels-select mt-3"><i class="ri-shopping-cart-2-line"></i>Помощь в покупке</a>
+                    <a class="parcels-select mt-3" ><i class="ri-information-line"></i>Интернет заказ</a>
+                </div>
+
+                <div class="col text-end mt-3 ">
+                    <!-- <span class="text-muted">Шаг 1 из 4</span> -->
+                    <button type="button" class="btn next-btn" id="nextBtn">Продолжить</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</body>
+<script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
+</html>

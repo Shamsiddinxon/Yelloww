@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts CDN -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap"
+    />
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../css/fontfase.css">
+    <link rel="stylesheet" href="../css/profile.css" />
+    <title>Yellow - Login</title>
+  </head>
+  <body> 
+    <section id="loginContent" class="container-fluid">
+      <div class="login-content">
+        <div class="content-left">
+            <img class="content-left-img" src="../images/loginimg/opa2.png" alt="">
+        </div>
+
+        <div class="content-right">
+          <div class="content-header">
+            <img class="phoneContent" src="/images/logo.svg" alt="logo" />
+            <h1 class="content-right-title">Log In</h1>
+            <p class="content-right-text" style="max-width:360px;">
+              Log in to use the full capabilities of the system you need to pass
+            </p>
+          </div>
+          <div class="content-body">
+            <form class="row" action="#">
+              <div class="col-12">
+                <label for="email">Phone or Email</label>
+                <input class="content-right-body-input" type="text" id="email" placeholder="Phone or Email" />
+              </div>
+              <div class="col-12">
+                <label for="password">Password</label>
+                <input class="content-right-body-input"
+                  type="password"
+                  id="password"
+                  placeholder="* * * * * *"
+                />
+              </div>
+              <div class="col-12 mt-1 d-flex justify-content-between">
+                <div class="d-flex align-items-center">
+                  <input
+                  class="checkbox"
+                  style="width: 15px; height:15px;"
+                  type="checkbox"
+                  value=""
+                  id="loginCheckbox"
+                  />
+                  <label class="checkbox-label content-right-body-checkbox-label" for="loginCheckbox">
+                    Remember me
+                  </label>
+                </div>
+                <a class="login-forget-password" href="#">Forgot password</a>
+              </div>
+              <!-- <div class="col-12">
+
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  value=""
+                  id="loginOffertaCheckbox"
+                />
+                <label class="checkbox-label content-right-body-checkbox-label" for="loginOffertaCheckbox">
+                  <a href="#">Forgot password</a>
+                </label>
+
+              </div> -->
+              <div class="col-12 mt-5">
+                <input class="login-btn btn" type="submit" value="Log In" />
+                <button class="google-btn btn">
+                  <img src="/images/new/login-link-google.svg" alt="google" width="26" height="26" />
+                </button>
+                <button class="facebook-btn btn">
+                  <img src="/images/new/login-link-fasebook.svg" alt="facebook" width="36" height="28" />
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
