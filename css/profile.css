@@ -3643,16 +3643,25 @@ tr {
   height: 55px;
 }
 
-.payment-btn-active {
+.payment-btn {
   padding: 8px 35px;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  color: #09bb3b;
-  background: rgba(9, 187, 59, 0.1);
+  color: #ABABAB;
+  background: rgba(171, 171, 171, 0.1);
   border-radius: 5px;
   border: none;
 }
+
+
+
+.payment-btn.active {
+  background: rgba(9, 187, 59, 0.1);
+  color: #09BB3B;
+}
+
+
 
 td .create-btn {
   background: rgba(33, 130, 243, 0.1);
@@ -3687,6 +3696,20 @@ td div .camera-btn {
   color: #09bb3b;
   background: rgba(53, 210, 97, 0.1);
 }
+
+td div .camera-btn.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 100px;
+  text-align: center;
+  color: #E8C305;
+  background: rgba(232, 195, 5, 0.1);
+}
+
+
 
 td.table-td-chekbox {
 }
