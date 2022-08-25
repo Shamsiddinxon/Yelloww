@@ -2639,6 +2639,53 @@ input.register-number-input {
   padding: 10px 20px;
 }
 
+
+/* Photo Modal Start */
+
+
+.modal-dialog.photo {
+    max-width: 720px;
+    border-radius:15px;
+}
+
+.photo .modal-content  {
+    max-width: 720px;
+    border-radius:15px;
+}
+
+.modal-body.photo {
+    padding: 0;
+}
+
+.modal-body.photo ul {
+    width: 700px;
+    margin: 0 auto;
+    padding: 0;
+    padding: 35px 15px;
+    display: flex;
+    grid-template-columns: 1fr, 1fr;
+    align-items:center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.modal-body.photo ul li {
+    padding: 5px;
+    /* margin: 15px; */
+    background: #F4F4F4;
+    border-radius: 10px;
+}
+
+.modal-body.photo ul li img {
+    width: 315px;
+    object-fit: contain;
+}
+
+
+
+
 /* ------------------------------  Media Queries ------------------------------ */
 
 @media only screen and (max-width: 1400px) {
@@ -3657,6 +3704,11 @@ tr {
   border-radius: 5px;
   border: none;
 }
+
+.payment-btn:hover {
+    color: #ABABAB;
+    background: rgba(171, 171, 171, 0.1);
+  }
 
 
 
