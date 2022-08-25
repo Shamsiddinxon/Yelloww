@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <!-- Custom Styles -->
     <link rel="stylesheet" href="/css/profile.css" />
+
     <!-- RemixIcon link -->
     <link rel="stylesheet" href="/fonts/remixicon.css" />
     <!-- Custom links -->
@@ -134,8 +135,8 @@
     <!-- Section Breadcrumb End -->
     <!-- Section Profile Start -->
     <section id="profile" class="container-fluid">
-    <div class="profile container">
-      <div class="profile-row row">
+    <div id="profile" class="profile container">
+      <div id="profile" class="profile-row row">
         <div class="sidebar col-sm-12 col-md-3">
           <ul class="sidebar-list">
             <li>
@@ -178,7 +179,7 @@
         <!-- Profile Dinamic Contents -->
         <div class="profile-content col">
           <div class="profile-row row">
-            <ul class="nav nav-pills" role="tablist">
+            <ul class="nav nav-pills" role="tablist" style="margin-left: 15px; margin-bottom:20px;">
               <li class="nav-item" role="presentation">
                 <button
                   class="nav-link active"
@@ -211,13 +212,13 @@
           </div>
           <div class="tab-content row">
             <div
-            class="tab-pane fade show active"
+            class="tab-pane fade show active mb-5"
             id="profile-info"
             role="tabpanel"
             aria-labelledby="profile-info-tab"
             >
-            <div class="profile-info-group">
-              <form class="row g-3">
+            <div class="profile-info-group" style="margin: 5px;">
+              <form class="row g-4">
                   <div class="col-12">
                     <div class="profile-info-item">
                       <img class="profile_avatar" src="/images/profil_avatar.png" alt="avatar">
@@ -227,89 +228,89 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <label for="name" class="form-label">Имя</label>
+                  <div class="col-md-6 mb-1">
+                    <label for="name" class="form-label edit-label">Имя</label>
                     <input
                       type="text"
-                      class="form-control"
+                      class="form-control edit-input"
                       name="first-name"
                       id="name"
                       value="Мансурбек"
                     />
                   </div>
-                  <div class="col-md-6">
-                    <label for="state" class="form-label">Состояние</label>
+                  <div class="col-md-6 mb-1">
+                    <label for="state" class="form-label edit-label">Состояние</label>
                     <input
                       type="text"
-                      class="form-control"
+                      class="form-control edit-input"
                       name="state"
                       id="state"
                       value="Узбекистан"
                     />
                   </div>
-                  <div class="col-md-6">
-                    <label for="second-name" class="form-label">Фамилия</label>
+                  <div class="col-md-6 mt-md-4 mb-1">
+                    <label for="second-name" class="form-label edit-label">Фамилия</label>
                     <input
                       type="text"
-                      class="form-control"
+                      class="form-control edit-input"
                       name="second-name"
                       id="second-name"
                       value="Толибжанов"
                     />
                   </div>
-                  <div class="col-md-6">
-                    <label for="country" class="form-label">Город</label>
+                  <div class="col-md-6 mt-md-4 mb-1">
+                    <label for="country" class="form-label edit-label">Город</label>
                     <input
                       type="text"
-                      class="form-control"
+                      class="form-control edit-input"
                       name="country"
                       id="country"
                       value="Ташкент"
                     />
                   </div>
-                  <div class="col-md-6">
-                    <label for="phoneMasked" class="form-label"
+                  <div class="col-md-6 mt-md-4 mb-1">
+                    <label for="phoneMasked" class="form-label edit-label"
                       >Контактный телефон</label
                     >
                     <input
                       type="text"
-                      class="form-control"
+                      class="form-control edit-input"
                       name="phone"
                       id="phoneMasked"
                       value="+998 91 753 65 48"
                     />
                   </div>
-                  <div class="col-md-6">
-                    <label for="address" class="form-label">Адресная строка</label>
+                  <div class="col-md-6 mt-md-4 mb-1">
+                    <label for="address" class="form-label edit-label">Адресная строка</label>
                     <input
                       type="text"
-                      class="form-control"
+                      class="form-control edit-input"
                       name="address"
                       id="address"
                       value="Яккасарой р. 24 дом"
                     />
                   </div>
-                  <div class="col-md-6">
-                    <label for="email" class="form-label">Email</label>
+                  <div class="col-md-6 mt-md-4">
+                    <label for="email" class="form-label edit-label">Email</label>
                     <input
                       type="text"
-                      class="form-control"
+                      class="form-control  edit-input"
                       name="email"
                       id="email"
                       value="Ali58@gmail.com"
                     />
                   </div>
-                  <div class="col-md-6">
-                    <label for="postcode" class="form-label">Почтовый индекс</label>
+                  <div class="col-md-6 mt-md-4">
+                    <label for="postcode" class="form-label edit-label">Почтовый индекс</label>
                     <input
                       type="text"
-                      class="form-control"
+                      class="form-control  edit-input"
                       name="postcode"
                       id="postcode"
                       value="15826"
                     />
                   </div>
-                  <div class="col-12">
+                  <div class="col-12 mt-md-5">
                     <div class="form-check form-check-inline">
                       <input class="form-check-input" type="radio" name="gender" id="male" value="male" checked>
                       <label class="form-check-label" for="male">Мужской</label>
@@ -328,15 +329,15 @@
             </div>
             </div>
             <div
-            class="tab-pane fade show"
+            class="tab-pane fade show  mb-5"
             id="profile-password"
             role="tabpanel"
             aria-labelledby="profile-password-tab"
             >
               <div class="profile-password-group">
-                <form class="password-item row g-3">
-                  <h1>Парол</h1>
-                  <div class="col-12">
+                <form class="password-item row m-1 g-3">
+                  <h1 class="my-2 mb-3">Парол</h1>
+                  <div class="col-12  mb-1">
                     <label for="current_password" class="form-label">Текущий пароль</label>
                     <input
                       type="password"
@@ -345,7 +346,7 @@
                       id="current_password"
                     />
                   </div>
-                  <div class="col-12">
+                  <div class="col-12 mt-4 mb-1">
                     <label for="new_password" class="form-label">Новый пароль</label>
                     <input
                       type="password"
@@ -354,7 +355,7 @@
                       id="new_password"
                     />
                   </div>
-                  <div class="col-12">
+                  <div class="col-12 mt-4 mb-1">
                     <label for="repeat_password" class="form-label">Повторите пароль</label>
                     <input
                       type="password"
@@ -363,14 +364,15 @@
                       id="repeat_password"
                     />
                   </div>
-                  <div class="col-12">
+                  <div class="col-12 mt-5 mb-1">
                     <button type="submit" class="profile-password-btn">
                       Сахронить изминения
                     </button>
                   </div>
                 </form>
-                <div class="password-item">
+                <div class="password-item m-1">
                   <div class="password-item__head">
+                    <i class="ri-information-line"></i>
                     <h1 class="head-title">Внимание!</h1>
                   </div>
                   <div class="password-item__body">
