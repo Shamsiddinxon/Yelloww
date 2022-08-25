@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <!-- Custom Styles -->
     <link rel="stylesheet" href="/css/profile.css" />
-    <link rel="stylesheet" href="../css/fontfase.css">
+    <link rel="stylesheet" href="../css/fontfase.css" />
     <!-- RemixIcon link -->
     <link rel="stylesheet" href="/fonts/remixicon.css" />
     <!-- Custom links -->
@@ -88,14 +88,47 @@
                 <option value="eng">Eng</option>
               </select> -->
 
-              <!-- <div class="select-lang">
-                <img src="../images/new/us-flag.svg" alt="" width="30">
-                <div></div>
+              <div class="lang-menu">
+                <div class="selected-lang">Eng</div>
+
+                <ul>
+                  <li>
+                    <a class="en" href="#">Eng</a>
+                  </li>
+
+                  <li>
+                    <a class="ru" href="#">Rus</a>
+                  </li>
+
+                  <li>
+                    <a class="uz" href="#">Uzb</a>
+                  </li>
+                </ul>
               </div>
 
-              <a href="#" class="select-lang select-lang-bottom">
-                <img src="../images/new/uz-flag.svg" alt=""  width="30">
-              </a> -->
+              <!-- <button
+                class="select-lang"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#langModal"
+              >
+                <img src="../images/new/us-flag.svg" alt="" width="30" />
+                <div></div>
+              </button> -->
+
+              <div
+                class="modal fade"
+                id="langModal"
+                tabindex="-1"
+                aria-labelledby="parcelsModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <a href="#" class="select-lang select-lang-bottom">
+                    <img src="../images/new/uz-flag.svg" alt="" width="30" />
+                  </a>
+                </div>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link btn-profile-icon" href="#">
@@ -273,13 +306,15 @@
 
                       <button class="body-group-top-btn">Copy</button>
                     </div>
-                    <hr class="">
+                    <hr class="" />
 
                     <ul class="body-group-main">
                       <li class="body-group-main-item">
                         <p class="body-group-main-item-desc">Address 1</p>
                         <div class="body-group-main-item-2">
-                          <p class="body-group-main-item-desc1">606 Enterchange Boleuvard</p>
+                          <p class="body-group-main-item-desc1">
+                            606 Enterchange Boleuvard
+                          </p>
                           <button class="body-group-top-btn">Copy</button>
                         </div>
                       </li>
@@ -327,12 +362,12 @@
                       <li class="body-group-main-item">
                         <p class="body-group-main-item-desc">Phone number</p>
                         <div class="body-group-main-item-2">
-                          <p class="body-group-main-item-desc1">+1 929 244 0000</p>
+                          <p class="body-group-main-item-desc1">
+                            +1 929 244 0000
+                          </p>
                           <button class="body-group-top-btn">Copy</button>
                         </div>
                       </li>
-
-                      
                     </ul>
 
                     <!-- <ul class="body-group__list">
@@ -612,12 +647,12 @@
       });
     });
 
-    let elSelectLangEng = document.querySelector(".select-lang")
-    let elSelectLangUzb = document.querySelector(".select-lang-bottom")
+    // let elSelectLangEng = document.querySelector(".select-lang");
+    // let elSelectLangUzb = document.querySelector(".select-lang-bottom");
 
-    elSelectLangEng.addEventListener("click", (evt)=>{
-      elSelectLangEng.classList.toggle("active")
-      // elSelectLangUzb.setAttribute("style", "display:none;")
-    })
+    // elSelectLangEng.addEventListener("click", (evt) => {
+    //   elSelectLangEng.classList.toggle("active");
+    //   // elSelectLangUzb.setAttribute("style", "display:none;")
+    // });
   </script>
 </html>

@@ -3686,6 +3686,7 @@ td .info-btn {
 }
 
 td div .camera-btn {
+  margin-right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3709,13 +3710,7 @@ td div .camera-btn.active {
   background: rgba(232, 195, 5, 0.1);
 }
 
-
-
-td.table-td-chekbox {
-}
-
 td label {
-  /* position: relative; */
   cursor: pointer;
   text-align: center;
 }
@@ -3793,6 +3788,42 @@ th.th-paymet {
 .th-servis {
   width: 70px;
 }
+
+.th-id {
+  width: 9%;
+  min-width: 120px;
+}
+ 
+.th-weit{
+  width: 13%;
+  min-width: 130px;
+}
+
+.th-send{
+  width: 12%;
+  min-width: 120px;
+}
+
+.th-fre {
+  width: 10%;
+  min-width: 90px;
+}
+
+.th-totall div {
+  display: flex;
+  justify-content: end;
+  margin-right: 65px;
+}
+
+.th-totals div {
+  margin-right: 120px;
+}
+
+.flex-ro div {
+  justify-content: end;
+}
+
+.arrived tbody tr td .info-btn
 
 /* *** ** MOY BALANSE *** ** */
 
@@ -3875,4 +3906,141 @@ input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+
+
+/* ----------------------------- LANG-MODAL ------------------ */
+
+.lang-menu {
+  width: 80px;
+  z-index: 9999000;
+}
+
+.selected-lang {
+  width: 80px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  line-height: 2;
+}
+
+.selected-lang::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url(../images/usa.svg) !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.lang-menu ul {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  border: 1px solid #f8f8f8;
+  box-shadow: 0px 1px 6px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  /* left: auto; */
+  transition: all 0.3s;
+  z-index: 9999000;
+}
+
+.lang-menu ul li  {
+  display: flex;
+  align-items: center;
+  z-index: 9999000;
+}
+
+.lang-menu ul li a {
+  min-width: 95px;
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: black;
+  z-index: 9999000;
+}
+
+.lang-menu ul li a::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url(../images/usa.svg) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lang-menu ul li a:hover {
+  background-color: #f2f2f2;
+}
+
+.en::before {
+  background-image: url(../images/usa.svg) !important;
+}
+
+.ru::before {
+  background-image: url(../images/new/rus.svg) !important;
+}
+
+.uz::before {
+  background-image: url(../images/uzb.svg) !important;
+}
+
+.lang-menu:hover ul {
+  display: block;
+}
+.navbar {
+  position: static;
+}
+
+/* --------------- TOOTIP ------------ */
+
+.tooltips {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltipText {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  transform: translateX(-50);
+  background: #000;
+  color: #fff;
+  white-space: nowrap;
+  padding: 7px 9px;
+  border-radius:7px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.tooltipText p {
+  margin: 0;
+}
+
+.tooltipText::before {
+  content: "";
+  position: absolute;
+  left: 25px;
+  bottom: -25px;
+  transform: translateX(-50);
+  border:15px solid;
+  border-color: #000 #0000 #0000 #0000;
+}
+
+.tooltips:hover .tooltipText {
+  top: -60px;
+  visibility: visible;
+  opacity: 1;
 }
