@@ -2126,6 +2126,7 @@ label[for="phoneMasked"] {
 .lang-menu {
   width: 80px;
   /* position: relative; */
+  margin-left: 20px;
   z-index: 9999000;
   display: flex;
   flex-direction: column;
@@ -2152,6 +2153,7 @@ label[for="phoneMasked"] {
   display: block;
   width: 32px;
   height: 20px;
+  margin-top: 4px;
   margin-right: 10px;
   background-image: url(../images/usa.svg) !important;
   background-repeat: no-repeat;
