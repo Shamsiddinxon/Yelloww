@@ -3618,6 +3618,10 @@ span .coutry-select {
 
 /* *** *** Table *** *** */
 
+.table-responsive {
+  overflow-y: hidden;
+}
+
 .table {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -4040,7 +4044,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .tooltips:hover .tooltipText {
-  top: -60px;
+  top: -65px;
   visibility: visible;
   opacity: 1;
 }
