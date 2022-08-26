@@ -239,7 +239,7 @@
                     aria-controls="parcles-archive"
                     aria-selected="false"
                   >
-                    Архив
+                  Ест тракинг
                   </button>
                 </li>
               </ul>
@@ -359,7 +359,7 @@
                               <div class="tooltips">
                                 <div class="tooltipText">
                                   <p>Box ID: 1503 Trucking: 1600w2ge</p>
-                                  <!-- <p> Box ID: 1503   Trucking: 1600w2ge</p> -->
+                                  <p> Box ID: 1503   Trucking: 1600w2ge</p>
                                 </div>
                                 1600
                               </div>
@@ -1209,6 +1209,8 @@
                                 <button
                                   class="btn info-btn"
                                   style="display: inline-bock"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#parcelsListViewModal"
                                 >
                                   <img
                                     src="../images/new/info-btn.svg"
@@ -1250,6 +1252,8 @@
                                 <button
                                   class="btn info-btn"
                                   style="display: inline-bock"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#parcelsListViewModal"
                                 >
                                   <img
                                     src="../images/new/info-btn.svg"
@@ -1291,6 +1295,8 @@
                                 <button
                                   class="btn info-btn"
                                   style="display: inline-bock"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#parcelsListViewModal"
                                 >
                                   <img
                                     src="../images/new/info-btn.svg"
@@ -1332,6 +1338,8 @@
                                 <button
                                   class="btn info-btn"
                                   style="display: inline-bock"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#parcelsListViewModal"
                                 >
                                   <img
                                     src="../images/new/info-btn.svg"
@@ -1396,6 +1404,8 @@
                                 <button
                                   class="btn info-btn"
                                   style="display: inline-bock"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#parcelsListViewModal"
                                 >
                                   <img
                                     src="../images/new/info-btn.svg"
@@ -1437,6 +1447,8 @@
                                 <button
                                   class="btn info-btn"
                                   style="display: inline-bock"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#parcelsListViewModal"
                                 >
                                   <img
                                     src="../images/new/info-btn.svg"
@@ -1478,6 +1490,8 @@
                                 <button
                                   class="btn info-btn"
                                   style="display: inline-bock"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#parcelsListViewModal"
                                 >
                                   <img
                                     src="../images/new/info-btn.svg"
@@ -1519,6 +1533,8 @@
                                 <button
                                   class="btn info-btn"
                                   style="display: inline-bock"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#parcelsListViewModal"
                                 >
                                   <img
                                     src="../images/new/info-btn.svg"
@@ -1585,6 +1601,8 @@
                                 <button
                                   class="btn info-btn"
                                   style="display: inline-bock"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#parcelsListViewModal"
                                 >
                                   <img
                                     src="../images/new/info-btn.svg"
@@ -1616,7 +1634,7 @@
                             <td class="flex-ro" style="height: 100%">
                               <div class="flex-row">
                                 <button
-                                  class="btn camera-btn"
+                                  class="btn camera-btn active"
                                   style="display: inline-bock"
                                   data-bs-toggle="modal"
                                   data-bs-target="#parcelsPhoto"
@@ -1626,6 +1644,8 @@
                                 <button
                                   class="btn info-btn"
                                   style="display: inline-bock"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#parcelsListViewModal"
                                 >
                                   <img
                                     src="../images/new/info-btn.svg"
@@ -1657,7 +1677,7 @@
                             <td class="flex-ro" style="height: 100%">
                               <div class="flex-row">
                                 <button
-                                  class="btn camera-btn"
+                                  class="btn camera-btn active"
                                   style="display: inline-bock"
                                   data-bs-toggle="modal"
                                   data-bs-target="#parcelsPhoto"
@@ -1667,6 +1687,8 @@
                                 <button
                                   class="btn info-btn"
                                   style="display: inline-bock"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#parcelsListViewModal"
                                 >
                                   <img
                                     src="../images/new/info-btn.svg"
@@ -1696,7 +1718,7 @@
                             <td class="flex-ro" style="height: 100%">
                               <div class="flex-row">
                                 <button
-                                  class="btn camera-btn"
+                                  class="btn camera-btn active"
                                   style="display: inline-bock"
                                   data-bs-toggle="modal"
                                   data-bs-target="#parcelsPhoto"
@@ -1706,6 +1728,8 @@
                                 <button
                                   class="btn info-btn"
                                   style="display: inline-bock"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#parcelsListViewModal"
                                 >
                                   <img
                                     src="../images/new/info-btn.svg"
@@ -1728,7 +1752,7 @@
                 </div>
               </div>
 
-              <div
+              <!-- <div
                 class="tab-pane fade"
                 id="parcles-archive"
                 role="tabpanel"
@@ -1744,6 +1768,328 @@
                   <button class="item-button btn">
                     <i class="ri-add-line"></i> Новый заказ
                   </button>
+                </div>
+              </div> -->
+
+              <!--                 tab bottom start -->
+            
+              <div
+              class="tab-pane fade"
+              id="parcles-archive"
+              role="tabpanel"
+              aria-labelledby="parcles-archive-tab"
+              >
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                  <li class="nav-item text-nowrap" role="presentation">
+                    <button
+                      class="nav-link menu-btn active"
+                      id="pills-verified2-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-verified2"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-verified2"
+                      aria-selected="true"
+                    >
+                    Verified
+                      <span class="tab-counter">(0)</span>
+                    </button>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-accepted2-tab2"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-accepted2"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-accepted2"
+                      aria-selected="false"
+
+                  
+                    >
+                    Accepted
+                      <span class="tab-counter unread">5</span>
+                    </button>
+                  </li>
+
+                </ul>
+
+                <div class="tab-content" id="pills-tabContent">
+
+                  
+                  <!-- Verified-2 -->
+                  <div
+                  class="tab-pane fade show active"
+                  id="pills-verified2"
+                  role="tabpanel"
+                  aria-labelledby="pills-verified2-tab"
+                  >
+                  <div class="parcles-list table-responsive  mt-4 mb-5">
+                    <table class="table">
+                      <thead class="table-body">
+                        <th class="th-verified2-link">Trucking number</th>
+                         <th class="th-verified2-name">Product name</th>
+                         <th class="th-price">Price</th>
+                         <th class="th-data">Creted date</th>
+                         <th class="th-verified2-action">
+                          <div>Actions</div>
+                         </th>
+                         <th class="th-verified2-servis">Special service</th>
+                        </thead>
+                        <tbody>
+                          <tr>
+                           <td>1600</td>
+                           <td>iphone 13 ProMax</td>
+                           <td>$1500.00</td>
+                           <td rowspan="2">03/22/2022</td>
+                           <td class="flex-ro verified2">
+                             <div class="flex-row">
+                               <button
+                                 class="btn create-btn"
+                                 style="display: inline-bock"
+                                 data-bs-toggle="modal"
+                                 data-bs-target="#parcelsEdit"
+                               >
+                                 <img src="../images/qalam.svg" alt="" />
+                               </button>
+                               <button
+                                 style="display: inline-bock"
+                                 class="btn btn-delete"
+                                 data-bs-toggle="modal"
+                                 data-bs-target="#deleteModal"
+                               >
+                                 <img
+                                   src="../images/delet-a-ctive.svg"
+                                   alt=""
+                                   width="16"
+                                 />
+                               </button>
+                             </div>
+                           </td>
+                           <td class="table-td-chekbox">
+                             <input type="checkbox" id="html" />
+                             <label for="html"></label>
+                           </td>
+                         </tr>
+
+                         <tr>
+                          <td>1600</td>
+                          <td>iphone 13 ProMax</td>
+                          <td>$1500.00</td>
+                          <td class="flex-ro verified2">
+                            <div class="flex-row">
+                              <button
+                                class="btn create-btn"
+                                style="display: inline-bock"
+                                data-bs-toggle="modal"
+                                data-bs-target="#parcelsEdit"
+                              >
+                                <img src="../images/qalam.svg" alt="" />
+                              </button>
+                              <button
+                                style="display: inline-bock"
+                                class="btn btn-delete"
+                                data-bs-toggle="modal"
+                                data-bs-target="#deleteModal"
+                              >
+                                <img
+                                  src="../images/delet-a-ctive.svg"
+                                  alt=""
+                                  width="16"
+                                />
+                              </button>
+                            </div>
+                          </td>
+                          <td class="table-td-chekbox">
+                            <input type="checkbox" id="html" />
+                            <label for="html"></label>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>1600</td>
+                          <td>iphone 13 ProMax</td>
+                          <td>$1500.00</td>
+                          <td>03/22/2022</td>
+                          <td class="flex-ro verified2">
+                            <div class="flex-row">
+                              <button
+                                class="btn create-btn"
+                                style="display: inline-bock"
+                                data-bs-toggle="modal"
+                                data-bs-target="#parcelsEdit"
+                              >
+                                <img src="../images/qalam.svg" alt="" />
+                              </button>
+                              <button
+                                style="display: inline-bock"
+                                class="btn btn-delete"
+                                data-bs-toggle="modal"
+                                data-bs-target="#deleteModal"
+                              >
+                                <img
+                                  src="../images/delet-a-ctive.svg"
+                                  alt=""
+                                  width="16"
+                                />
+                              </button>
+                            </div>
+                          </td>
+                          <td class="table-td-chekbox">
+                            <input type="checkbox" id="html" />
+                            <label for="html"></label>
+                          </td>
+                        </tr>
+
+                        
+                       </tbody>
+                     </table>
+                   </div>
+                 </div>
+
+                 <!-- Accepted -->
+                 <div
+        
+                 class="tab-pane fade"
+                 id="pills-accepted2"
+                 role="tabpanel"
+                 aria-labelledby="pills-accepted2-tab"
+               >
+                 <div
+                   class="parcles-list table-responsive mt-4 mb-5"
+                   style="
+                     border-top-left-radius: 10px;
+                     border-top-right-radius: 10px;
+                   "
+                 >
+                 <table class="table">
+                  <thead class="table-body">
+                    <th class="th-verified2-link">Trucking number</th>
+                     <th class="th-verified2-name">Product name</th>
+                     <th class="th-price">Price</th>
+                     <th class="th-data">Creted date</th>
+                     <th class="th-verified2-action">
+                      <div>Actions</div>
+                     </th>
+                     <th class="th-verified2-servis">Special service</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                       <td>1600</td>
+                       <td>iphone 13 ProMax</td>
+                       <td>$1500.00</td>
+                       <td rowspan="2">03/22/2022</td>
+                       <td class="flex-ro verified2">
+                        <div class="flex-row">
+                          <button
+                            class="btn camera-btn active"
+                            style="display: inline-bock"
+                            data-bs-toggle="modal"
+                            data-bs-target="#parcelsPhoto"
+                          >
+                            <i class="ri-camera-fill"></i>
+                          </button>
+                          <button
+                            class="btn info-btn"
+                            style="display: inline-bock"
+                            data-bs-toggle="modal"
+                            data-bs-target="#parcelsListViewModal"
+                          >
+                            <img
+                              src="../images/new/info-btn.svg"
+                              alt=""
+                              width="14"
+                              height="14"
+                            />
+                          </button>
+                        </div>
+                       </td>
+                       <td class="table-td-chekbox">
+                         <input type="checkbox" id="html" />
+                         <label for="html"></label>
+                       </td>
+                     </tr>
+
+                     <tr>
+                      <td>1600</td>
+                      <td>iphone 13 ProMax</td>
+                      <td>$1500.00</td>
+                      <td class="flex-ro verified2">
+                       <div class="flex-row">
+                         <button
+                           class="btn camera-btn active"
+                           style="display: inline-bock"
+                           data-bs-toggle="modal"
+                           data-bs-target="#parcelsPhoto"
+                         >
+                           <i class="ri-camera-fill"></i>
+                         </button>
+                         <button
+                           class="btn info-btn"
+                           style="display: inline-bock"
+                           data-bs-toggle="modal"
+                          data-bs-target="#parcelsListViewModal"
+                         >
+                           <img
+                             src="../images/new/info-btn.svg"
+                             alt=""
+                             width="14"
+                             height="14"
+                           />
+                         </button>
+                       </div>
+                      </td>
+                      <td class="table-td-chekbox">
+                        <input type="checkbox" id="html" />
+                        <label for="html"></label>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>1600</td>
+                      <td>iphone 13 ProMax</td>
+                      <td>$1500.00</td>
+                      <td>03/22/2022</td>
+                      <td class="flex-ro verified2">
+                       <div class="flex-row">
+                         <button
+                           class="btn camera-btn active"
+                           style="display: inline-bock"
+                           data-bs-toggle="modal"
+                           data-bs-target="#parcelsPhoto"
+                         >
+                           <i class="ri-camera-fill"></i>
+                         </button>
+                         <button
+                           class="btn info-btn"
+                           style="display: inline-bock"
+                           data-bs-toggle="modal"
+                          data-bs-target="#parcelsListViewModal"
+                         >
+                           <img
+                             src="../images/new/info-btn.svg"
+                             alt=""
+                             width="14"
+                             height="14"
+                           />
+                         </button>
+                       </div>
+                      </td>
+                      <td class="table-td-chekbox">
+                        <input type="checkbox" id="html" />
+                        <label for="html"></label>
+                      </td>
+                    </tr>
+
+                    
+                   </tbody>
+                 </table>
+                 </div>
+               </div>
+
+
                 </div>
               </div>
             </div>
@@ -1831,7 +2177,7 @@
                   <div class="item-deckaration__value">$3 423</div>
                 </div>
               </div>
-              <div class="item-declaration">
+              <div class="item-declaration mb-5">
                 <div>
                   <div class="item-deckaration__name">Наименование</div>
                   <div class="item-deckaration__value">Sneakers 456</div>
@@ -1871,7 +2217,7 @@
                 </li>
               </ul>
               <blockquote class="blockquote">
-                <p class="mb-0">Комментарий для оператора</p>
+                <p class="mb-2">Комментарий для оператора</p>
                 <p class="text-muted">
                   Here will be description about the parcel
                 </p>
@@ -1903,7 +2249,7 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form class="row g-2 parcels-list-form">
+            <form class="row g-3 parcels-list-form">
               <div class="col-md-12">
                 <label for="productList" class="form-label"
                   >Ссылка на товар</label

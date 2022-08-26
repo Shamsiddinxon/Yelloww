@@ -665,7 +665,7 @@ input.edit-input {
 .profile-content .tab-content .profile-password-group {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 18px;
+  grid-gap: 24px;
 }
 
 .profile-content .tab-content .profile-password-group .password-item {
@@ -2336,7 +2336,15 @@ input.register-number-input {
   max-width: 1156px !important;
 }
 
+#productComment {
+  height: 80px;
+}
+
 /*/ my changes end ******************/
+
+.modal-content {
+  border-radius:10px;
+}
 
 .parcels-modal-steps .step.finish,
 .parcels-modal-steps .step.active {
@@ -2541,7 +2549,8 @@ input.register-number-input {
 #parcelsListViewModal .modal-body .parcels-title {
   font-weight: 600;
   font-size: 18px;
-  margin-top: 25px;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 #parcelsListViewModal .modal-body .parcels-list-declaration .item-declaration {
@@ -2549,7 +2558,7 @@ input.register-number-input {
   justify-content: space-between;
   background-color: #f4f4f4;
   margin-bottom: 10px;
-  padding: 10px 12px;
+  padding: 12px 15px;
   border-radius: 10px;
 }
 
@@ -2559,7 +2568,8 @@ input.register-number-input {
   .item-declaration
   .item-deckaration__name {
   font-weight: 600;
-  font-size: 12px;
+  font-size: 13px;
+  margin-bottom: 8px;
 }
 
 #parcelsListViewModal
@@ -2567,9 +2577,11 @@ input.register-number-input {
   .parcels-list-declaration
   .item-declaration
   .item-deckaration__value {
-  font-weight: 800;
-  font-size: 18px;
+  font-weight: 700;
+  font-size: 19px;
 }
+
+
 
 #parcelsListViewModal .modal-body .parcels-list-details ul {
   padding-left: 10px;
@@ -2608,7 +2620,7 @@ input.register-number-input {
   font-size: 14px;
   font-weight: 600;
   color: #121212;
-  margin-bottom: 0;
+  margin-bottom: 8px;
 }
 
 .parcels-list-form .parcels-list-update-btn {
@@ -3892,7 +3904,34 @@ th.th-paymet {
   justify-content: end;
 }
 
-.arrived tbody tr td .info-btn
+
+/* **************** */
+.th-verified2-servis {
+  width: 8%;
+  min-width: 80px;
+}
+
+.th-verified2-link {
+  width: 11%;
+  min-width: 100pxpx;
+}
+
+.th-verified2-name {
+  width: 20%;
+  min-width: 200px;
+}
+
+.th-verified2-action div {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-right: 35px;
+}
+
+.verified2 .flex-row {
+  margin-right: 15px;
+  
+}
 
 /* *** ** MOY BALANSE *** ** */
 
