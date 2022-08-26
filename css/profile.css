@@ -729,7 +729,7 @@ input.edit-input {
   font-size: 24px;
   gap: 8px;
   padding-bottom: 16px;
-  border-bottom: 1px solid  #EAEAEA;;
+  border-bottom: 1px solid #eaeaea;
   box-sizing: border-box;
 }
 
@@ -2343,7 +2343,7 @@ input.register-number-input {
 /*/ my changes end ******************/
 
 .modal-content {
-  border-radius:10px;
+  border-radius: 10px;
 }
 
 .parcels-modal-steps .step.finish,
@@ -2581,8 +2581,6 @@ input.register-number-input {
   font-size: 19px;
 }
 
-
-
 #parcelsListViewModal .modal-body .parcels-list-details ul {
   padding-left: 10px;
 }
@@ -2713,6 +2711,152 @@ input.register-number-input {
 .modal-body.photo ul li img {
   width: 315px;
   object-fit: contain;
+}
+
+/* Photo Modal Start */
+.offers .modal-content,
+.offers {
+  max-width: 1000px;
+  width: 1000px;
+  margin: 40px auto;
+}
+
+.offers .modal-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.offers {
+  margin-top: 0;
+  padding-top: 40px;
+}
+
+.offers .modal-list {
+  max-width: 720px;
+  font-size: 48px;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.offers .modal-list .modal-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #cdcdcd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.offers .modal-list .modal-item:nth-child(even) {
+  border-left: 1px solid #cdcdcd;
+  padding-left: 20px;
+}
+
+.offers .modal-list .modal-item:nth-child(1),
+.offers .modal-list .modal-item:nth-child(2) {
+  border-top: 1px solid #cdcdcd;
+}
+
+.modal-item-title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #828282;
+}
+
+.modal-item-desc {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #828282;
+}
+
+.offers .modal-list .modal-item input {
+  width: 20px;
+  height: 20px;
+  background: #828282;
+  margin-right: 25px;
+}
+
+.offers .modal-list .modal-item input:checked + 
+ i {
+ color: #E8C305;
+}
+
+.offers .modal-list .modal-item input:checked + div
+ h4 {
+ color: #000;
+}
+
+.offers .modal-list .modal-item i {
+  color: #828282;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.modal-item-selects {
+  display: flex;
+  align-items: center;
+}
+
+.modal-item-select {
+  height: 28px;
+  margin-left: 15px;
+  font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+background: #F4F4F4;
+border-radius: 6px;
+padding: 5px 26px 5px 10px;
+}
+
+.offers .modal-bottom {
+  max-width: 720px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.offers .modal-bottom p {
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.offers .modal-bottom p span {
+  font-weight: 600;
+}
+
+.offers .modal-bottom .cancel-btn {
+  margin-right: 13px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  background: #e0e0e0;
+  border-radius: 8px;
+  border: none;
+}
+
+.offers .modal-bottom .add-btn {
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  background: #e8c305;
+  padding: 10px 20px;
+  border: none;
 }
 
 /* ------------------------------  Media Queries ------------------------------ */
@@ -3810,7 +3954,11 @@ td label:before {
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
-  margin-left: 15px;
+  margin-left: 10px; 
+} 
+
+.verified2 + td label {
+  margin-left: 5px;
 }
 
 td input:checked + label:after {
@@ -3904,7 +4052,6 @@ th.th-paymet {
   justify-content: end;
 }
 
-
 /* **************** */
 .th-verified2-servis {
   width: 8%;
@@ -3930,7 +4077,6 @@ th.th-paymet {
 
 .verified2 .flex-row {
   margin-right: 15px;
-  
 }
 
 /* *** ** MOY BALANSE *** ** */
