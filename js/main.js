@@ -23,7 +23,7 @@ jQuery(document).ready(function ($) {
       },
     },
   };
-  let mySwiper = new Swiper(".swiper", options);
+  let mySwiper = new Swiper(".swipers", options);
   let slidersCount = mySwiper.params.loop
     ? mySwiper.slides.length - 2
     : mySwiper.slides.length;

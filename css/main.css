@@ -114,41 +114,41 @@
   position: relative;
   overflow: hidden;
 }
-.swiper {
+.swipers {
   background-color: #f4f4f4;
   border-radius: 25px;
   width: 100%;
   height: 500px;
 }
-.swiper .swiper-wrapper .swiper-slide {
+.swipers .swiper-wrapper .swiper-slide {
   background-image: url(/images/line_slider.png), url(/images/line_slider.png);
   background-position: 60px, 76px;
   background-size: 8px 100%;
   background-repeat: no-repeat, no-repeat;
 }
-.swiper .swiper-wrapper .swiper-slide div:first-child {
+.swipers .swiper-wrapper .swiper-slide div:first-child {
   padding-left: 120px;
   padding-top: 120px;
 }
-.swiper .swiper-wrapper .swiper-slide div:last-child {
+.swipers .swiper-wrapper .swiper-slide div:last-child {
   position: relative;
   background-image: url(/images/slider_circle.png);
   background-position: 80% 60%;
   background-repeat: no-repeat;
   background-size: 75%;
 }
-.swiper .swiper-wrapper .swiper-slide .swiper-title {
+.swipers .swiper-wrapper .swiper-slide .swiper-title {
   position: relative;
   font-weight: 800;
   font-size: 42px;
   margin: none;
 }
-.swiper .swiper-wrapper .swiper-slide .swiper-text {
+.swipers .swiper-wrapper .swiper-slide .swiper-text {
   font-size: 24px;
   font-weight: 600;
   line-height: 145%;
 }
-.swiper .swiper-wrapper .swiper-slide .swiper-button {
+.swipers .swiper-wrapper .swiper-slide .swiper-button {
   border: 1px solid #000000;
   box-sizing: border-box;
   font-weight: 600;
@@ -156,21 +156,21 @@
   padding: 15px 30px;
   transition: 0.5s all;
 }
-.swiper .swiper-wrapper .swiper-slide .swiper-button:hover {
+.swipers .swiper-wrapper .swiper-slide .swiper-button:hover {
   border-color: #e8c305;
   color: #e8c305;
 }
-.swiper .swiper-wrapper .swiper-slide .swiper-image {
+.swipers .swiper-wrapper .swiper-slide .swiper-image {
   position: absolute;
   top: 75px;
   left: 75px;
   width: 75%;
 }
-.swiper .swiper-wrapper .swiper-slide .swiper-button i {
+.swipers .swiper-wrapper .swiper-slide .swiper-button i {
   position: relative;
   top: 3px;
 }
-.swiper .swiper-pagination {
+.swipers .swiper-pagination {
   width: 100%;
   height: 4px;
   left: 10px;
@@ -1504,6 +1504,298 @@ label[for="phoneMasked"] {
   background-color: #e8c305;
 }
 
+/* --- franchayzing page --- */
+
+/* - top-menu - */
+
+#top-menu {
+  background: #f4f4f4;
+  padding: 10px 0;
+  height: 60px;
+}
+
+.top-menu-list {
+  max-width: 1100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.top-menu-btn {
+  font-weight: 500;
+  font-size: 16px;
+  /* line-height: 19px; */
+  color: #121212;
+}
+
+.top-menu-btn.active,
+.top-menu-btn:hover {
+  color: #e8c305;
+}
+
+/*  -  Online section -  */
+.online {
+  margin-top: 60px;
+}
+
+#online .online .online-video {
+  max-width: 65%;
+  margin: 0 auto !important;
+}
+
+.online-title {
+  max-width: 1000px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #000000;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.online-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+/*   -  Choose  -   */
+
+.choose {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.choose-title {
+  max-width: 500px;
+  font-weight: 400;
+  font-size: 76px;
+  line-height: 136px;
+  color: #121212;
+}
+
+.choose-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 15px;
+}
+
+.choose-item {
+  max-width: 220px;
+}
+
+.choose-item-link {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 80px;
+  font-size: 48px;
+  text-decoration: none;
+  background: #e8c20524;
+  border-radius: 8px;
+  color: #e8c305;
+  margin-bottom: 25px;
+}
+
+.choose-item-title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 58px;
+  color: #121212;
+}
+
+.choose-item-desc {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #121212;
+}
+
+/*   -***  Operates  ***-   */
+
+.operates {
+  background: #f4f4f4;
+  border-radius: 30px;
+  padding: 50px 30px 80px;
+}
+
+.operates-title {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.operates-list {
+  max-width: 1240px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 20px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.operates-item {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.operates-item-title {
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 77px;
+  color: #f4f4f4;
+  margin-bottom: 20px;
+}
+
+.operates-item i {
+  font-size: 40px;
+  color: #e8c305;
+}
+
+.operates-item-desc {
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+}
+
+/*  -***    Ensures start  ***-    */
+
+.ensures-top {
+  margin-bottom: 32px;
+  margin-top: 80px;
+}
+
+.ensures-title {
+  margin-bottom: 35px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  color: #121212;
+}
+
+.ensures-nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #f4f4f4;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.ensures-nav a {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  border-radius: 4px;
+  padding: 10px 15px;
+  height: 40px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.ensures-nav a.active,
+.ensures-nav a:active {
+  color: #e8c305;
+  background: #ffffff;
+}
+
+.ensures-nav a:hover {
+  color: #e8c305;
+}
+
+.ensures-left {
+  width: 65%;
+}
+
+.ensures-swiper {
+  width: 100%;
+  border-radius: 20px;
+  height: 100%;
+  margin-left: 1px;
+}
+
+.ensures-slide {
+  transition: all 0.3s;
+}
+
+.ensures-slide .img-wraper img {
+  width: 100%;
+  object-fit: cover;
+  height: 560px;
+}
+
+.ensures-swiper.swiper-pagination-bullet {
+  width: 106px;
+  height: 76px;
+  padding: 3px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.ensures-swiper.swiper-pagination-bullet img {
+  width: 100px;
+  height: 70px;
+  border-radius: 10px;
+}
+
+.ensures-swiper.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+.ensures-wrapp {
+  display: flex;
+  gap: 24px;
+}
+
+.ensures-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ensures-right-desc {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 29px;
+  color: #000000;
+}
+
+/*  -***    Ensures end  ***-    */
+
+/*  -***    Ensures start  ***-    */
+
 /* ------------------------------  Media Queries ------------------------------ */
 
 @media (max-width: 575.98px) {
@@ -2120,7 +2412,6 @@ label[for="phoneMasked"] {
 }
 /* ------------------------------  Media Queries End ------------------------------ */
 
-
 /* ----------------------------- LANG-MODAL ------------------ */
 
 .lang-menu {
@@ -2130,13 +2421,13 @@ label[for="phoneMasked"] {
   z-index: 9999000;
   display: flex;
   flex-direction: column;
-  align-items:center
+  align-items: center;
 }
 
 .lang-menu div {
   display: flex;
   flex-direction: row;
-  align-items:center
+  align-items: center;
 }
 
 .selected-lang {
@@ -2149,7 +2440,7 @@ label[for="phoneMasked"] {
 }
 
 .selected-lang::before {
-  content: '';
+  content: "";
   display: block;
   width: 32px;
   height: 20px;
@@ -2165,7 +2456,7 @@ label[for="phoneMasked"] {
   padding: 0;
   background: #fff;
   border: 1px solid #f8f8f8;
-  box-shadow: 0px 1px 6px rgba(0,0,0,0.3);
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   list-style: none;
   display: none;
@@ -2177,7 +2468,7 @@ label[for="phoneMasked"] {
   z-index: 9999000 !important;
 }
 
-.lang-menu ul li  {
+.lang-menu ul li {
   display: flex;
   align-items: center;
 }
@@ -2191,7 +2482,7 @@ label[for="phoneMasked"] {
 }
 
 .lang-menu ul li a::before {
-  content: '';
+  content: "";
   display: inline-block;
   vertical-align: middle;
   width: 32px;
@@ -2200,7 +2491,7 @@ label[for="phoneMasked"] {
   background-image: url(../images/usa.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius:3px;
+  border-radius: 3px;
 }
 
 .lang-menu ul li a:hover {
