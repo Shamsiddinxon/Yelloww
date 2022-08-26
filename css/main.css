@@ -1687,9 +1687,13 @@ label[for="phoneMasked"] {
 
 /*  -***    Ensures start  ***-    */
 
+#ensures {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
 .ensures-top {
   margin-bottom: 32px;
-  margin-top: 80px;
 }
 
 .ensures-title {
@@ -1794,7 +1798,204 @@ label[for="phoneMasked"] {
 
 /*  -***    Ensures end  ***-    */
 
-/*  -***    Ensures start  ***-    */
+/*  -***    Business start  ***-    */
+
+#business {
+  margin-bottom: 80px;
+}
+
+.business-title {
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  color: #121212;
+  text-align: center;
+}
+
+.business-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.business-item {
+  max-width: 450px;
+  width: 100%;
+  max-height: 428px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: #f4f4f4;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.business-item h3 {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 87px;
+  color: #e8c305;
+}
+
+.business-item h4 {
+  margin-bottom: 18px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 39px;
+  color: #121212;
+}
+
+.business-item p {
+  max-width: 318px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #121212;
+}
+/*  -***    Business end  ***-    */
+
+/*  -***    Set-Up start  ***-    */
+#set {
+  background: #f4f4f4;
+  margin-bottom: 80px;
+}
+.set {
+  padding: 40px 12px;
+}
+
+.set h2 {
+  margin-bottom: 50px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  color: #121212;
+}
+
+.set-list {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  gap: 20px;
+}
+
+.set-item-icon {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 72px;
+  width: 72px;
+  padding: 20px;
+  line-height: 26px;
+  background: #ffff;
+  color: #e8c305;
+  font-size: 32px;
+  border-radius: 50%;
+}
+
+.set-title {
+  margin-bottom: 29px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 29px;
+  color: #121212;
+}
+
+.set-title span {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #121212;
+}
+
+.set-desc {
+  max-width: 140px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4f4f4f;
+}
+
+.set-line {
+  position: absolute;
+  width: 85.3%;
+  height: 1px;
+  left: 0;
+  bottom: 71px;
+  background: #9c9c9c;
+}
+
+.set-line::before {
+  position: absolute;
+  content: " ";
+  top: -6px;
+  right: -5px;
+  width: 12px;
+  height: 12px;
+  background: #e8c305;
+  border-radius: 50%;
+}
+/*  -***    Set-Up end  ***-    */
+
+/*  -***    Acordion start  ***-    */
+#acordion {
+  margin-bottom: 80px;
+}
+
+.acordion-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 40px;
+}
+
+.acordion {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.accordion.acordion {
+  border-radius: 8px;
+}
+
+.acordion .accordion-button,
+.acordion .accordion-header {
+
+  height: 53px;
+}
+
+.acordion .accordion-item,
+.acordion .accordion-button,
+.acordion .accordion-header {
+  background: #f4f4f4;
+  border-radius: 8px;
+  /* height: 53px; */
+}
+
+.acordion .accordion-button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.acordion .accordion-body {
+  padding: 35px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/*  -***    Acordion end  ***-    */
 
 /* ------------------------------  Media Queries ------------------------------ */
 
