@@ -1890,7 +1890,6 @@ table thead th p {
   padding: 50px 55px;
   width: 80%;
   max-width: 600px;
-  /* min-height: 666px; */
   margin-top: 80px;
   margin-bottom: 30px;
   color: #000000;
@@ -1979,7 +1978,6 @@ input.register-number-input {
   height: 50px;
   border-radius: 10px !important;
   padding-left: 110px !important;
-  /* margin-bottom: 32px; */
 }
 
 .input-margin-b {
@@ -2060,7 +2058,6 @@ input.register-number-input {
 .register-content .content-right .content-body input::placeholder {
   font-weight: 400;
   font-size: 18px;
-  /* padding: 10px; */
   color: #a8a8a8;
 }
 
