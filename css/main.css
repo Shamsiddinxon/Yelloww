@@ -1,3 +1,5 @@
+@import "./fontfase.css";
+
 * {
   margin: 0;
   padding: 0;
@@ -1104,7 +1106,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 /* Page Service Start */
 #service {
-  min-height: calc(100vh - 100px);
+  /* min-height: calc(100vh - 200px); */
 }
 .service {
   margin-top: 25px;
@@ -1165,13 +1167,18 @@ input[type="range"]::-webkit-slider-thumb {
 #content {
   min-height: calc(100vh - 100px);
 }
-.content {
-  margin-top: 50px;
+.content-shop {
+  padding: 0;
+  padding-left: 24px;
+}
+.content .sidebar {
+  padding-top: 50px;
 }
 .card-row {
+  padding-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 20px;
 }
 .card-row .card {
   border: none;
@@ -1212,25 +1219,68 @@ input[type="range"]::-webkit-slider-thumb {
   padding: 0px;
 }
 
+.content-pagination {
+  margin-top: 35px;
+  margin-bottom: 60px;
+}
+
+.content-pagination button {
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 29px;
+  color: #030303;
+  border: none;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.content-pagination .old,
+.content-pagination .next {
+  background: #e8c305;
+}
+
+.content-pagination button.item {
+  background-color: #fff;
+  border: 1px solid #e9e9e9;
+}
+
+.content-pagination button.item.disab {
+  color: #c4c4c4;
+}
+
+.content-pagination .old.disab,
+.content-pagination .next.disab {
+  background: #f8f8f8;
+}
+
 /* Page Service Sart */
 .service {
-  margin-top: 50px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 .service .service-row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
+  grid-gap: 20px;
   align-items: center;
 }
 .service .service-row .service-title {
+  text-align: left;
+  margin-bottom: 5px;
   font-weight: 600;
   font-size: 48px;
-  padding: 0px 15px;
+  padding: 0px 0px;
 }
 .service .service-row .service-text {
+  text-align: left;
   font-weight: 400;
-  font-size: 16px;
-  padding: 15px;
+  font-size: 18px;
+  padding: 0px;
 }
 .service .service-row .service-right {
   display: grid;
@@ -1266,14 +1316,14 @@ input[type="range"]::-webkit-slider-thumb {
   margin-bottom: 100px;
 }
 .about-us .about-row .about-title {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 40px;
-  margin-top: 100px;
+  margin-top: 40px;
 }
 .about-us .about-row .about-text {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 18px;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 /* Page Contacts Start */
@@ -1284,19 +1334,21 @@ input[type="range"]::-webkit-slider-thumb {
   margin: 40px 0px;
 }
 .contacts .nav-pills .nav-item {
-  padding: 10px;
+  padding: 6px;
   background-color: #f4f4f4;
 }
 .contacts .nav-pills .nav-item:first-child {
-  border-radius: 8px 0px 0px 8px;
+  border-radius: 10px 0px 0px 10px;
 }
 .contacts .nav-pills .nav-item:last-child {
-  border-radius: 0px 8px 8px 0px;
+  border-radius: 0px 10px 10px 0px;
 }
 .contacts .nav-pills .nav-link {
+  height: 45px;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 15px;
   color: #000000;
+  border-radius:10px;
 }
 .contacts .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
@@ -1314,21 +1366,29 @@ input[type="range"]::-webkit-slider-thumb {
 }
 .contacts-info-group .contacts-info {
   font-weight: 600;
-  padding: 20px 20px 5px 20px;
+  padding: 25px 25px 5px 20px;
   border-radius: 10px;
   background-color: #ffffff;
 }
 .contacts-info-group .contacts-info p {
-  margin-bottom: 8px;
+  display: flex;
+  align-items:center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 18px;
   vertical-align: baseline;
+}
+.contacts-info-group .contacts-info p i {
+  margin-right: 8px;
 }
 .contacts-info-group .contacts-image {
   position: absolute;
-  top: 25%;
-  right: 15%;
+  top:30%;
+  right: 10%;
 }
 .contacts-address-group {
-  margin: 15px 0px 20px 0px;
+  margin: 20px 0px 20px 0px;
   padding: 30px;
   border: 1px solid #e8c305;
   border-radius: 10px;
@@ -1337,7 +1397,8 @@ input[type="range"]::-webkit-slider-thumb {
 .contacts-address-group .contact-map {
   width: 100%;
   overflow: hidden;
-  height: 300px;
+  height: 220px;
+  border-radius:10px;
 }
 .contacts-address-group iframe {
   border: 0;
@@ -1350,21 +1411,24 @@ input[type="range"]::-webkit-slider-thumb {
 .contacts-address-group .contacts-title {
   font-weight: 600;
   font-size: 24px;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 .contacts-address-group .contacts-address {
-  margin-top: 10px;
+  /* margin-top: 10px; */
   font-weight: 400;
   font-size: 14px;
 }
 .contacts .contacts-form {
-  padding: 40px 20px;
+  height: 645px;
+  padding: 40px 25px;
+  margin-left: 20px;
   border-radius: 10px;
   background-color: #f4f4f4;
 }
 .contacts .contacts-form .contacts-title {
   font-weight: 600;
   font-size: 24px;
+  margin-bottom: 10px;
 }
 .contacts .contacts-form .contacts-form-btn {
   font-weight: 600;
@@ -1372,14 +1436,21 @@ input[type="range"]::-webkit-slider-thumb {
   color: #000000;
   background-color: #e8c305;
 }
+form textarea {
+  height: 200px;
+}
 label[for="name"],
 label[for="email"],
 label[for="address"],
 label[for="second-name"],
 label[for="phoneMasked"] {
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 15px;
   margin-left: 5px;
+}
+
+.mt-40 {
+  margin-top: 30px;
 }
 
 /* Page Help Start */
@@ -1773,6 +1844,7 @@ label[for="phoneMasked"] {
   width: 100px;
   height: 70px;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .ensures-swiper.swiper-pagination-bullet-active {
@@ -2288,8 +2360,42 @@ span .coutry-select {
   margin-top: 40px;
   font-size: 19px !important;
 }
-
 /*  -***    Join Us end  ***-    */
+
+.fr.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fr.footer div {
+  display: flex;
+  align-items: center;
+}
+
+.fr.footer div p {
+  margin: 0;
+  margin-left: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #7d7d7d;
+}
+
+.fr.footer a {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.fr.footer a i {
+  margin-right: 10px;
+}
 
 /* ------------------------------  Media Queries ------------------------------ */
 

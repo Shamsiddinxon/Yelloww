@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <!-- Custom Styles -->
     <link rel="stylesheet" href="/css/main.css" />
+    <!-- <link rel="stylesheet" href=""> -->
     <!-- RemixIcon link -->
     <link rel="stylesheet" href="/fonts/remixicon.css" />
     <!-- Custom links -->
@@ -60,6 +61,9 @@
               <a class="nav-link" href="help.html">Помощь</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="franchayzing.html">Франчайзинг</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#"><i class="ri-search-line"></i></a>
             </li>
           </ul>
@@ -70,12 +74,24 @@
                 ><i class="ri-calculator-line"></i
               ></a>
             </li>
-            <li class="nav-item">
-              <select class="nav-link btn-lang">
-                <option value="uzb">Uzb</option>
-                <option value="rus">Rus</option>
-                <option value="eng">Eng</option>
-              </select>
+            <li>
+              <div class="lang-menu">
+                <div class="selected-lang">Eng</div>
+
+                <ul>
+                  <li>
+                    <a class="en" href="#">Eng</a>
+                  </li>
+
+                  <li>
+                    <a class="ru" href="#">Rus</a>
+                  </li>
+
+                  <li>
+                    <a class="uz" href="#">Uzb</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link btn-login" href="#">
@@ -111,8 +127,8 @@
     <section
       id="content"
       class="container-fluid">
-      <div class="content container">
-        <div class="content-row row">
+      <div id="content" class="content container">
+        <div id="content" class="content-row row">
           <div class="sidebar col-sm-12 col-md-3">
             <ul class="sidebar-list">
               <li><a class="sidebar-item" href="#">Товары для красоты</a></li>
@@ -147,7 +163,7 @@
                     занимающаяся дизайном маркетинг
                   </p>
                   <a class="btn card-btn" href="#"
-                    >Подробно <i class="ri-arrow-right-up-line"></i
+                    >Подробно  <i class="ri-arrow-right-up-line"></i
                   ></a>
                 </div>
               </div>
@@ -256,6 +272,21 @@
                 ></a>
               </div>
             </div>
+          </div>
+
+          <div class="content-pagination">
+            <button class="old disab">
+              <img src="../images/new/old-btn.svg" alt="" width="24" height="24">
+            </button>
+
+            <button class="item">1</button>
+
+            <button class="item disab">2</button>
+
+            <button class="item disab">3</button>
+            <button class="next">
+              <img src="../images/new/next-btn.svg" alt="" width="24" height="24">
+            </button>
           </div>
         </div>
       </div>

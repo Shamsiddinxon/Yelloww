@@ -60,6 +60,9 @@
               <a class="nav-link" href="help.html">Помощь</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="franchayzing.html">Франчайзинг</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#"><i class="ri-search-line"></i></a>
             </li>
           </ul>
@@ -70,12 +73,24 @@
                 ><i class="ri-calculator-line"></i
               ></a>
             </li>
-            <li class="nav-item">
-              <select class="nav-link btn-lang">
-                <option value="uzb">Uzb</option>
-                <option value="rus">Rus</option>
-                <option value="eng">Eng</option>
-              </select>
+            <li>
+              <div class="lang-menu">
+                <div class="selected-lang">Eng</div>
+
+                <ul>
+                  <li>
+                    <a class="en" href="#">Eng</a>
+                  </li>
+
+                  <li>
+                    <a class="ru" href="#">Rus</a>
+                  </li>
+
+                  <li>
+                    <a class="uz" href="#">Uzb</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link btn-login" href="#">
@@ -139,7 +154,7 @@
             </li>
           </ul>
         </div>
-        <div class="row gx-4">
+        <div class="row gx-4 mb-5">
           <div class="col-md-6 col-12">
             <div class="tab-content" id="pills-tabContent">
               <!-- United States tab -->
@@ -151,7 +166,7 @@
               >
                 <div class="row">
                   <div class="contacts-info-group col-12">
-                    <h3 class="contacts-title mb-3">Контакть</h3>
+                    <h3 class="contacts-title mt-2 mb-3">Контакть</h3>
                     <div class="contacts-info">
                       <p><i class="ri-phone-fill"></i> +1 357 159 75 57</p>
                       <p><i class="ri-mail-line"></i> yellow@gmail.com</p>
@@ -168,11 +183,13 @@
                     />
                   </div>
                   <div class="contacts-address-group col-12">
-                    <h3 class="contacts-title float-start">Карта</h3>
-                    <span class="contacts-address float-end"
-                      ><i class="ri-map-pin-line"></i> New York Greenhill street
-                      11</span
-                    >
+                    <div class="mb-3">
+                      <h3 class="contacts-title float-start mb-4">Карта</h3>
+                      <span class="contacts-address float-end"
+                        ><i class="ri-map-pin-line"></i> New York Greenhill
+                        street 11</span
+                      >
+                    </div>
                     <div class="contact-map">
                       <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.0614782379666!2d-73.98363708522544!3d40.76067254257451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258fc59b1b7cb%3A0xf9a68d9f3d90c571!2sGreenhill%20%26%20Co.!5e0!3m2!1sru!2s!4v1642882812364!5m2!1sru!2s"
@@ -194,7 +211,7 @@
               >
                 <div class="row">
                   <div class="contacts-info-group col-12">
-                    <h3 class="contacts-title mb-3">Контакть</h3>
+                    <h3 class="contacts-title mt-2 mb-3">Контакть</h3>
                     <div class="contacts-info">
                       <p><i class="ri-phone-fill"></i> +998 99 123 45 67</p>
                       <p><i class="ri-mail-line"></i> yellow@gmail.com</p>
@@ -210,11 +227,13 @@
                     />
                   </div>
                   <div class="contacts-address-group col-12">
-                    <h3 class="contacts-title float-start">Карта</h3>
-                    <span class="contacts-address float-end"
-                      ><i class="ri-map-pin-line"></i> Tashkent Afrosiyob
-                      14</span
-                    >
+                    <div>
+                      <h3 class="contacts-title float-start mb-4">Карта</h3>
+                      <span class="contacts-address float-end"
+                        ><i class="ri-map-pin-line"></i> Tashkent Afrosiyob
+                        14</span
+                      >
+                    </div>
                     <div class="contact-map">
                       <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.0614782379666!2d-73.98363708522544!3d40.76067254257451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258fc59b1b7cb%3A0xf9a68d9f3d90c571!2sGreenhill%20%26%20Co.!5e0!3m2!1sru!2s!4v1642882812364!5m2!1sru!2s"
@@ -229,11 +248,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-12">
+          <div class="col-md-6 col-12 p-0">
             <div class="contacts-form">
               <h3 class="contacts-title">Обратная связь</h3>
               <form class="row g-3">
-                <div class="col-md-6">
+                <div class="col-md-6 mt-4">
                   <label for="name" class="form-label">Имя</label>
                   <input
                     type="text"
@@ -242,7 +261,7 @@
                     id="name"
                   />
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mt-4">
                   <label for="second-name" class="form-label">Фамилия</label>
                   <input
                     type="text"
@@ -251,7 +270,7 @@
                     id="second-name"
                   />
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mt-40">
                   <label for="phoneMasked" class="form-label"
                     >Контактный телефон</label
                   >
@@ -262,7 +281,7 @@
                     id="phoneMasked"
                   />
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mt-40">
                   <label for="email" class="form-label">Email</label>
                   <input
                     type="email"
@@ -271,7 +290,7 @@
                     id="email"
                   />
                 </div>
-                <div class="col-12">
+                <div class="col-12 mt-40">
                   <label for="address" class="form-label">Сообщение</label>
                   <textarea
                     name="address"
