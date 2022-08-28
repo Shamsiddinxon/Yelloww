@@ -1998,6 +1998,10 @@ label[for="phoneMasked"] {
 /*  -***    Acordion end  ***-    */
 
 /*  -***    Meet start  ***-    */
+#meet {
+  margin-bottom: 80px;
+}
+
 .meet-title {
   margin: 0;
   font-weight: 600;
@@ -2062,7 +2066,8 @@ label[for="phoneMasked"] {
   margin-bottom: 40px;
 }
 
-.meet-bottom a {
+.meet-bottom a,
+.join-left .join-btn {
   height: 50px;
   padding: 13px 50px;
   font-weight: 500;
@@ -2070,6 +2075,7 @@ label[for="phoneMasked"] {
   line-height: 24px;
   color: #000000;
   background: #e8c305;
+  border: none;
   border-radius: 8px;
   text-decoration: none;
   overflow: hidden;
@@ -2080,17 +2086,66 @@ label[for="phoneMasked"] {
   height: 100%;
   object-fit: cover;
 }
-
 /*  -***    Meet end  ***-    */
+
+/*  -***    Join Us start  ***-    */
+#join {
+  margin-bottom: 90px;
+}
+
+.join {
+  display: flex;
+  justify-content: space-between;
+}
 
 .join-left {
   width: 50%;
 }
 
+.join-right {
+  width: 44%;
+}
+
+.join-right img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.join-item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
 .join-item .input,
-.join-item input {
+.join-item input,
+.join-item select {
   border: 1px solid #a8a8a8;
   border-radius: 8px !important;
+}
+
+.join-item select,
+.join-item .input,
+.join-item .input::placeholder {
+  color: #a8a8a8;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  color: #a8a8a8;
+}
+
+.join-item select:focus {
+  border-color: #e8c305;
+  outline: none !important;
+  box-shadow: none;
+}
+
+.join-item label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+  color: #000000;
 }
 
 .join-title {
@@ -2109,10 +2164,11 @@ label[for="phoneMasked"] {
 }
 
 .join-list {
+  margin-bottom: 40px;
   list-style: none;
   padding: 0;
   margin: 0;
-  gap:25px;
+  gap: 25px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -2136,18 +2192,21 @@ label[for="phoneMasked"] {
   border-color: #e8c305 !important;
 }
 
- input.number-input:focus {
+input.number-input:focus {
   border-color: #e8c305;
   -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    outline: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
 }
 
 input.number-input {
   height: 50px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
   border-radius: 10px !important;
-  padding-left: 75px !important;
+  padding-left: 95px !important;
   -webkit-appearance: none;
 }
 
@@ -2173,6 +2232,64 @@ span .coutry-select {
 .input-margin-b button span img {
   margin-right: 6px;
 }
+
+/* radio input */
+.join-item .label {
+  display: block;
+}
+
+.radio-item {
+  display: inline-block;
+  position: relative;
+  padding: 0 0px;
+  margin: 10px 65px 0 0;
+}
+
+.radio-item input[type="radio"] {
+  display: none;
+}
+
+.radio-item label {
+  color: #666;
+  font-weight: normal;
+}
+
+.radio-item label:before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin: 0 5px 0 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 11px;
+  border: 2px solid #828282;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+
+.radio-item input[type="radio"]:checked + label:before {
+  border: 2px solid #e8c305;
+}
+
+.radio-item input[type="radio"]:checked + label:after {
+  border-radius: 11px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 9px;
+  left: 4px;
+  content: " ";
+  display: block;
+  background: #e8c305;
+}
+
+.join-btn {
+  margin-top: 40px;
+  font-size: 19px !important;
+}
+
+/*  -***    Join Us end  ***-    */
 
 /* ------------------------------  Media Queries ------------------------------ */
 
