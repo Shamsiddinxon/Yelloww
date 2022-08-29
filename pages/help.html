@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;800&display=swap"
       rel="stylesheet"
     />
     <!-- Bootstrap Styles -->
@@ -60,6 +62,9 @@
               <a class="nav-link active" href="help.html">Помощь</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="franchayzing.html">Франчайзинг</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#"><i class="ri-search-line"></i></a>
             </li>
           </ul>
@@ -70,12 +75,24 @@
                 ><i class="ri-calculator-line"></i
               ></a>
             </li>
-            <li class="nav-item">
-              <select class="nav-link btn-lang">
-                <option value="uzb">Uzb</option>
-                <option value="rus">Rus</option>
-                <option value="eng">Eng</option>
-              </select>
+            <li>
+              <div class="lang-menu">
+                <div class="selected-lang">Eng</div>
+
+                <ul>
+                  <li>
+                    <a class="en" href="#">Eng</a>
+                  </li>
+
+                  <li>
+                    <a class="ru" href="#">Rus</a>
+                  </li>
+
+                  <li>
+                    <a class="uz" href="#">Uzb</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link btn-login" href="#">
@@ -95,15 +112,14 @@
       <nav aria-label="breadcrumb" class="breadcrumbs container">
         <h1 class="breadcrumb-title">Помощь</h1>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/pages/main-uz.html">Главная</a></li>
+          <li class="breadcrumb-item">
+            <a href="/pages/main-uz.html">Главная</a>
+          </li>
           <li class="breadcrumb-item active" aria-current="page">Помощь</li>
         </ol>
       </nav>
     </section>
-    <section
-      id="faq-content"
-      class="container-fluid"
-    >
+    <section id="faq-content" class="container-fluid">
       <div class="faq-content container">
         <h1 class="faq-content-title">Часто задаваемые вопросы</h1>
         <div class="accordion" id="accordionPanelsStayOpenExample">
@@ -408,10 +424,18 @@
             <div class="footer-socials">
               <h1 class="footer-title">Follow yellow</h1>
               <ul>
-                <li><a href="#"><i class="ri-telegram-fill"></i></a></li>
-                <li><a href="#"><i class="ri-facebook-circle-fill"></i></a></li>
-                <li><a href="#"><i class="ri-instagram-fill"></i></a></li>
-                <li><a href="#"><i class="ri-twitter-fill"></i></a></li>
+                <li>
+                  <a href="#"><i class="ri-telegram-fill"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="ri-instagram-fill"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="ri-twitter-fill"></i></a>
+                </li>
               </ul>
             </div>
           </div>
