@@ -1459,8 +1459,10 @@ input[type="range"]::-webkit-slider-thumb {
   margin-bottom: 10px;
 }
 .contacts .contacts-form .contacts-form-btn {
+  height: 50px;
+  border-radius:10px;
   font-weight: 600;
-  padding: 10px 30px;
+  padding: 10px 50px;
   color: #000000;
   background-color: #e8c305;
 }
