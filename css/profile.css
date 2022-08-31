@@ -2878,9 +2878,13 @@ input.register-number-input {
   line-height: 29px;
 }
 .calculator .calculator-row .calculator-item {
-  padding: 20px;
+  padding: 10px;
   padding-right: 0;
   font-size: 18px;
+}
+
+.modal-content {
+  padding: 30px;
 }
 
 /* Calullator & All Inputs */
@@ -2979,6 +2983,7 @@ input[type="range"]::-webkit-slider-thumb {
   justify-content: space-between;
   border-top: 1px solid #e7e7e7;
   padding-top: 23px;
+  margin-top: 15px;
 }
 
 .calc-title {

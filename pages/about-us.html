@@ -74,7 +74,6 @@
               <a class="nav-link" 
               data-bs-toggle="modal"
               data-bs-target="#parcelsCalculator"
-              href="#"
                 ><i class="ri-calculator-line"></i
               ></a>
             </li>
@@ -305,20 +304,20 @@
         aria-labelledby="parcelsListCalculatorModalLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog calculator modal-dialog-centered">
+        <div class="modal-dialog calculator-m modal-dialog-centered">
           <div class="modal-content">
-          <div class="modal-body calculator">
-            <h3>Калкулятор</h3>
+          <div class="modal-body calculator-m">
+            <h3 class="">Калкулятор</h3>
             <button
                 type="button"
                 class="btn-close"
                 data-bs-dismiss="modal"
                 aria-label="Close"
               ></button>
-            <div class="calculator-row row">
+            <div class="calculator-rows">
               <div class="calculator-item">
                 <div class="row" style="margin-right: 11px">
-                  <div class="col-6 mb-36px">
+                  <div class="col-6 ">
                     <label for="inputFrom" class="form-label top-lable">Откуда?</label>
                     <input
                       type="text"
@@ -369,7 +368,7 @@
                     value=""
                     id="formCheckCalc"
                   />
-                  <label class="form-check-label mx-2" for="formCheckCalc">
+                  <label class="form-check-label top-lable mx-2" for="formCheckCalc">
                     Расчет стаимости даставки крупногабартных посылок
                   </label>
                 </div>
@@ -378,7 +377,7 @@
               <div class="calculator-item calculator-bottom">
                 <div class="row">
                   <div class="col-3">
-                    <label for="inputLength" class="form-label">Длина</label>
+                    <label for="inputLength" class="form-label top-lable">Длина</label>
                     <input
                       type="text"
                       class="form-control"
@@ -387,7 +386,7 @@
                     />
                   </div>
                   <div class="col-3">
-                    <label for="inputWidth" class="form-label">Ширина</label>
+                    <label for="inputWidth" class="form-label top-lable">Ширина</label>
                     <input
                       type="text"
                       class="form-control"
@@ -396,7 +395,7 @@
                     />
                   </div>
                   <div class="col-3">
-                    <label for="inputHeight" class="form-label">Высота</label>
+                    <label for="inputHeight" class="form-label top-lable">Высота</label>
                     <input
                       type="text"
                       class="form-control"

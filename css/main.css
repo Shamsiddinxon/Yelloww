@@ -54,6 +54,10 @@
   color: #121212;
 }
 
+.navbar-light .navbar-nav .nav-link i {
+  font-size: 18px;
+}
+
 .navbar-light .nav-item .nav-links {
   font-weight: 600;
   font-size: 16px;
@@ -1439,7 +1443,7 @@ input[type="range"]::-webkit-slider-thumb {
   color: #121212;
   transition: 0.5s;
 }
-.countdown .day, 
+.countdown .day,
 .countdown .hour,
 .countdown .min,
 .countdown .sec {
@@ -3566,32 +3570,38 @@ span.wh-55 {
   height: 55px;
 }
 
-
 /* Calculator Modall */
 
 /* *** ** Calculator Modall ** *** */
-.modal-dialog.calculator {
+.modal-dialog.calculator-m {
   max-width: 770px;
   width: 770px !important;
+  transition: all 0.5s;
 }
 
-.modal .calculator .modal-content {
+.modal .calculator-m .modal-content {
   position: relative;
   width: 770px;
   width: 100%;
   border-radius: 15px;
   background: #f4f4f4;
+  transition: all 0.5s;
 }
 
 .modal-body h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
+  margin-bottom: 30px;
 }
-.calculator .calculator-row .calculator-item {
-  padding: 20px;
+.calculator-m .calculator-rows .calculator-item {
+  padding: 0px;
   padding-right: 0;
   font-size: 18px;
+}
+
+.modal-content {
+  padding: 30px;
 }
 
 /* Calullator & All Inputs */
@@ -3606,13 +3616,13 @@ select {
   border-radius: 5px;
   padding: 10px 10px;
 }
-
-input[type="text"],
-input[type="email"],
-input[type="search"],
+.calculator-m
+.calculator-m input[type="text"],
+.calculator-m input[type="email"],
+.calculator-m input[type="search"],
 .number-input,
 textarea,
-select {
+.calculator-m select {
   font-weight: 400;
   font-size: 18px;
   line-height: 145%;
@@ -3684,12 +3694,18 @@ input[type="range"]::-webkit-slider-thumb {
   appearance: none;
 }
 
-.calculator-total-amount {
+.calculator-bottom {
+  transition: all 0.5s;
+}
+
+.calculator-m .calculator-total-amount {
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid #e7e7e7;
-  padding-top: 23px;
+  padding: 0;
+  padding-top: 20px;
+  margin-top: 25px;
 }
 
 .calc-title {
@@ -3698,7 +3714,7 @@ input[type="range"]::-webkit-slider-thumb {
   line-height: 24px;
 }
 
-.calculator .btn-close {
+.calculator-m .btn-close {
   position: absolute;
   right: 30px;
   top: 30px;
@@ -3709,5 +3725,3 @@ input[type="range"]::-webkit-slider-thumb {
   font-size: 24px;
   line-height: 29px;
 }
-
-
