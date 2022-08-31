@@ -1,3 +1,18 @@
+
+  
+  
+  // /// calculator modall
+  document.querySelector(".calculator-bottom")?.classList.add("none")
+  document.querySelector("#formCheckCalc").addEventListener("click", ()=> {
+    document.querySelector(".calculator-bottom").classList.toggle("none")
+  })
+  
+  // searchForms.addEventListener("submit", (evt)=> {
+  //     console.log("alik");
+  // })
+  
+
+
 jQuery(document).ready(function ($) {
   let autoPlayDelay = 5000;
   let options = {
@@ -23,6 +38,8 @@ jQuery(document).ready(function ($) {
       },
     },
   };
+
+
   let mySwiper = new Swiper(".swipers", options);
   let slidersCount = mySwiper.params.loop
     ? mySwiper.slides.length - 2
@@ -136,9 +153,12 @@ jQuery(document).ready(function ($) {
 });
 
 const myCountdown = new countdown({
-  target: '.countdown',
-  dayWord: ' Days',
-  hourWord: ' Hours',
-  minWord: ' Mins',
-  secWord: ' Seconds'
-});
+    target: '.countdown',
+    dayWord: ' Days',
+    hourWord: ' Hours',
+    minWord: ' Mins',
+    secWord: ' Seconds'
+  });
+
+
+  

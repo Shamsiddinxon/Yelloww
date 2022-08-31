@@ -132,16 +132,19 @@
         <div class="countdown-group">
           <div class="countdown" data-date="28-02-2022" data-time="12:00">
             <div class="day">
-              <span class="num"></span><span class="word"></span>
+              <span class="num">04</span><span class="word">Days</span>
             </div>
+            <span class="px-0">:</span>
             <div class="hour">
-              <span class="num"></span><span class="word"></span>
+              <span class="num">06</span><span class="word">Hours</span>
             </div>
+            <span class="px-0">:</span>
             <div class="min">
-              <span class="num"></span><span class="word"></span>
+              <span class="num">46</span><span class="word">Min</span>
             </div>
+            <span class="px-0">:</span>
             <div class="sec">
-              <span class="num"></span><span class="word"></span>
+              <span class="num">23</span><span class="word">Sec</span>
             </div>
           </div>
           <h1 class="countdown-title">Time to send shipments to the UZB</h1>
@@ -153,26 +156,27 @@
           <button class="countdown-btn-track btn">Track</button>
         </div>
       </div>
-    </section>
+    </section> 
     <!-- Section Slider Start -->
 
     <!-- Section Track id works Start -->
 
     <!-- STEEP-0 -->
-    <div class="track container-fluid mb-370">
+    <div id="steep-0" class="track container-fluid mb-370">
       <div class="container">
         <div class="steep-0">
-          <div class="track-search">
+          <form name="search-id" class="track-search">
             <label for="search-id">Box id</label>
             <div class="track-search-input">
               <input
                 type="text"
-                id="search-id"
+                id="search-id-0"
+                name="search-id"
                 placeholder="Enter your Box ID here"
               />
-              <button type="button" id="track-id">Track</button>
+              <button type="submit" id="track-id">Track</button>
             </div>
-          </div>
+          </form>
 
           <div class="track-search-help">
             <button class="">MULTIPLE TRACKING NUMBERS</button>
@@ -180,16 +184,16 @@
           </div>
 
           <div class="steep-0-bottom">
-            <h3>Identify where your parcel is?</h3>
+            <h3>Identify where yourparcel is?</h3>
           </div>
         </div>
       </div>
     </div>
     <!-- STEEP-1 -->
-    <div class="track container-fluid">
+    <div id="steep-1"  class="track container-fluid">
       <div class="container">
         <div class="steep-1">
-          <div class="track-search">
+          <form class="track-search">
             <label for="search-id">Box id</label>
             <div class="track-search-input">
               <input
@@ -199,8 +203,8 @@
               />
               <button type="button" id="track-id">Track</button>
             </div>
-          </div>
-          
+          </form>
+
           <div class="steep-1-main">
             <span class="steep-1-main-line"></span>
             <div class="steep-1-main-item">
@@ -232,6 +236,25 @@
               </div>
             </div>
           </div>
+
+          <div class="steep-1-main align-items-end">
+            <div class="steep-1-main-item-bottom">
+              <h5>From</h5>
+              <h3>New York, US</h3>
+            </div>
+
+            <div class="steep-1-main-item-bottom px-3">
+              <p>
+                Estimated delivery date: 22/08/2022 | 17:00 Tashkent timezone
+              </p>
+              <span></span>
+            </div>
+
+            <div class="steep-1-main-item-bottom">
+              <h5>To</h5>
+              <h3>Tashkent, Uzb</h3>
+            </div>
+          </div>
         </div>
 
         <div class="steep-1-bottom">
@@ -252,37 +275,14 @@
             <p>New York, US</p>
             <p>Tashkent, Uzb</p>
           </div>
-
-          <!-- <table style="width: 100%;">
-            <thead>
-              <tr>
-                <th>Order ID</th>
-                <th>Order ID</th>
-                <th>Order ID</th>
-                <th>Order ID</th>
-                <th>Order ID</th>
-                <th>Order ID</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>04/22/2022</th>
-                <th>04/22/2022</th>
-                <th>04/22/2022</th>
-                <th>04/22/2022</th>
-                <th>04/22/2022</th>
-                <th>04/22/2022</th>
-              </tr>
-            </tbody>
-          </table> -->
         </div>
       </div>
     </div>
     <!-- STEEP-2 -->
-    <div class="track container-fluid">
+    <div id="steep-2"  class="track container-fluid">
       <div class="container">
         <div class="steep-1">
-          <div class="track-search">
+          <form class="track-search">
             <label for="search-id">Box id</label>
             <div class="track-search-input">
               <input
@@ -292,12 +292,12 @@
               />
               <button type="button" id="track-id">Track</button>
             </div>
-          </div>
-          
+          </form>
+
           <div class="steep-1-main">
             <span class="steep-1-main-line"></span>
             <div class="steep-1-main-item">
-              <span  class="active"></span>
+              <span class="active"></span>
               <div class="steep-1-main-item-text">
                 <h4>Pending</h4>
               </div>
@@ -307,8 +307,7 @@
               <span class="active wh-55"></span>
               <div class="steep-1-main-item-text">
                 <h4>Sent</h4>
-                <p>On Yellow Airline to
-                  deliver Tashkent.</p>
+                <p>On Yellow Airline to deliver Tashkent.</p>
               </div>
             </div>
 
@@ -324,6 +323,25 @@
               <div class="steep-1-main-item-text">
                 <h4>Delivered</h4>
               </div>
+            </div>
+          </div>
+
+          <div class="steep-1-main align-items-end">
+            <div class="steep-1-main-item-bottom">
+              <h5>From</h5>
+              <h3>New York, US</h3>
+            </div>
+
+            <div class="steep-1-main-item-bottom px-3">
+              <p>
+                Estimated delivery date: 22/08/2022 | 17:00 Tashkent timezone
+              </p>
+              <span></span>
+            </div>
+
+            <div class="steep-1-main-item-bottom">
+              <h5>To</h5>
+              <h3>Tashkent, Uzb</h3>
             </div>
           </div>
         </div>
@@ -350,10 +368,10 @@
       </div>
     </div>
     <!-- STEEP-3 -->
-    <div class="track container-fluid">
+    <div id="steep-3"  class="track container-fluid">
       <div class="container">
         <div class="steep-1">
-          <div class="track-search">
+          <form class="track-search">
             <label for="search-id">Box id</label>
             <div class="track-search-input">
               <input
@@ -363,12 +381,12 @@
               />
               <button type="button" id="track-id">Track</button>
             </div>
-          </div>
-          
+          </form>
+
           <div class="steep-1-main">
             <span class="steep-1-main-line"></span>
             <div class="steep-1-main-item">
-              <span  class="active"></span>
+              <span class="active"></span>
               <div class="steep-1-main-item-text">
                 <h4>Pending</h4>
               </div>
@@ -385,8 +403,7 @@
               <span class="active wh-55"> </span>
               <div class="steep-1-main-item-text">
                 <h4>In customs</h4>
-                <p>Your parcel is in the
-                  In custom </p>
+                <p>Your parcel is in the In custom</p>
               </div>
             </div>
 
@@ -395,6 +412,25 @@
               <div class="steep-1-main-item-text">
                 <h4>Delivered</h4>
               </div>
+            </div>
+          </div>
+
+          <div class="steep-1-main align-items-end">
+            <div class="steep-1-main-item-bottom">
+              <h5>From</h5>
+              <h3>New York, US</h3>
+            </div>
+
+            <div class="steep-1-main-item-bottom px-3">
+              <p>
+                Estimated delivery date: 22/08/2022 | 17:00 Tashkent timezone
+              </p>
+              <span></span>
+            </div>
+
+            <div class="steep-1-main-item-bottom">
+              <h5>To</h5>
+              <h3>Tashkent, Uzb</h3>
             </div>
           </div>
         </div>
@@ -421,10 +457,10 @@
       </div>
     </div>
     <!-- STEEP-4 -->
-    <div class="track container-fluid">
+    <div id="steep-4"  class="track container-fluid">
       <div class="container">
         <div class="steep-1">
-          <div class="track-search">
+          <form class="track-search">
             <label for="search-id">Box id</label>
             <div class="track-search-input">
               <input
@@ -434,12 +470,12 @@
               />
               <button type="button" id="track-id">Track</button>
             </div>
-          </div>
-          
+          </form>
+
           <div class="steep-1-main">
             <span class="steep-1-main-line"></span>
             <div class="steep-1-main-item">
-              <span  class="active "></span>
+              <span class="active"></span>
               <div class="steep-1-main-item-text">
                 <h4>Pending</h4>
               </div>
@@ -463,30 +499,74 @@
               <span class="end active"> </span>
               <div class="steep-1-main-item-text">
                 <h4>Delivered</h4>
-                <p>Your parcel is delivered
-                  we are happy serving you!</p>
+                <p>Your parcel is delivered we are happy serving you!</p>
               </div>
+            </div>
+          </div>
+
+          <div class="steep-1-main align-items-end">
+            <div class="steep-1-main-item-bottom">
+              <h5>From</h5>
+              <h3>New York, US</h3>
+            </div>
+
+            <div class="steep-1-main-item-bottom px-3">
+              <p>
+                Estimated delivery date: 22/08/2022 | 17:00 Tashkent timezone
+              </p>
+              <span></span>
+            </div>
+
+            <div class="steep-1-main-item-bottom">
+              <h5>To</h5>
+              <h3>Tashkent, Uzb</h3>
             </div>
           </div>
         </div>
 
-        <div class="steep-1-bottom">
-          <div class="thead">
-            <p>Order ID</p>
-            <p>Box ID</p>
-            <p>Created date</p>
-            <p>Weight</p>
-            <p>Shipper city, state</p>
-            <p>Recipient city, state</p>
-          </div>
+        <div class="steep-4-bottom mb-3">
+          <ul>
+            <li class="m-0"><span class="line"></span></li>
+            <li>
+              <span class="item-dot"></span>
+              <p class="desc1">Created date:</p>
+              <p class="desc2">21/08/2022 | 17:43</p>
+              <p class="desc3">Brooklyn, NY</p>
+              <p class="desc4">
+                Created
+                <span>Stopped in enterance. Signature is not finished</span>
+              </p>
+            </li>
 
-          <div class="tbody">
-            <p>3456</p>
-            <p>1600</p>
-            <p>04/22/2022</p>
-            <p>2.2 lb / 1 kg</p>
-            <p>New York, US</p>
-            <p>Tashkent, Uzb</p>
+            <li>
+              <span class="item-dot"></span>
+              <p class="desc1">Sent date</p>
+              <p class="desc2">21/08/2022 | 17:43</p>
+              <p class="desc3">New Castle, DE</p>
+              <p class="desc4">Delivered by transportation type of FedEx</p>
+            </li>
+
+            <li>
+              <span class="item-dot"></span>
+              <p class="desc1">New Castle, DE</p>
+              <p class="desc2">21/08/2022 | 17:43</p>
+              <p class="desc3">Tashkent, Airport</p>
+              <p class="desc4">In the filial office of FedEx</p>
+            </li>
+
+            <li>
+              <span class="item-dot"></span>
+              <p class="desc1">Delivered date</p>
+              <p class="desc2">21/08/2022 | 17:43</p>
+              <p class="desc3">Tashket, Uzbekistan</p>
+              <p class="desc4">Parcel delivered to customer successfully</p>
+            </li>
+          </ul>
+        </div>
+        <div class="steep-4-bottom-img p-0">
+          <div>
+            <p>Signature</p>
+            <img src="../images/new/yuk-2.png" alt="" weight="72" height="75" />
           </div>
         </div>
       </div>
@@ -1047,4 +1127,60 @@
   <script src="/js/iframe_api.js"></script>
   <script src="/js/countdown.js"></script>
   <script src="/js/main.js"></script>
+  <script>
+    let searchInputs = document.querySelectorAll(".search-id");
+  let searchForms = document.querySelectorAll(".track-search");
+  let steep0 = document.querySelector("#steep-0");
+  let steep1 = document.querySelector("#steep-1");
+  let steep2 = document.querySelector("#steep-2");
+  let steep3 = document.querySelector("#steep-3");
+  let steep4 = document.querySelector("#steep-4");
+  
+  steep0.classList.remove("none");
+  steep1.classList.add("none");
+  steep2.classList.add("none");
+  steep3.classList.add("none");
+  steep4.classList.add("none");
+  console.log(steep1);
+  
+  for (item of searchForms) {
+    item.addEventListener("submit", (evt) => {
+      evt.preventDefault();
+      let inputValue = evt.srcElement[0].value;
+      if (inputValue == 1) {
+        steep0.classList.add("none");
+        steep2.classList.add("none");
+        steep3.classList.add("none");
+        steep4.classList.add("none");
+        steep1.classList.remove("none");
+      } else if (inputValue == 2) {
+        steep0.classList.add("none");
+        steep1.classList.add("none");
+        steep3.classList.add("none");
+        steep4.classList.add("none");
+        steep2.classList.remove("none");
+      } else if (inputValue == 3) {
+        steep0.classList.add("none");
+        steep1.classList.add("none");
+        steep3.classList.remove("none");
+        steep4.classList.add("none");
+        steep2.classList.add("none");
+      } else if (inputValue == 4) {
+        steep0.classList.add("none");
+        steep1.classList.add("none");
+        steep3.classList.add("none");
+        steep4.classList.remove("none");
+        steep2.classList.add("none");
+      } else if (inputValue == 0) {
+          steep0.classList.remove("none");
+          steep1.classList.add("none");
+          steep3.classList.add("none");
+          steep4.classList.add("none");
+          steep2.classList.add("none");
+        }
+    });
+  }
+
+
+  </script>
 </html>
