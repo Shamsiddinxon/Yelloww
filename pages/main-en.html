@@ -5,16 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Google Fonts CDN -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap"/>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap"
+    />
     <!-- Bootstrap Styles -->
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <!-- Custom Styles -->
     <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="../css/fontfase.css">
+    <link rel="stylesheet" href="../css/fontfase.css" />
     <!-- RemixIcon link -->
     <link rel="stylesheet" href="/fonts/remixicon.css" />
     <!-- Custom links -->
-    <link rel="stylesheet" href="/css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../test.css" />
     <title>Yellow - home page</title>
   </head>
   <body>
@@ -66,8 +70,14 @@
           <ul class="navbar-nav navbar-right">
             <li class="nav-item">
               <div class="nav-link nav-links">
-                <button class="search-button"><i class="ri-search-line"></i></button>
-                <input type="search" class="search-input" placeholder="search..">
+                <button class="search-button">
+                  <i class="ri-search-line"></i>
+                </button>
+                <input
+                  type="search"
+                  class="search-input"
+                  placeholder="search.."
+                />
               </div>
             </li>
             <li class="nav-item">
@@ -76,7 +86,6 @@
               ></a>
             </li>
             <li class="">
-
               <div class="lang-menu">
                 <div class="selected-lang">Eng</div>
 
@@ -96,78 +105,395 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-links btn-login" href="/profile/login.html">
+              <a
+                class="nav-link nav-links btn-login"
+                href="/profile/login.html"
+              >
                 <i class="ri-login-circle-line">&nbsp;</i>Войти
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-links btn-register" href="/profile/register.html">Регистрация</a>
+              <a
+                class="nav-link nav-links btn-register"
+                href="/profile/register.html"
+                >Регистрация</a
+              >
             </li>
           </ul>
         </div>
         <!-- navbar end -->
       </nav>
     </section>
-    <!-- Section Navbar End --> 
+    <!-- Section Navbar End -->
 
     <!-- Section Counter Start -->
-    <section id="counter"  class="container-fluid">
+    <section id="counter" class="container-fluid">
       <div class="counter container">
-          <div class="countdown-group">
-            <div class="countdown" data-date="28-02-2022" data-time="12:00">
-              <div class="day"><span class="num"></span><span class="word"></span></div>
-              <div class="hour"><span class="num"></span><span class="word"></span></div>
-              <div class="min"><span class="num"></span><span class="word"></span></div>
-              <div class="sec"><span class="num"></span><span class="word"></span></div>
+        <div class="countdown-group">
+          <div class="countdown" data-date="28-02-2022" data-time="12:00">
+            <div class="day">
+              <span class="num"></span><span class="word"></span>
             </div>
-            <h1 class="countdown-title">Time to send shipments to the UZB</h1>
-            <p class="countdown-text">Have time to ship, just a few days before the shipment arrives Place
-              your orders to the maximum, let us deliver quality delivery</p>
-            <button class="countdown-btn-send btn">Send a shipment</button>
-            <button class="countdown-btn-track btn">Track</button>
-          </div>
-      </div>
-    </section>
-    <!-- Section Slider Start -->
-    <!-- Section How it works Start -->
-    <section id="how" class="container-fluid">
-      <div class="how container">
-        <div class="how-row row">
-          <div class="col-md-7 p-md-0" style="border-radius: 10px !important;" >
-            <div class="video" style="border-radius: 10px;" data-video-id="30LEYoVoFpM">
-              <div class="video-layer">
-                <div class="video-placeholder"></div>
-              </div>
-              <div class="video-preview">
-                <img src="/images/how_section.png" alt="video"/>
-                <svg viewBox="0 0 74 74">
-                  <circle style="opacity:0.64;stroke:#FFFFFF" cx="37" cy="37" r="36.5"></circle>
-                  <circle fill="none" stroke="#FFFFFF" cx="37" cy="37" r="36.5"></circle>
-                  <polygon fill="#FFFFFF" points="33,22 33,52 48,37"></polygon>
-                </svg>
-                <div class="video-preview-line"></div>
-                <div class="video-preview-overlay"></div>
-              </div>
+            <div class="hour">
+              <span class="num"></span><span class="word"></span>
+            </div>
+            <div class="min">
+              <span class="num"></span><span class="word"></span>
+            </div>
+            <div class="sec">
+              <span class="num"></span><span class="word"></span>
             </div>
           </div>
-          <div class="col p-3" style="margin-left: 24px;">
-            <h1 class="how-title">Как это работает?</h1>
-            <p class="how-text">
-              Выполните четыре простых шага, чтобыполучить покупку из США
-              Наверняка все,кто знает о существовании мануфактуры ETA S.A уже
-              знают о таком механизме, как ETA 2824. Этот часовой механизм
-              получил широкое распространение почти во всех ценовых катего-
-              риях. Используется, как в базовом варианте так и доработанный
-              различными усложнениями
-            </p>
-            <a class="btn how-btn" href="#"
-              >Узнать больше <i class="ri-arrow-right-line"></i
-            ></a>
-          </div>
+          <h1 class="countdown-title">Time to send shipments to the UZB</h1>
+          <p class="countdown-text">
+            Have time to ship, just a few days before the shipment arrives Place
+            your orders to the maximum, let us deliver quality delivery
+          </p>
+          <button class="countdown-btn-send btn">Send a shipment</button>
+          <button class="countdown-btn-track btn">Track</button>
         </div>
       </div>
     </section>
-    <!-- Section How it works End -->
+    <!-- Section Slider Start -->
+
+    <!-- Section Track id works Start -->
+
+    <!-- STEEP-0 -->
+    <div class="track container-fluid mb-370">
+      <div class="container">
+        <div class="steep-0">
+          <div class="track-search">
+            <label for="search-id">Box id</label>
+            <div class="track-search-input">
+              <input
+                type="text"
+                id="search-id"
+                placeholder="Enter your Box ID here"
+              />
+              <button type="button" id="track-id">Track</button>
+            </div>
+          </div>
+
+          <div class="track-search-help">
+            <button class="">MULTIPLE TRACKING NUMBERS</button>
+            <a href="#">NEED HELP?</a>
+          </div>
+
+          <div class="steep-0-bottom">
+            <h3>Identify where your parcel is?</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- STEEP-1 -->
+    <div class="track container-fluid">
+      <div class="container">
+        <div class="steep-1">
+          <div class="track-search">
+            <label for="search-id">Box id</label>
+            <div class="track-search-input">
+              <input
+                type="text"
+                id="search-id"
+                placeholder="Enter your Box ID here"
+              />
+              <button type="button" id="track-id">Track</button>
+            </div>
+          </div>
+          
+          <div class="steep-1-main">
+            <span class="steep-1-main-line"></span>
+            <div class="steep-1-main-item">
+              <span class="active wh-55"></span>
+              <div class="steep-1-main-item-text">
+                <h4>Pending</h4>
+                <p>Shipment information sent to Yellow</p>
+              </div>
+            </div>
+
+            <div class="steep-1-main-item">
+              <span></span>
+              <div class="steep-1-main-item-text">
+                <h4>Sent</h4>
+              </div>
+            </div>
+
+            <div class="steep-1-main-item">
+              <span> </span>
+              <div class="steep-1-main-item-text">
+                <h4>In customs</h4>
+              </div>
+            </div>
+
+            <div class="steep-1-main-item">
+              <span> </span>
+              <div class="steep-1-main-item-text">
+                <h4>Delivered</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="steep-1-bottom">
+          <div class="thead">
+            <p>Order ID</p>
+            <p>Box ID</p>
+            <p>Created date</p>
+            <p>Weight</p>
+            <p>Shipper city, state</p>
+            <p>Recipient city, state</p>
+          </div>
+
+          <div class="tbody">
+            <p>3456</p>
+            <p>1600</p>
+            <p>04/22/2022</p>
+            <p>2.2 lb / 1 kg</p>
+            <p>New York, US</p>
+            <p>Tashkent, Uzb</p>
+          </div>
+
+          <!-- <table style="width: 100%;">
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Order ID</th>
+                <th>Order ID</th>
+                <th>Order ID</th>
+                <th>Order ID</th>
+                <th>Order ID</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>04/22/2022</th>
+                <th>04/22/2022</th>
+                <th>04/22/2022</th>
+                <th>04/22/2022</th>
+                <th>04/22/2022</th>
+                <th>04/22/2022</th>
+              </tr>
+            </tbody>
+          </table> -->
+        </div>
+      </div>
+    </div>
+    <!-- STEEP-2 -->
+    <div class="track container-fluid">
+      <div class="container">
+        <div class="steep-1">
+          <div class="track-search">
+            <label for="search-id">Box id</label>
+            <div class="track-search-input">
+              <input
+                type="text"
+                id="search-id"
+                placeholder="Enter your Box ID here"
+              />
+              <button type="button" id="track-id">Track</button>
+            </div>
+          </div>
+          
+          <div class="steep-1-main">
+            <span class="steep-1-main-line"></span>
+            <div class="steep-1-main-item">
+              <span  class="active"></span>
+              <div class="steep-1-main-item-text">
+                <h4>Pending</h4>
+              </div>
+            </div>
+
+            <div class="steep-1-main-item">
+              <span class="active wh-55"></span>
+              <div class="steep-1-main-item-text">
+                <h4>Sent</h4>
+                <p>On Yellow Airline to
+                  deliver Tashkent.</p>
+              </div>
+            </div>
+
+            <div class="steep-1-main-item">
+              <span> </span>
+              <div class="steep-1-main-item-text">
+                <h4>In customs</h4>
+              </div>
+            </div>
+
+            <div class="steep-1-main-item">
+              <span> </span>
+              <div class="steep-1-main-item-text">
+                <h4>Delivered</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="steep-1-bottom">
+          <div class="thead">
+            <p>Order ID</p>
+            <p>Box ID</p>
+            <p>Created date</p>
+            <p>Weight</p>
+            <p>Shipper city, state</p>
+            <p>Recipient city, state</p>
+          </div>
+
+          <div class="tbody">
+            <p>3456</p>
+            <p>1600</p>
+            <p>04/22/2022</p>
+            <p>2.2 lb / 1 kg</p>
+            <p>New York, US</p>
+            <p>Tashkent, Uzb</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- STEEP-3 -->
+    <div class="track container-fluid">
+      <div class="container">
+        <div class="steep-1">
+          <div class="track-search">
+            <label for="search-id">Box id</label>
+            <div class="track-search-input">
+              <input
+                type="text"
+                id="search-id"
+                placeholder="Enter your Box ID here"
+              />
+              <button type="button" id="track-id">Track</button>
+            </div>
+          </div>
+          
+          <div class="steep-1-main">
+            <span class="steep-1-main-line"></span>
+            <div class="steep-1-main-item">
+              <span  class="active"></span>
+              <div class="steep-1-main-item-text">
+                <h4>Pending</h4>
+              </div>
+            </div>
+
+            <div class="steep-1-main-item">
+              <span class="active"></span>
+              <div class="steep-1-main-item-text">
+                <h4>Sent</h4>
+              </div>
+            </div>
+
+            <div class="steep-1-main-item">
+              <span class="active wh-55"> </span>
+              <div class="steep-1-main-item-text">
+                <h4>In customs</h4>
+                <p>Your parcel is in the
+                  In custom </p>
+              </div>
+            </div>
+
+            <div class="steep-1-main-item">
+              <span> </span>
+              <div class="steep-1-main-item-text">
+                <h4>Delivered</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="steep-1-bottom">
+          <div class="thead">
+            <p>Order ID</p>
+            <p>Box ID</p>
+            <p>Created date</p>
+            <p>Weight</p>
+            <p>Shipper city, state</p>
+            <p>Recipient city, state</p>
+          </div>
+
+          <div class="tbody">
+            <p>3456</p>
+            <p>1600</p>
+            <p>04/22/2022</p>
+            <p>2.2 lb / 1 kg</p>
+            <p>New York, US</p>
+            <p>Tashkent, Uzb</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- STEEP-4 -->
+    <div class="track container-fluid">
+      <div class="container">
+        <div class="steep-1">
+          <div class="track-search">
+            <label for="search-id">Box id</label>
+            <div class="track-search-input">
+              <input
+                type="text"
+                id="search-id"
+                placeholder="Enter your Box ID here"
+              />
+              <button type="button" id="track-id">Track</button>
+            </div>
+          </div>
+          
+          <div class="steep-1-main">
+            <span class="steep-1-main-line"></span>
+            <div class="steep-1-main-item">
+              <span  class="active "></span>
+              <div class="steep-1-main-item-text">
+                <h4>Pending</h4>
+              </div>
+            </div>
+
+            <div class="steep-1-main-item">
+              <span class="active"></span>
+              <div class="steep-1-main-item-text">
+                <h4>Sent</h4>
+              </div>
+            </div>
+
+            <div class="steep-1-main-item">
+              <span class="active"> </span>
+              <div class="steep-1-main-item-text">
+                <h4>In customs</h4>
+              </div>
+            </div>
+
+            <div class="steep-1-main-item">
+              <span class="end active"> </span>
+              <div class="steep-1-main-item-text">
+                <h4>Delivered</h4>
+                <p>Your parcel is delivered
+                  we are happy serving you!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="steep-1-bottom">
+          <div class="thead">
+            <p>Order ID</p>
+            <p>Box ID</p>
+            <p>Created date</p>
+            <p>Weight</p>
+            <p>Shipper city, state</p>
+            <p>Recipient city, state</p>
+          </div>
+
+          <div class="tbody">
+            <p>3456</p>
+            <p>1600</p>
+            <p>04/22/2022</p>
+            <p>2.2 lb / 1 kg</p>
+            <p>New York, US</p>
+            <p>Tashkent, Uzb</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section Track id works End -->
+
     <!-- Section Chance Start -->
     <section id="chance" class="container-fluid">
       <div class="chance container">
@@ -187,9 +513,12 @@
           </div>
           <div class="chance-item">
             <img class="chance-icon" src="/images/how_icon_6.png" alt="" />
-            <h1 class="chance-title">Воздушные и морские перевозки экспеди-торские услуги</h1>
+            <h1 class="chance-title">
+              Воздушные и морские перевозки экспеди-торские услуги
+            </h1>
           </div>
         </div>
+      </div>
     </section>
     <!-- Section Chance End -->
 
@@ -220,10 +549,21 @@
                 <div class="video-placeholder"></div>
               </div>
               <div class="video-preview">
-                <img src="/images/about_us.png" alt="video"/>
+                <img src="/images/about_us.png" alt="video" />
                 <svg viewBox="0 0 74 74">
-                  <circle style="opacity:0.64;stroke:#FFFFFF" cx="37" cy="37" r="36.5"></circle>
-                  <circle fill="none" stroke="#FFFFFF" cx="37" cy="37" r="36.5"></circle>
+                  <circle
+                    style="opacity: 0.64; stroke: #ffffff"
+                    cx="37"
+                    cy="37"
+                    r="36.5"
+                  ></circle>
+                  <circle
+                    fill="none"
+                    stroke="#FFFFFF"
+                    cx="37"
+                    cy="37"
+                    r="36.5"
+                  ></circle>
                   <polygon fill="#FFFFFF" points="33,22 33,52 48,37"></polygon>
                 </svg>
                 <div class="video-preview-line"></div>
@@ -289,7 +629,7 @@
       </div>
     </section>
     <!-- Section Statistics End-->
-    
+
     <!-- Section GreenPart Start -->
     <section id="environment" class="container-fluid">
       <div class="environment container">
@@ -301,10 +641,21 @@
                 <div class="video-placeholder"></div>
               </div>
               <div class="video-preview">
-                <img src="/images/environment_image.png" alt="video"/>
+                <img src="/images/environment_image.png" alt="video" />
                 <svg viewBox="0 0 74 74">
-                  <circle style="opacity:0.64;stroke:#FFFFFF" cx="37" cy="37" r="36.5"></circle>
-                  <circle fill="none" stroke="#FFFFFF" cx="37" cy="37" r="36.5"></circle>
+                  <circle
+                    style="opacity: 0.64; stroke: #ffffff"
+                    cx="37"
+                    cy="37"
+                    r="36.5"
+                  ></circle>
+                  <circle
+                    fill="none"
+                    stroke="#FFFFFF"
+                    cx="37"
+                    cy="37"
+                    r="36.5"
+                  ></circle>
                   <polygon fill="#FFFFFF" points="33,22 33,52 48,37"></polygon>
                 </svg>
                 <div class="video-preview-line"></div>
@@ -312,29 +663,32 @@
               </div>
             </div>
           </div>
-          <div class="col p-3" style="margin-left: 24px;">
+          <div class="col p-3" style="margin-left: 24px">
             <h1 class="environment-title mb-3">Перерабатывать коробки</h1>
             <p class="environment-text">
-              Наша компания стремится не наносить вред окружающей среде и использует продукцию,
-              которая может быть использована для разнообразной переработки, например, бумажные коробки и тому подобное,
-              а также ежегодно выделяет за свой счет средства на очистку атмосферы. 
-              создает условия для чистого отопления. Наша компания строго придерживается здорового образа жизни
+              Наша компания стремится не наносить вред окружающей среде и
+              использует продукцию, которая может быть использована для
+              разнообразной переработки, например, бумажные коробки и тому
+              подобное, а также ежегодно выделяет за свой счет средства на
+              очистку атмосферы. создает условия для чистого отопления. Наша
+              компания строго придерживается здорового образа жизни
             </p>
-            <a class="environment-btn btn" href="#">Узнать больше <i class="ri-arrow-right-line"></i
+            <a class="environment-btn btn" href="#"
+              >Узнать больше <i class="ri-arrow-right-line"></i
             ></a>
           </div>
         </div>
       </div>
     </section>
     <!-- Section GreenPart End  -->
-   
+
     <!-- Section Calculator Start -->
     <section id="calculator" class="container-fluid">
       <div class="calculator container">
         <h1 class="calculator-section-title">Калкулятор</h1>
         <div class="calculator-row row">
           <div class="calculator-item">
-            <div class="row" style="margin-right: 11px;">
+            <div class="row" style="margin-right: 11px">
               <div class="col-6">
                 <label for="inputFrom" class="form-label">Откуда?</label>
                 <input
@@ -380,8 +734,16 @@
           </div>
           <div class="calculator-item">
             <div class="row">
-              <div class="col-12 d-flex align-items-center" style="margin-top: 30px;">
-                <input class="form-check-input mr-1" type="checkbox" value="" id="formCheckCalc">
+              <div
+                class="col-12 d-flex align-items-center"
+                style="margin-top: 30px"
+              >
+                <input
+                  class="form-check-input mr-1"
+                  type="checkbox"
+                  value=""
+                  id="formCheckCalc"
+                />
                 <label class="form-check-label" for="formCheckCalc">
                   Расчет стаимости даставки крупногабартных посылок
                 </label>
@@ -438,15 +800,23 @@
         <div class="help-row row">
           <div class="help-left-col col-md-7">
             <h1 class="help-title">Нужна помощь в покупке?</h1>
-            <p class="help-text">Затрудняетесь с покупкой в интернет магазине? Магазин не принимает
-              вашу платежную карту? Мы вам поможем!  
-              Оформите заказ услуги Помощь в покупке, указав ссылки на нужные вам товары.
-              Всего за 10% мы произведем их покупку и прогарантируем, что вы получите
-              именно то, что заказали!</p>
-              <a class="help-btn btn" href="/pages/help-shop.html">Подробнее об услуге</a>
+            <p class="help-text">
+              Затрудняетесь с покупкой в интернет магазине? Магазин не принимает
+              вашу платежную карту? Мы вам поможем! Оформите заказ услуги Помощь
+              в покупке, указав ссылки на нужные вам товары. Всего за 10% мы
+              произведем их покупку и прогарантируем, что вы получите именно то,
+              что заказали!
+            </p>
+            <a class="help-btn btn" href="/pages/help-shop.html"
+              >Подробнее об услуге</a
+            >
           </div>
           <div class="help-right-col col">
-            <img class="help-image" src="/images/extra_service.png" alt="help">
+            <img
+              class="help-image"
+              src="/images/extra_service.png"
+              alt="help"
+            />
           </div>
         </div>
       </div>
@@ -469,11 +839,21 @@
       <div class="partners-group">
         <div class="partners-group-swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="/images/partner_1.png" alt="partner" /></div>
-            <div class="swiper-slide"><img src="/images/partner_2.png" alt="partner" /></div>
-            <div class="swiper-slide"><img src="/images/partner_3.png" alt="partner" /></div>
-            <div class="swiper-slide"><img src="/images/partner_5.png" alt="partner" /></div>
-            <div class="swiper-slide"><img src="/images/partner_6.png" alt="partner" /></div>
+            <div class="swiper-slide">
+              <img src="/images/partner_1.png" alt="partner" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/partner_2.png" alt="partner" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/partner_3.png" alt="partner" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/partner_5.png" alt="partner" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/partner_6.png" alt="partner" />
+            </div>
           </div>
         </div>
       </div>
@@ -502,7 +882,11 @@
               пользовался разными компаниями но Turon Express оказалась лучшей!
               Их главное качество это скорость и аккуратность
             </p>
-            <img class="comment-avatar" src="/images/comments_user_1.png" alt="user1" />
+            <img
+              class="comment-avatar"
+              src="/images/comments_user_1.png"
+              alt="user1"
+            />
             <div class="comment-user-info">
               <h3 class="comment-user-name">Lydia Geidt</h3>
               <span class="comment-created-at">16:31 am </span>
@@ -515,7 +899,11 @@
               пользовался разными компаниями но Turon Express оказалась лучшей!
               Их главное качество это скорость и аккуратность
             </p>
-            <img class="comment-avatar" src="/images/comments_user_2.png" alt="user1" />
+            <img
+              class="comment-avatar"
+              src="/images/comments_user_2.png"
+              alt="user1"
+            />
             <div class="comment-user-info">
               <h3 class="comment-user-name">Lydia Geidt</h3>
               <span class="comment-created-at">16:31 am </span>
@@ -528,7 +916,11 @@
               пользовался разными компаниями но Turon Express оказалась лучшей!
               Их главное качество это скорость и аккуратность
             </p>
-            <img class="comment-avatar" src="/images/comments_user_3.png" alt="user1" />
+            <img
+              class="comment-avatar"
+              src="/images/comments_user_3.png"
+              alt="user1"
+            />
             <div class="comment-user-info">
               <h3 class="comment-user-name">Lydia Geidt</h3>
               <span class="comment-created-at">16:31 am </span>
@@ -541,7 +933,11 @@
               пользовался разными компаниями но Turon Express оказалась лучшей!
               Их главное качество это скорость и аккуратность
             </p>
-            <img class="comment-avatar" src="/images/comments_user_1.png" alt="user1" />
+            <img
+              class="comment-avatar"
+              src="/images/comments_user_1.png"
+              alt="user1"
+            />
             <div class="comment-user-info">
               <h3 class="comment-user-name">Lydia Geidt</h3>
               <span class="comment-created-at">16:31 am </span>
@@ -578,10 +974,18 @@
             <div class="footer-socials">
               <h1 class="footer-title">Follow yellow</h1>
               <ul>
-                <li><a href="#"><i class="ri-telegram-fill"></i></a></li>
-                <li><a href="#"><i class="ri-facebook-circle-fill"></i></a></li>
-                <li><a href="#"><i class="ri-instagram-fill"></i></a></li>
-                <li><a href="#"><i class="ri-twitter-fill"></i></a></li>
+                <li>
+                  <a href="#"><i class="ri-telegram-fill"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="ri-instagram-fill"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="ri-twitter-fill"></i></a>
+                </li>
               </ul>
             </div>
           </div>
@@ -643,5 +1047,4 @@
   <script src="/js/iframe_api.js"></script>
   <script src="/js/countdown.js"></script>
   <script src="/js/main.js"></script>
-  
 </html>

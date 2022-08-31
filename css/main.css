@@ -240,6 +240,292 @@
   position: relative;
   top: 3px;
 }
+/* Section HowItWorks End */
+
+/* Section Track id Start */
+.track {
+  position: relative;
+  margin-top: 60px;
+  padding: 60px 0;
+  background-color: #f4f4f4;
+}
+
+.mb-370 {
+  margin-bottom: 370px;
+}
+
+.track-search,
+.steep-0,
+.track-search-help {
+  max-width: 618px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.steep-0 {
+  max-width: 957px;
+  position: relative;
+}
+
+.track-search-input {
+  position: relative;
+}
+
+.track-search label[for="search-id"] {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin-left: 5px !important;
+  margin-bottom: 9px;
+}
+
+.track-search-input input {
+  height: 55px !important;
+  border: none;
+  background-color: #fff;
+  max-width: 618px;
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px 24px;
+}
+
+.track-search-input input:focus {
+  border-color: #fff !important;
+}
+
+.track-search-input button {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  height: 47px !important;
+  padding: 10px 40px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  background: #e8c305;
+  transition: 0.3s;
+  border: none;
+  border-radius: 8px;
+}
+
+.track-search-input button:hover {
+  opacity: 0.8;
+}
+
+.track-search-help {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  margin-bottom: 300px;
+}
+
+.track-search-help button,
+.track-search-help a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  border: none;
+  text-decoration: none;
+  color: #121212;
+  background: #f4f4f4;
+}
+
+.steep-0-bottom {
+  position: absolute;
+  top: 250px;
+  margin: 0 auto;
+  width: 100%;
+  background-image: url(../images/new/trac-id-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  height: 544px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.steep-0-bottom h3 {
+  max-width: 540px;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 68px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+/*  steep - 2 */
+.steep-1-main {
+  position: relative;
+  max-width: 966px;
+  margin: 0 auto;
+  margin-bottom: 129px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.steep-1-main-line {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  top: 27px;
+  height: 2px;
+  background: #d6d6d6;
+}
+
+.steep-1-main-item,
+.steep-1-main-item-bottom {
+  position: relative;
+}
+
+.steep-1-main-item-text {
+  width: 105px;
+  position: absolute;
+  left: auto;
+  right: auto;
+}
+
+.steep-1-main-item-text p {
+  width: 150px;
+}
+
+.steep-1-main-item span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-top: 0px;
+  color: #000000;
+  background: #d6d6d6;
+  border-radius: 50%;
+}
+
+.steep-1-main-item span.active {
+  display: inline-block;
+  color: #000000;
+  background: #e8c305;
+  background-image: url(../images/new/strelka.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 24px 24px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 12px rgba(232, 195, 5, 0.2);
+}
+
+.steep-1-main-item .end.active {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  margin: 0;
+  color: #000000;
+  background: #09BB3B;
+  background-image: url(../images/new/frichka-track.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 24px 24px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 12px rgba(232, 195, 5, 0.2);
+}
+
+.steep-1-main-item h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #121212;
+}
+
+.steep-1-main-item p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+}
+
+.steep-1-main-item-bottom span {
+  position: absolute;
+  display: inline-block;
+  background: #d6d6d6;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.steep-1-main-item-bottom h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0;
+}
+
+.steep-1-main-item-bottom h5 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.steep-1-main-item-bottom p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #828282;
+  margin: 0;
+}
+
+/* .steep-1-bottom th {
+  max-width: 134px;
+}
+
+.steep-1-bottom thead {
+  padding: 5px;
+  background: #828282;
+} */
+
+.steep-1-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 20px 0;
+}
+
+.steep-1-bottom div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.steep-1-bottom .thead {
+  padding: 19px 25px;
+  background: #f4f4f4;
+  border-radius: 10px;
+}
+
+.steep-1-bottom .tbody {
+  padding: 30px 25px;
+}
+
+.steep-1-bottom .thead p {
+  margin: 0;
+  width: 134px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.steep-1-bottom .tbody p {
+  margin: 0;
+  width: 134px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+/* Section Track id End */
 
 /* Section Chance Start */
 .chance {
@@ -272,9 +558,7 @@
 .chance .chance-title {
   display: inline-block;
   font-size: 18px;
-  /* font-weight: 600; */
   font-weight: 500;
-  /* font-size: 24px; */
   line-height: 29px;
 
   color: #121212;
@@ -808,7 +1092,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .footer-item p,
-.footer-row p{
+.footer-row p {
   margin-bottom: 50px;
   font-weight: 400;
   font-size: 16px;
@@ -822,8 +1106,6 @@ input[type="range"]::-webkit-slider-thumb {
   font-size: 16px;
   line-height: 145%;
 }
-
-
 
 .footer .footer-title {
   font-weight: 600;
@@ -1460,7 +1742,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 .contacts .contacts-form .contacts-form-btn {
   height: 50px;
-  border-radius:10px;
+  border-radius: 10px;
   font-weight: 600;
   padding: 10px 50px;
   color: #000000;
@@ -3179,4 +3461,9 @@ span .coutry-select {
 
 .navbar {
   position: static;
+}
+
+span.wh-55 {
+  width: 55px;
+  height: 55px;
 }
