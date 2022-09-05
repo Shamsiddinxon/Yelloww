@@ -2685,8 +2685,9 @@ input.register-number-input {
 }
 
 .photo .modal-content {
-  max-width: 720px;
+  max-width: 730px;
   border-radius: 15px;
+  padding: 10px;
 }
 
 .modal-body.photo {
@@ -2694,7 +2695,7 @@ input.register-number-input {
 }
 
 .modal-body.photo ul {
-  width: 700px;
+width: 700px;
   margin: 0 auto;
   padding: 0;
   padding: 35px 15px;
@@ -2742,6 +2743,7 @@ input.register-number-input {
 
 .offers .modal-list {
   max-width: 720px;
+  width: 100%;
   font-size: 48px;
   display: grid;
   grid-template-columns: auto auto;
@@ -2889,7 +2891,7 @@ input.register-number-input {
 }
 
 .modal-content {
-  padding: 30px;
+  padding: 15px;
 }
 
 /* Calullator & All Inputs */
