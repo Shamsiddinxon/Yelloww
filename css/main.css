@@ -955,7 +955,6 @@ input[type="range"]::-webkit-slider-thumb {
   margin-top: 30px;
 }
 
-
 /* Section Help Start */
 .help {
   background: #f4f4f4;
@@ -3017,7 +3016,7 @@ span .coutry-select {
   }
 
   /* Section Calculator Start */
-  #calculator{
+  #calculator {
     padding: 0 20px;
   }
   .calculator {
@@ -3026,9 +3025,13 @@ span .coutry-select {
   .calculator .calculator-row {
     grid-template-columns: 100%;
     padding: 10px 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
   .calculator .calculator-total-amount {
     padding: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
   .calculator .calculator-total-amount .calc-title {
     font-size: 14px;
@@ -3046,8 +3049,6 @@ span .coutry-select {
     padding: 20px;
     font-size: 18px;
   }
-
-
 
   /* Calculator labels */
   label[for="inputFrom"],
@@ -3076,7 +3077,7 @@ span .coutry-select {
   .row div .bottom,
   .calculator-item .row .col-sm-3,
   /* .calculator-item .row .col-9, */
-  .calculator-item .row .col-9, .calculator-item .row .col-3  {
+  .calculator-item .row .col-9, .calculator-item .row .col-3 {
     margin-top: 15px !important;
   }
 
@@ -3176,6 +3177,7 @@ span .coutry-select {
   .counter {
     background-image: none;
     height: 400px;
+    border-radius: 0px;
   }
   .countdown-group .countdown {
     font-size: 30px;
@@ -3184,6 +3186,18 @@ span .coutry-select {
     font-weight: 400;
     font-size: 14px;
     color: #9a7000;
+  }
+  .countdown-group .countdown div {
+    padding: 10px;
+  }
+  .countdown-group .countdown .px-0 {
+    margin-top: 19px;
+    font-weight: 800;
+    font-size: 30px;
+  }
+
+  .countdown-group .countdown-btn-send {
+    height: 45px;
   }
   .countdown .day,
   .countdown .hour,
@@ -3356,6 +3370,33 @@ span .coutry-select {
     left: -10px;
   }
 
+  /*   Main En Section   */
+  .counter {
+    background-position: 60px, 76px, 0 0;
+    background-size: 8px 100%, 8px 100%, 0, 0;
+  }
+
+  .countdown .day .num,
+  .countdown .hour .num,
+  .countdown .min .num,
+  .countdown .sec .num {
+    display: block;
+    font-size: 45px;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 73px;
+  }
+
+  .countdown-group .countdown .px-0 {
+    margin-top: 9px;
+    font-weight: 800;
+    font-size: 45px;
+  }
+
+  .counter {
+    /* background-image: none; */
+    height: 400px;
+  }
 
   /* Section Calculator Start */
   .calculator {
@@ -3411,7 +3452,6 @@ span .coutry-select {
     border-radius: 5px;
     padding: 10px 10px;
   }
-
 
   /* Section Slider Start */
   .swiper {
@@ -3487,66 +3527,178 @@ span .coutry-select {
   }
 }
 
+@media only screen and (max-width: 991.98px) {
+  .steep-0-bottom {
+    height: 400px;
+    top: 236px;
+  }
+  .steep-0-bottom h3 {
+    max-width: 403px;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+  .track-search-help {
+    margin-bottom: 214px;
+  }
+  .mb-370 {
+    margin-bottom: 270px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .steep-0-bottom {
+    height: 295px;
+    top: 236px;
+  }
+  .steep-0-bottom h3 {
+    max-width: 378px;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 27px;
+  }
+  .track-search-help {
+    margin-bottom: 154px;
+  }
+  .mb-370 {
+    margin-bottom: 220px;
+  }
+
+  .track-search-help button,
+  .track-search-help a {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .steep-0-bottom h3 {
+    max-width: 190px;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 27px;
+  }
+  .track-search-help button,
+  .track-search-help a {
+    font-size: 14px;
+  }
+  .track {
+    padding: 40px 0;
+  }
+  .track-search label[for="search-id"] {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .steep-0-bottom {
+    height: 247px;
+    top: 190px;
+  }
+  .track-search, .steep-0{
+    margin-bottom: 25px;
+  }
+  .steep-0-bottom h3 {
+    max-width: 190px;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 27px;
+  }
+
+  .mb-370 {
+    margin-bottom: 150px;
+  }
+  .track-search-help button,
+  .track-search-help a {
+    font-size: 14px;
+  }
+
+  .track-search label[for="search-id"] {
+    font-size: 14px;
+  }
+}
+
+
 @media (min-width: 768px) and (max-width: 991.98px) {
   /**************************************************
             Page Main Media-Large Start 
 ***************************************************/
 
-/* Section Calculator Start */
-.calculator {
-  margin-top: 50px;
-}
-.calculator .calculator-row {
-  grid-template-columns: 100%;
-  padding: 10px 0px;
-}
-.calculator .calculator-total-amount {
-  padding: 5px;
-}
-.calculator .calculator-total-amount .calc-title {
-  font-size: 14px;
-}
-.calculator .calculator-total-amount .calc-amount {
-  font-size: 14px;
-}
-.calculator .calculator-section-title {
-  font-weight: 800;
-  font-size: 24px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-.calculator .calculator-row .calculator-item {
-  padding: 20px ;
-  font-size: 18px;
-}
+  /*   Main En Section   */
+  .countdown .day .num,
+  .countdown .hour .num,
+  .countdown .min .num,
+  .countdown .sec .num {
+    display: block;
+    font-size: 45px;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 73px;
+  }
 
-/* Calculator labels */
-label[for="inputFrom"],
-label[for="inputTo"],
-label[for="formCheckCalc"],
-label[for="inputLength"],
-label[for="inputWidth"],
-label[for="inputHeight"],
-label[for="inputMeasurement"] {
-  font-size: 12px;
-  margin-left: 0;
-}
+  .countdown-group .countdown {
+    /* margin-top: 40px; */
+    font-weight: 800;
+    font-size: 45px;
+  }
 
-/* Calullator & All Inputs */
-input[type="text"],
-input[type="email"],
-input[type="search"],
-textarea,
-select {
-  font-size: 14px;
-  border-radius: 5px;
-  padding: 10px 10px;
-}
+  .counter {
+    background-position: 60px, 76px, 15% 13%, 92% 8%;
+    background-size: 8px 100%, 8px 100%, 150px auto, 150px auto;
+  }
 
-.form-check-input {
-  margin-right: 8px !important;
-}
+  /* Section Calculator Start */
+  .calculator {
+    margin-top: 50px;
+  }
+  .calculator .calculator-row {
+    grid-template-columns: 100%;
+    padding: 10px 0px;
+  }
+  .calculator .calculator-total-amount {
+    padding: 5px;
+  }
+  .calculator .calculator-total-amount .calc-title {
+    font-size: 14px;
+  }
+  .calculator .calculator-total-amount .calc-amount {
+    font-size: 14px;
+  }
+  .calculator .calculator-section-title {
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .calculator .calculator-row .calculator-item {
+    padding: 20px;
+    font-size: 18px;
+  }
 
+  /* Calculator labels */
+  label[for="inputFrom"],
+  label[for="inputTo"],
+  label[for="formCheckCalc"],
+  label[for="inputLength"],
+  label[for="inputWidth"],
+  label[for="inputHeight"],
+  label[for="inputMeasurement"] {
+    font-size: 12px;
+    margin-left: 0;
+  }
+
+  /* Calullator & All Inputs */
+  input[type="text"],
+  input[type="email"],
+  input[type="search"],
+  textarea,
+  select {
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 10px 10px;
+  }
+
+  .form-check-input {
+    margin-right: 8px !important;
+  }
 
   .footer {
     padding: 35px 15px;
@@ -3746,8 +3898,7 @@ select {
   border-radius: 8px;
   padding: 10px 10px;
 }
-.calculator-m
-.calculator-m input[type="text"],
+.calculator-m .calculator-m input[type="text"],
 .calculator-m input[type="email"],
 .calculator-m input[type="search"],
 .number-input,
