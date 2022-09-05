@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -48,9 +48,9 @@
             <li class="nav-item">
               <a class="nav-link" href="shop.html">Магазины</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="about-us.html">О нас</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Контакты</a>
             </li>
@@ -75,11 +75,11 @@
           </ul>
           <!-- navbar-right -->
           <ul class="navbar-nav navbar-right">
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#"
                 ><i class="ri-calculator-line"></i
               ></a>
-            </li>
+            </li> -->
 
             <li>
               <div class="lang-menu">
@@ -474,7 +474,7 @@
         <h1 class="calculator-section-title">Калкулятор</h1>
         <div class="calculator-row row">
           <div class="calculator-item">
-            <div class="row g-3">
+            <div class="row mr-lg-2">
               <div class="col-6">
                 <label for="inputFrom" class="form-label">Откуда?</label>
                 <input
@@ -493,7 +493,7 @@
                   value="Ташкент"
                 />
               </div>
-              <div class="col-9">
+              <div class="col-9 bottom">
                 <input
                   type="text"
                   class="form-control"
@@ -509,7 +509,7 @@
                   oninput="this.previousElementSibling.value = this.value +' кг'"
                 />
               </div>
-              <div class="col-3">
+              <div class="col-3 bottom">
                 <select id="inputCurrency" class="calc-select">
                   <option value="rub" selected>Руб</option>
                   <option value="usd">Usd</option>
@@ -519,8 +519,11 @@
             </div>
           </div>
           <div class="calculator-item">
-            <div class="row g-3">
-              <div class="col-12 mb-4">
+            <div class="row">
+              <div
+                class="col-12 d-flex align-items-center gap-1"
+                style="margin-top: 30px"
+              >
                 <input
                   class="form-check-input"
                   type="checkbox"
@@ -531,7 +534,7 @@
                   Расчет стаимости даставки крупногабартных посылок
                 </label>
               </div>
-              <div class="col-3">
+              <div class="col-sm-3 col-6">
                 <label for="inputLength" class="form-label">Длина</label>
                 <input
                   type="text"
@@ -540,7 +543,7 @@
                   value="0"
                 />
               </div>
-              <div class="col-3">
+              <div class="col-sm-3 col-6">
                 <label for="inputWidth" class="form-label">Ширина</label>
                 <input
                   type="text"
@@ -549,7 +552,7 @@
                   value="0"
                 />
               </div>
-              <div class="col-3">
+              <div class="col-sm-3 col-6">
                 <label for="inputHeight" class="form-label">Высота</label>
                 <input
                   type="text"
@@ -558,7 +561,7 @@
                   value="0"
                 />
               </div>
-              <div class="col-3">
+              <div class="col-sm-3 col-6">
                 <label for="inputMeasurement" class="form-label">&nbsp;</label>
                 <select id="inputMeasurement" class="calc-select">
                   <option value="sm" selected>см</option>
@@ -576,6 +579,7 @@
       </div>
     </section>
     <!-- Section Calculator End -->
+
 
     <!-- Section Help Start -->
     <section id="help" class="container-fluid">

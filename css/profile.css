@@ -1871,34 +1871,21 @@ table thead th p {
 .login-content .content-left,
 .register-content .content-left {
   position: relative;
-  /* background-image: url(../images/loginimg/opa2.png); */
-  /* background-image: url(/images/login_image.png); */
-  /* background-position: 70% bottom; */
-  /* background-size: contain; */
-  /* background-size:  auto 80vh;
-  background-repeat: no-repeat; */
+  background-image: url(../images/loginimg/opa2.png);
+  background-position: 70% 55px;
+  background-size: contain;
+  background-repeat: no-repeat;
   height: 100vh;
   z-index: 1;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
 }
-
-.content-left-img {
-  /* width: ; */
-  max-height: 95%;
-  max-width: 50%;
-  object-fit: cover;
-}
-
 .login-content .content-right,
 .register-content .content-right {
   align-self: start;
   background-color: #ffffff;
   border-radius: 20px;
   padding: 50px 55px;
-  width: 80%;
-  max-width: 600px;
+  width: 90%;
+  max-width: 620px;
   margin-top: 80px;
   margin-bottom: 30px;
   color: #000000;
@@ -2027,11 +2014,16 @@ input.register-number-input {
 .register-content .content-right .content-body input {
   border-color: #a8a8a8;
   padding: 10px 20px;
-  /* height: 50px; */
+  height: 50px;
   font-weight: 400;
   font-size: 20px;
   line-height: 22px;
   color: #000;
+}
+
+.login-content .content-right .content-body input.checkbox,
+.register-content .content-right .content-body input.checkbox {
+  height: inherit;
 }
 
 .register-content .content-right .content-body span {
@@ -2117,7 +2109,7 @@ input.register-number-input {
 }
 
 .register-content .content-right {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .mt-2 {
@@ -3058,7 +3050,7 @@ input[type="range"]::-webkit-slider-thumb {
   }
 }
 
-@media only screen and (max-width: 1108px) {
+@media only screen and (max-width: 1200px) {
   .login-content,
   .register-content {
     position: relative;
@@ -3107,6 +3099,8 @@ input[type="range"]::-webkit-slider-thumb {
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
+    margin: 0 auto;
+    margin-bottom: 40px;
   }
 
   .label.content-right-body-checkbox-label {

@@ -950,9 +950,11 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .calculator-item .row .col-9,
-.calculator-item .row .col-3 {
+.calculator-item .row .col-3,
+.calculator-item .row .col-sm-3 {
   margin-top: 30px;
 }
+
 
 /* Section Help Start */
 .help {
@@ -3015,6 +3017,9 @@ span .coutry-select {
   }
 
   /* Section Calculator Start */
+  #calculator{
+    padding: 0 20px;
+  }
   .calculator {
     margin-top: 50px;
   }
@@ -3042,6 +3047,8 @@ span .coutry-select {
     font-size: 18px;
   }
 
+
+
   /* Calculator labels */
   label[for="inputFrom"],
   label[for="inputTo"],
@@ -3060,9 +3067,17 @@ span .coutry-select {
   input[type="search"],
   textarea,
   select {
-    font-size: 14px;
+    font-size: 14px !important;
+    font-weight: 500 !important;
     border-radius: 5px;
     padding: 10px 10px;
+  }
+
+  .row div .bottom,
+  .calculator-item .row .col-sm-3,
+  /* .calculator-item .row .col-9, */
+  .calculator-item .row .col-9, .calculator-item .row .col-3  {
+    margin-top: 15px !important;
   }
 
   /* Section Help Start */
@@ -3319,7 +3334,7 @@ span .coutry-select {
   }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (min-width: 576px) and (max-width: 846px) {
   /* Section Navbar Start */
   .navbar {
     flex-direction: row-reverse;
@@ -3340,6 +3355,64 @@ span .coutry-select {
   .navbar-light .navbar-nav .nav-link.active::before {
     left: -10px;
   }
+
+
+  /* Section Calculator Start */
+  .calculator {
+    margin-top: 50px;
+  }
+  .calculator .calculator-row {
+    grid-template-columns: 100%;
+    padding: 10px 0px;
+  }
+  .calculator .calculator-total-amount {
+    padding: 5px;
+  }
+  .calculator .calculator-total-amount .calc-title {
+    font-size: 14px;
+  }
+  .calculator .calculator-total-amount .calc-amount {
+    font-size: 14px;
+  }
+  .calculator .calculator-section-title {
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .calculator .calculator-row .calculator-item {
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  .calculator .calculator-row .calculator-item .row {
+    margin: 0;
+  }
+
+  /* Calculator labels */
+  label[for="inputFrom"],
+  label[for="inputTo"],
+  label[for="formCheckCalc"],
+  label[for="inputLength"],
+  label[for="inputWidth"],
+  label[for="inputHeight"],
+  label[for="inputMeasurement"] {
+    font-size: 12px;
+    margin-left: 0;
+  }
+
+  /* Calullator & All Inputs */
+  input[type="text"],
+  input[type="email"],
+  input[type="search"],
+  textarea,
+  select {
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 10px 10px;
+  }
+
+
   /* Section Slider Start */
   .swiper {
     border-radius: 0;
@@ -3418,6 +3491,63 @@ span .coutry-select {
   /**************************************************
             Page Main Media-Large Start 
 ***************************************************/
+
+/* Section Calculator Start */
+.calculator {
+  margin-top: 50px;
+}
+.calculator .calculator-row {
+  grid-template-columns: 100%;
+  padding: 10px 0px;
+}
+.calculator .calculator-total-amount {
+  padding: 5px;
+}
+.calculator .calculator-total-amount .calc-title {
+  font-size: 14px;
+}
+.calculator .calculator-total-amount .calc-amount {
+  font-size: 14px;
+}
+.calculator .calculator-section-title {
+  font-weight: 800;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.calculator .calculator-row .calculator-item {
+  padding: 20px ;
+  font-size: 18px;
+}
+
+/* Calculator labels */
+label[for="inputFrom"],
+label[for="inputTo"],
+label[for="formCheckCalc"],
+label[for="inputLength"],
+label[for="inputWidth"],
+label[for="inputHeight"],
+label[for="inputMeasurement"] {
+  font-size: 12px;
+  margin-left: 0;
+}
+
+/* Calullator & All Inputs */
+input[type="text"],
+input[type="email"],
+input[type="search"],
+textarea,
+select {
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+
+.form-check-input {
+  margin-right: 8px !important;
+}
+
+
   .footer {
     padding: 35px 15px;
   }
@@ -3610,10 +3740,10 @@ input[type="email"],
 input[type="search"],
 textarea,
 select {
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 19px;
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 10px 10px;
 }
 .calculator-m
@@ -3669,7 +3799,7 @@ input[type="range"] {
   -moz-appearance: none;
   appearance: none;
   position: relative;
-  bottom: 20px;
+  bottom: 22px;
   width: 100%;
 }
 input[type="range"]::-webkit-slider-runnable-track {
