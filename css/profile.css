@@ -1232,7 +1232,7 @@ table thead th p {
   font-size: 16.08px;
   line-height: 17px;
   border-radius: 10px !important;
-  padding-left: 80px ;
+  padding-left: 80px;
   -webkit-appearance: none;
   padding-bottom: 17px;
 }
@@ -1246,12 +1246,39 @@ table thead th p {
 }
 
 .bonus-invite button.send {
-  background: #d3d3d3;
+  background: #E8C305;
+  color: #fff;
   border-radius: 7.04px;
   border: none;
   height: 44px;
   width: 100%;
   margin-top: 14px;
+}
+
+.bonus-invite button.send.disabled {
+  color: #9B9B9B;
+  background: #D3D3D3;
+}
+
+.bonus-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 200px;
+  background: #f4f4f4;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  min-width: 358px;
+  padding: 13px;
+  border: none;
+  border: 1px solid transparent;
+  transition: 0.2s;
+}
+
+.bonus-btn:hover {
+  opacity: 0.8;
+  border: 1px solid black;
 }
 
 /*
