@@ -62,7 +62,9 @@
               <a class="nav-link" href="/pages/help.html">Помощь</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/franchayzing.html">Франчайзинг</a>
+              <a class="nav-link" href="/pages/franchayzing.html"
+                >Франчайзинг</a
+              >
             </li>
           </ul>
           <!-- navbar-right -->
@@ -90,7 +92,7 @@
             </li>
             <li>
               <div class="lang-menu">
-                <div class="selected-lang">Eng</div>
+                <div class="selected-lang" id="lang-menu-id">Eng</div>
 
                 <ul>
                   <li>
@@ -105,19 +107,6 @@
                     <a class="uz" href="#">Uzb</a>
                   </li>
                 </ul>
-              </div>
-              <div
-                class="modal fade"
-                id="langModal"
-                tabindex="-1"
-                aria-labelledby="parcelsModalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-dialog-centered modal-lg">
-                  <a href="#" class="select-lang select-lang-bottom">
-                    <img src="../images/new/uz-flag.svg" alt="" width="30" />
-                  </a>
-                </div>
               </div>
             </li>
             <li class="nav-item">
@@ -661,6 +650,14 @@
   <script src="/js/jquery-3.6.0.min.js"></script>
   <script src="/js/bootstrap.bundle.min.js"></script>
   <script>
+    document.querySelector("body").addEventListener("click", (evt) => {
+      if (evt.target.id == "lang-menu-id") {
+        document.querySelector(".lang-menu").classList.toggle("act");
+      } else {
+        document.querySelector(".lang-menu").classList.remove("act");
+      }
+    });
+
     document.querySelector(".calculator-bottom").classList.add("none");
     document.querySelector("#formCheckCalc").addEventListener("click", () => {
       document.querySelector(".calculator-bottom").classList.toggle("none");

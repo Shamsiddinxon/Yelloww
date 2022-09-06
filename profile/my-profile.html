@@ -90,7 +90,7 @@
             </li>
             <li>
               <div class="lang-menu">
-                <div class="selected-lang">Eng</div>
+                <div class="selected-lang" id="lang-menu-id">Eng</div>
 
                 <ul>
                   <li>
@@ -105,19 +105,6 @@
                     <a class="uz" href="#">Uzb</a>
                   </li>
                 </ul>
-              </div>
-              <div
-                class="modal fade"
-                id="langModal"
-                tabindex="-1"
-                aria-labelledby="parcelsModalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-dialog-centered modal-lg">
-                  <a href="#" class="select-lang select-lang-bottom">
-                    <img src="../images/new/uz-flag.svg" alt="" width="30" />
-                  </a>
-                </div>
               </div>
             </li>
             <li class="nav-item">
@@ -349,7 +336,7 @@
                         </div>
                       </li>
 
-                      <li class="body-group-main-item">
+                      <li class="body-group-main-item mb-0">
                         <p class="body-group-main-item-desc">Phone number</p>
                         <div class="body-group-main-item-2">
                           <p class="body-group-main-item-desc1">
@@ -359,7 +346,7 @@
                         </div>
                       </li>
                     </ul>
-
+                   
                     <!-- <ul class="body-group__list">
                       <li class="list-item">
                         <span class="list-item-left">Имя</span>
@@ -403,9 +390,13 @@
                       <i class="ri-edit-line"></i> Изминенит
                     </button> -->
                   </div>
+                  <div class="middle-item__head mt-0">
+                    <p class="working-hours">Working hours</p>
+                    <span>09:00 - 17:00 | Monday - Friday</span>
+                  </div>
                 </div>
               </div>
-              <div class="content-middle-item">
+              <div class="content-middle-item right">
                 <div class="middle-item__head middle-item__headd">
                   <h1 class="head-title">
                     <i class="ri-error-warning-line"></i> Внимание!
@@ -774,5 +765,13 @@
     document.querySelector("#formCheckCalc").addEventListener("click", ()=> {
       document.querySelector(".calculator-bottom").classList.toggle("none")
     })
+
+    document.querySelector("body").addEventListener("click", (evt) => {
+      if (evt.target.id == "lang-menu-id") {
+        document.querySelector(".lang-menu").classList.toggle("act");
+      } else {
+        document.querySelector(".lang-menu").classList.remove("act");
+      }
+    });
   </script>
 </html>

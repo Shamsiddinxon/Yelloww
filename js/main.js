@@ -10,6 +10,15 @@
   // searchForms.addEventListener("submit", (evt)=> {
   //     console.log("alik");
   // })
+
+  document.querySelector("body").addEventListener("click", (evt) => {
+    if(evt.target.id == 'lang-menu-id'){
+      document.querySelector(".lang-menu").classList.toggle("act");
+    } else {
+      document.querySelector(".lang-menu").classList.remove("act");
+    }
+    console.log("salom");
+  });
   
 
 

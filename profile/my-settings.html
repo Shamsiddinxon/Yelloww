@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Google Fonts CDN -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap"/>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap"
+    />
     <!-- Bootstrap Styles -->
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <!-- Custom Styles -->
@@ -14,7 +17,7 @@
     <!-- RemixIcon link -->
     <link rel="stylesheet" href="/fonts/remixicon.css" />
     <!-- Custom links -->
-    <link rel="stylesheet" href="/css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
     <title>Yellow - My Profile</title>
   </head>
   <body>
@@ -59,32 +62,41 @@
               <a class="nav-link" href="/pages/help.html">Помощь</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/franchayzing.html">Франчайзинг</a>
+              <a class="nav-link" href="/pages/franchayzing.html"
+                >Франчайзинг</a
+              >
             </li>
           </ul>
           <!-- navbar-right -->
           <ul class="navbar-nav navbar-right">
             <li class="nav-item">
-                <div class="nav-link">
-                    <button class="search-button"><i class="ri-search-line"></i></button>
-                    <input type="search" class="search-input" placeholder="search..">
-                </div>
+              <div class="nav-link">
+                <button class="search-button">
+                  <i class="ri-search-line"></i>
+                </button>
+                <input
+                  type="search"
+                  class="search-input"
+                  placeholder="search.."
+                />
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link"
-              data-bs-toggle="modal"
-              data-bs-target="#parcelsCalculator"
-              href="#"
+              <a
+                class="nav-link"
+                data-bs-toggle="modal"
+                data-bs-target="#parcelsCalculator"
+                href="#"
                 ><i class="ri-calculator-line"></i
               ></a>
             </li>
             <li>
               <div class="lang-menu">
-                <div class="selected-lang">Eng</div>
+                <div class="selected-lang" id="lang-menu-id">Eng</div>
 
                 <ul>
                   <li>
-                    <a class="en" href="#">Eng</a>
+                     <a class="en" href="#">Eng</a>
                   </li>
 
                   <li>
@@ -96,23 +108,14 @@
                   </li>
                 </ul>
               </div>
-              <div
-                class="modal fade"
-                id="langModal"
-                tabindex="-1"
-                aria-labelledby="parcelsModalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-dialog-centered modal-lg">
-                  <a href="#" class="select-lang select-lang-bottom">
-                    <img src="../images/new/uz-flag.svg" alt="" width="30" />
-                  </a>
-                </div>
-              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link btn-profile-icon" href="#">
-                <img class="profile_avatar" src="/images/profil_avatar.png" alt="profile">
+                <img
+                  class="profile_avatar"
+                  src="/images/profil_avatar.png"
+                  alt="profile"
+                />
               </a>
             </li>
           </ul>
@@ -133,7 +136,7 @@
             <a href="/profile/my-profile.html">Профил</a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">
-            Редактировать  
+            Редактировать
           </li>
         </ol>
       </nav>
@@ -141,251 +144,292 @@
     <!-- Section Breadcrumb End -->
     <!-- Section Profile Start -->
     <section id="profile" class="container-fluid">
-    <div id="profile" class="profile container">
-      <div id="profile" class="profile-row row">
-        <div class="sidebar col-sm-12 col-md-3">
-          <ul class="sidebar-list">
-            <li>
-              <a class="sidebar-item " href="/profile/my-profile.html"
-                ><i class="ri-user-line"></i> Профиль</a
-              >
-            </li>
-            <li>
-              <a class="sidebar-item" href="/profile/my-parcels.html"
-                ><i class="ri-archive-line"></i> Мои посылки</a
-              >
-            </li>
-            <li>
-              <a class="sidebar-item" href="/profile/my-address.html"
-                ><i class="ri-map-pin-line"></i> Мои адреса</a
-              >
-            </li>
-            <li>
-              <a
-                class="sidebar-item"
-                style="margin-bottom: 317px"
-                href="/profile/my-balance.html"
-                ><i class="ri-wallet-3-line"></i> Mой баланс</a
-              >
-            </li>
-
-            <li>
-              <a class="sidebar-item active" href="#"
-                ><i class="ri-settings-4-line"></i> Settings</a
-              >
-            </li>
-
-            <li>
-              <a class="sidebar-item" href="/index.html"
-                ><i class="ri-logout-circle-line"></i> Выйти</a
-              >
-            </li>
-          </ul>
-        </div>
-        <!-- Profile Dinamic Contents -->
-        <div class="profile-content col" style="margin-left:18px">
-          <div class="profile-row row">
-            <ul class="nav nav-pills" role="tablist" style="margin-bottom:25px;">
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link active"
-                  id="profile-info-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#profile-info"
-                  type="button"
-                  role="tab"
-                  aria-controls="profile-info"
-                  aria-selected="true"
+      <div id="profile" class="profile container">
+        <div id="profile" class="profile-row row">
+          <div class="sidebar col-sm-12 col-md-3">
+            <ul class="sidebar-list">
+              <li>
+                <a class="sidebar-item" href="/profile/my-profile.html"
+                  ><i class="ri-user-line"></i> Профиль</a
                 >
-                Личные данные
-                </button>
               </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="profile-password-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#profile-password"
-                  type="button"
-                  role="tab"
-                  aria-controls="profile-password"
-                  aria-selected="false"
+              <li>
+                <a class="sidebar-item" href="/profile/my-parcels.html"
+                  ><i class="ri-archive-line"></i> Мои посылки</a
                 >
-                  Сменить пароль
-                </button>
+              </li>
+              <li>
+                <a class="sidebar-item" href="/profile/my-address.html"
+                  ><i class="ri-map-pin-line"></i> Мои адреса</a
+                >
+              </li>
+              <li>
+                <a
+                  class="sidebar-item"
+                  style="margin-bottom: 317px"
+                  href="/profile/my-balance.html"
+                  ><i class="ri-wallet-3-line"></i> Mой баланс</a
+                >
+              </li>
+
+              <li>
+                <a class="sidebar-item active" href="#"
+                  ><i class="ri-settings-4-line"></i> Settings</a
+                >
+              </li>
+
+              <li>
+                <a class="sidebar-item" href="/index.html"
+                  ><i class="ri-logout-circle-line"></i> Выйти</a
+                >
               </li>
             </ul>
           </div>
-          <div class="tab-content row">
-            <div
-            class="tab-pane fade show active mb-5"
-            id="profile-info"
-            role="tabpanel"
-            aria-labelledby="profile-info-tab"
-            >
-            <div class="profile-info-group" style="margin: 0px;">
-              <form class="row g-4">
-                  <div class="col-12">
-                    <div class="profile-info-item">
-                      <img class="profile_avatar" src="/images/profil_avatar.png" alt="avatar">
-                      <div class="profile-item-group">
-                        <h1 class="profile_title">Jakob Dias</h1>
-                        <p class="profile-text">Yellow ID: 1556285</p>
+          <!-- Profile Dinamic Contents -->
+          <div class="profile-content col" style="margin-left: 18px">
+            <div class="profile-row row">
+              <ul
+                class="nav nav-pills"
+                role="tablist"
+                style="margin-bottom: 25px"
+              >
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="profile-info-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#profile-info"
+                    type="button"
+                    role="tab"
+                    aria-controls="profile-info"
+                    aria-selected="true"
+                  >
+                    Личные данные
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="profile-password-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#profile-password"
+                    type="button"
+                    role="tab"
+                    aria-controls="profile-password"
+                    aria-selected="false"
+                  >
+                    Сменить пароль
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content row">
+              <div
+                class="tab-pane fade show active mb-5"
+                id="profile-info"
+                role="tabpanel"
+                aria-labelledby="profile-info-tab"
+              >
+                <div class="profile-info-group" style="margin: 0px">
+                  <form class="row g-4">
+                    <div class="col-12">
+                      <div class="profile-info-item">
+                        <img
+                          class="profile_avatar"
+                          src="/images/profil_avatar.png"
+                          alt="avatar"
+                        />
+                        <div class="profile-item-group">
+                          <h1 class="profile_title">Jakob Dias</h1>
+                          <p class="profile-text">Yellow ID: 1556285</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-md-6 mb-1">
-                    <label for="name" class="form-label edit-label">Имя</label>
-                    <input
-                      type="text"
-                      class="form-control edit-input"
-                      name="first-name"
-                      id="name"
-                      value="Мансурбек"
-                    />
-                  </div>
-                  <div class="col-md-6 mb-1">
-                    <label for="state" class="form-label edit-label">Состояние</label>
-                    <input
-                      type="text"
-                      class="form-control edit-input"
-                      name="state"
-                      id="state"
-                      value="Узбекистан"
-                    />
-                  </div>
-                  <div class="col-md-6 mt-md-4 mb-1">
-                    <label for="second-name" class="form-label edit-label">Фамилия</label>
-                    <input
-                      type="text"
-                      class="form-control edit-input"
-                      name="second-name"
-                      id="second-name"
-                      value="Толибжанов"
-                    />
-                  </div>
-                  <div class="col-md-6 mt-md-4 mb-1">
-                    <label for="country" class="form-label edit-label">Город</label>
-                    <input
-                      type="text"
-                      class="form-control edit-input"
-                      name="country"
-                      id="country"
-                      value="Ташкент"
-                    />
-                  </div>
-                  <div class="col-md-6 mt-md-4 mb-1">
-                    <label for="phoneMasked" class="form-label edit-label"
-                      >Контактный телефон</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control edit-input"
-                      name="phone"
-                      id="phoneMasked"
-                      value="+998 91 753 65 48"
-                    />
-                  </div>
-                  <div class="col-md-6 mt-md-4 mb-1">
-                    <label for="address" class="form-label edit-label">Адресная строка</label>
-                    <input
-                      type="text"
-                      class="form-control edit-input"
-                      name="address"
-                      id="address"
-                      value="Яккасарой р. 24 дом"
-                    />
-                  </div>
-                  <div class="col-md-6 mt-md-4">
-                    <label for="email" class="form-label edit-label">Email</label>
-                    <input
-                      type="text"
-                      class="form-control  edit-input"
-                      name="email"
-                      id="email"
-                      value="Ali58@gmail.com"
-                    />
-                  </div>
-                  <div class="col-md-6 mt-md-4">
-                    <label for="postcode" class="form-label edit-label">Почтовый индекс</label>
-                    <input
-                      type="text"
-                      class="form-control  edit-input"
-                      name="postcode"
-                      id="postcode"
-                      value="15826"
-                    />
-                  </div>
-                  <div class="col-12 mt-md-5">
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="gender" id="male" value="male" checked>
-                      <label class="form-check-label" for="male">Мужской</label>
+                    <div class="col-md-6 mb-1">
+                      <label for="name" class="form-label edit-label"
+                        >Имя</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control edit-input"
+                        name="first-name"
+                        id="name"
+                        value="Мансурбек"
+                      />
                     </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="gender" id="female" value="female">
-                      <label class="form-check-label" for="female">Женский</label>
+                    <div class="col-md-6 mb-1">
+                      <label for="state" class="form-label edit-label"
+                        >Состояние</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control edit-input"
+                        name="state"
+                        id="state"
+                        value="Узбекистан"
+                      />
                     </div>
-                  </div>
-                  <div class="col-12">
-                    <button type="submit" class="profile-info-btn btn">
-                      Сахронить изминения
-                    </button>
-                  </div>
-              </form>
-            </div>
-            </div>
-            <div
-            class="tab-pane fade show  mb-5"
-            id="profile-password"
-            role="tabpanel"
-            aria-labelledby="profile-password-tab"
-            >
-              <div class="profile-password-group">
-                <form class="password-item row m-0 g-3">
-                  <h1 class="my-2 mb-3">Парол</h1>
-                  <div class="col-12  mb-1">
-                    <label for="current_password" class="form-label">Текущий пароль</label>
-                    <input
-                      type="password"
-                      class="form-control"
-                      name="current_password"
-                      id="current_password"
-                    />
-                  </div>
-                  <div class="col-12 mt-4 mb-1">
-                    <label for="new_password" class="form-label">Новый пароль</label>
-                    <input
-                      type="password"
-                      class="form-control"
-                      name="new_password"
-                      id="new_password"
-                    />
-                  </div>
-                  <div class="col-12 mt-4 mb-1">
-                    <label for="repeat_password" class="form-label">Повторите пароль</label>
-                    <input
-                      type="password"
-                      class="form-control"
-                      name="repeat_password"
-                      id="repeat_password"
-                    />
-                  </div>
-                  <div class="col-12 mt-5 mb-1">
-                    <button type="submit" class="profile-password-btn">
-                      Сахронить изминения
-                    </button>
-                  </div>
-                </form>
-                <div class="password-item m-0">
-                  <div class="password-item__head">
-                    <i class="ri-information-line"></i>
-                    <h1 class="head-title">Внимание!</h1>
-                  </div>
-                  <div class="password-item__body">
-                    <p class="body-text">
-                      Введите свой текущий пароль, новый пароль, и повторите ввод но-вого пароля,
-                      чтобы исключить возможность опечатки.Все поля обязательны для заполнения
-                    </p>
+                    <div class="col-md-6 mt-md-4 mb-1">
+                      <label for="second-name" class="form-label edit-label"
+                        >Фамилия</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control edit-input"
+                        name="second-name"
+                        id="second-name"
+                        value="Толибжанов"
+                      />
+                    </div>
+                    <div class="col-md-6 mt-md-4 mb-1">
+                      <label for="country" class="form-label edit-label"
+                        >Город</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control edit-input"
+                        name="country"
+                        id="country"
+                        value="Ташкент"
+                      />
+                    </div>
+                    <div class="col-md-6 mt-md-4 mb-1">
+                      <label for="phoneMasked" class="form-label edit-label"
+                        >Контактный телефон</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control edit-input"
+                        name="phone"
+                        id="phoneMasked"
+                        value="+998 91 753 65 48"
+                      />
+                    </div>
+                    <div class="col-md-6 mt-md-4 mb-1">
+                      <label for="address" class="form-label edit-label"
+                        >Адресная строка</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control edit-input"
+                        name="address"
+                        id="address"
+                        value="Яккасарой р. 24 дом"
+                      />
+                    </div>
+                    <div class="col-md-6 mt-md-4">
+                      <label for="email" class="form-label edit-label"
+                        >Email</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control edit-input"
+                        name="email"
+                        id="email"
+                        value="Ali58@gmail.com"
+                      />
+                    </div>
+                    <div class="col-md-6 mt-md-4">
+                      <label for="postcode" class="form-label edit-label"
+                        >Почтовый индекс</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control edit-input"
+                        name="postcode"
+                        id="postcode"
+                        value="15826"
+                      />
+                    </div>
+                    <div class="col-12 mt-md-4 mb-2">
+                      <div class="radio-item">
+                        <input
+                          type="radio"
+                          id="gendera"
+                          name="gender"
+                          value="Male"
+                        />
+                        <label class="edit-label" for="gendera">Мужской</label>
+                      </div>
+
+                      <div class="radio-item">
+                        <input
+                          type="radio"
+                          id="genderb"
+                          name="gender"
+                          value="Female"
+                        />
+                        <label class="edit-label" for="genderb">Женский</label>
+                      </div>
+                    </div>
+                    <div class="col-12 mt-4">
+                      <button type="submit" class="profile-info-btn btn">
+                        Сахронить изминения
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade show mb-5"
+                id="profile-password"
+                role="tabpanel"
+                aria-labelledby="profile-password-tab"
+              >
+                <div class="profile-password-group">
+                  <form class="password-item row m-0 g-3">
+                    <h1 class="my-2 mb-3">Парол</h1>
+                    <div class="col-12 mb-1">
+                      <label for="current_password" class="form-label"
+                        >Текущий пароль</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        name="current_password"
+                        id="current_password"
+                      />
+                    </div>
+                    <div class="col-12 mt-4 mb-1">
+                      <label for="new_password" class="form-label"
+                        >Новый пароль</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        name="new_password"
+                        id="new_password"
+                      />
+                    </div>
+                    <div class="col-12 mt-4 mb-1">
+                      <label for="repeat_password" class="form-label"
+                        >Повторите пароль</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        name="repeat_password"
+                        id="repeat_password"
+                      />
+                    </div>
+                    <div class="col-12 mt-5 mb-1">
+                      <button type="submit" class="profile-password-btn">
+                        Сахронить изминения
+                      </button>
+                    </div>
+                  </form>
+                  <div class="password-item right m-0">
+                    <div class="password-item__head">
+                      <i class="ri-information-line"></i>
+                      <h1 class="head-title">Внимание!</h1>
+                    </div>
+                    <div class="password-item__body">
+                      <p class="body-text">
+                        Введите свой текущий пароль, новый пароль, и повторите
+                        ввод но-вого пароля, чтобы исключить возможность
+                        опечатки.Все поля обязательны для заполнения
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -407,40 +451,60 @@
     <!-- Section FooterNav Mobile Start-->
     <section id="footer-nav">
       <nav class="footer-nav phoneContent">
-          <ul class="footer-nav-list">
-            <li><a class="footer-nav-item active" href="/profile/my-profile.html"><i class="ri-home-4-line"></i> Main</a></li>
-            <li><a class="footer-nav-item" href="/profile/my-parcels.html"><i class="ri-archive-line"></i> My parcels</a></li>
-            <li><a class="footer-nav-item" href="#"><i class="ri-add-line"></i></a></li>
-            <li><a class="footer-nav-item" href="/profile/my-address.html"><i class="ri-map-pin-line"></i> Address</a></li>
-            <li><a class="footer-nav-item" href="/profile/my-balance.html"><i class="ri-wallet-3-line"></i> Balance</a></li>
-          </ul>
-        </nav>
+        <ul class="footer-nav-list">
+          <li>
+            <a class="footer-nav-item active" href="/profile/my-profile.html"
+              ><i class="ri-home-4-line"></i> Main</a
+            >
+          </li>
+          <li>
+            <a class="footer-nav-item" href="/profile/my-parcels.html"
+              ><i class="ri-archive-line"></i> My parcels</a
+            >
+          </li>
+          <li>
+            <a class="footer-nav-item" href="#"><i class="ri-add-line"></i></a>
+          </li>
+          <li>
+            <a class="footer-nav-item" href="/profile/my-address.html"
+              ><i class="ri-map-pin-line"></i> Address</a
+            >
+          </li>
+          <li>
+            <a class="footer-nav-item" href="/profile/my-balance.html"
+              ><i class="ri-wallet-3-line"></i> Balance</a
+            >
+          </li>
+        </ul>
+      </nav>
     </section>
     <!-- Section FooterNav Mobile End -->
 
-        <!-- Modal Calculator -->
-        <div
-        class="modal fade"
-        id="parcelsCalculator"
-        tabindex="-1"
-        aria-labelledby="parcelsListCalculatorModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog calculator modal-dialog-centered">
-          <div class="modal-content">
+    <!-- Modal Calculator -->
+    <div
+      class="modal fade"
+      id="parcelsCalculator"
+      tabindex="-1"
+      aria-labelledby="parcelsListCalculatorModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog calculator modal-dialog-centered">
+        <div class="modal-content">
           <div class="modal-body calculator">
             <h3>Калкулятор</h3>
             <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
             <div class="calculator-row row">
               <div class="calculator-item">
                 <div class="row" style="margin-right: 11px">
                   <div class="col-6 mb-36px">
-                    <label for="inputFrom" class="form-label top-lable">Откуда?</label>
+                    <label for="inputFrom" class="form-label top-lable"
+                      >Откуда?</label
+                    >
                     <input
                       type="text"
                       class="form-control"
@@ -449,7 +513,9 @@
                     />
                   </div>
                   <div class="col-6">
-                    <label for="inputTo" class="form-label top-lable">Куда?</label>
+                    <label for="inputTo" class="form-label top-lable"
+                      >Куда?</label
+                    >
                     <input
                       type="text"
                       class="form-control"
@@ -481,19 +547,19 @@
                     </select>
                   </div>
                   <div
-                  class="col-12 d-flex align-items-center"
-                  style="margin-top: 30px"
-                >
-                  <input
-                    class="form-check-input m-0 "
-                    type="checkbox"
-                    value=""
-                    id="formCheckCalc"
-                  />
-                  <label class="form-check-label mx-2" for="formCheckCalc">
-                    Расчет стаимости даставки крупногабартных посылок
-                  </label>
-                </div>
+                    class="col-12 d-flex align-items-center"
+                    style="margin-top: 30px"
+                  >
+                    <input
+                      class="form-check-input m-0"
+                      type="checkbox"
+                      value=""
+                      id="formCheckCalc"
+                    />
+                    <label class="form-check-label mx-2" for="formCheckCalc">
+                      Расчет стаимости даставки крупногабартных посылок
+                    </label>
+                  </div>
                 </div>
               </div>
               <div class="calculator-item calculator-bottom">
@@ -544,18 +610,18 @@
             </div>
           </div>
         </div>
-        </div>
       </div>
+    </div>
   </body>
   <!-- Bootstrap Js -->
   <script src="https://unpkg.com/imask"></script>
   <script src="/js/jquery-3.6.0.min.js"></script>
   <script src="/js/bootstrap.bundle.min.js"></script>
   <script>
-        document.querySelector(".calculator-bottom").classList.add("none")
-    document.querySelector("#formCheckCalc").addEventListener("click", ()=> {
-      document.querySelector(".calculator-bottom").classList.toggle("none")
-    })
+    document.querySelector(".calculator-bottom").classList.add("none");
+    document.querySelector("#formCheckCalc").addEventListener("click", () => {
+      document.querySelector(".calculator-bottom").classList.toggle("none");
+    });
 
     var element = document.getElementById("phoneMasked");
     var maskOptions = {
@@ -563,9 +629,18 @@
     };
     var mask = IMask(element, maskOptions);
 
-    jQuery(document).ready(function($){
-      $(".search-button").click(function(){
-          $('.search-input').val('').toggle();
+    jQuery(document).ready(function ($) {
+      $(".search-button").click(function () {
+        $(".search-input").val("").toggle();
       });
     });
+
+    document.querySelector("body").addEventListener("click", (evt) => {
+      if (evt.target.id == "lang-menu-id") {
+        document.querySelector(".lang-menu").classList.toggle("act");
+      } else {
+        document.querySelector(".lang-menu").classList.remove("act");
+      }
+    });
   </script>
+</html>
