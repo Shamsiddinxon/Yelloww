@@ -61,7 +61,9 @@
               <a class="nav-link" href="/pages/help.html">Помощь</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/franchayzing.html">Франчайзинг</a>
+              <a class="nav-link" href="/pages/franchayzing.html"
+                >Франчайзинг</a
+              >
             </li>
           </ul>
           <!-- navbar-right -->
@@ -179,20 +181,20 @@
           </div>
           <!-- Profile Dinamic Contents -->
           <div class="profile-content col">
-            <div class="profile-content-row row m-0 p-0 mb-3">
+            <div class="profile-content-row row m-0 p-0 mb-4">
               <ul class="nav nav-pills" role="tablist">
                 <li class="nav-item" role="presentation">
                   <button
                     class="nav-link active"
-                    id="my-balance-tab"
+                    id="my-bonus-tab"
                     data-bs-toggle="pill"
-                    data-bs-target="#my-balance"
+                    data-bs-target="#my-bonus"
                     type="button"
                     role="tab"
-                    aria-controls="my-balance"
+                    aria-controls="my-bonus"
                     aria-selected="true"
                   >
-                    Мой баланс
+                    Bonus
                   </button>
                 </li>
                 <li class="nav-item" role="presentation">
@@ -206,10 +208,10 @@
                     aria-controls="my-score"
                     aria-selected="false"
                   >
-                    Мои баллы
+                    Transaction history
                   </button>
                 </li>
-                <li class="nav-item" role="presentation">
+                <!-- <li class="nav-item" role="presentation">
                   <button
                     class="nav-link"
                     id="transaction-history-tab"
@@ -236,85 +238,68 @@
                   >
                     Мои счета
                   </button>
-                </li>
+                </li> -->
               </ul>
             </div>
             <div class="tab-content row mb-4">
               <div
                 class="tab-pane fade show active"
-                id="my-balance"
+                id="my-bonus"
                 role="tabpanel"
-                aria-labelledby="my-balance-tab"
+                aria-labelledby="my-bonus-tab"
               >
-                <div class="my-balance-group">
-                  <div class="balance-item">
-                    <div class="balance__head">
-                      <h1 class="balance__title">Текущий остаток</h1>
-                    </div>
-                    <div class="balance__body">
-                      <div>
-                        <img src="/images/payment_bank.png" alt="bank" /><span
-                          class="balance"
-                          >$ 2.07</span
-                        >
+                <div class="bonus">
+                  <div class="bonus-item bonus-card">
+                    <img src="../images/new/logo-balans-bonus.svg" alt="" />
+                    <div class="bonus-card-right">
+                      <div class="cart-div">
+                        <p class="cart">card</p>
+                        <div>
+                          <p class="bonus-title">1%</p>
+                          <span>Balanse</span>
+                        </div>
                       </div>
-                      <div>
-                        <select name="currency" class="currency">
-                          <option value="usd">USD</option>
-                          <option value="uzs">UZS</option>
-                        </select>
-                      </div>
+
+                      <p class="bonus-title">$200</p>
+                      <span>Lifetime savings</span>
                     </div>
                   </div>
-                  <div class="payments-item">
-                    <div class="payments__head">
-                      <h1 class="payments__title">Мы принимаем</h1>
+
+
+                  <div class="bonus-item bonus-invite">
+                    <h3>Invite friend</h3>
+                    <div class="input-group">
+                      <label class="col-12" for="number">Phone number</label>
+                      <button class="bt btt btn-outline-secondar mt-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="d-flex align-items-center gap-1"><img src="../images/usa.svg" alt="" width="44">
+                          <!-- <div class="coutry-select"></div> -->
+                          +1</span>
+                      </button>
+                      <input type="number" id="number" class="form-number-input" value="+1">
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item active"><span><img src="../images/usa.svg" alt="" class="mx-2"></span>United States</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item"><span><img src="../images/uzb.svg" alt="" class="mx-2"></span>Uzbekistan</a>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="payments__body">
-                      <div>
-                        <img src="/images/payment_visa.png" alt="visa" />
-                      </div>
-                      <div>
-                        <img src="/images/payment_paypal.png" alt="paypal" />
-                      </div>
-                      <div>
-                        <img
-                          src="/images/payment_mastercard.png"
-                          alt="mastercard"
-                        />
-                      </div>
+                    <button class="send">Send invitation </button>
+                  </div>
+
+
+                  <div class="bonus-item bonus-invite link">
+                    <h3>Invite friend</h3>
+                    <div class="">
+                      <!-- <label class="col-12" for="link">Phone number</label> -->
+                     
+                      <input type="text" id="link" class="form-link-input">
+                      <button class="send">Send invitation </button>
                     </div>
                   </div>
-                  <div class="refill-item">
-                    <div class="refill__head">
-                      <h1 class="refill__title">Пополнить счет</h1>
-                    </div>
-                    <div class="refill__body">
-                      <form class="row g-3 p-3" action="#">
-                        <label for="refill-input">Сумма пополнение </label>
-                        <input
-                          class="refill-input"
-                          type="text"
-                          id="refill-input"
-                          placeholder="$ 0.00"
-                        />
-                        <input
-                          class="refill-button"
-                          type="submit"
-                          value="Пополнить счет"
-                        />
-                      </form>
-                    </div>
-                    <div class="refill__footer">
-                      <h1 class="refill__title">
-                        <i class="ri-error-warning-line"></i> Внимание!
-                      </h1>
-                      <p class="refill__text">
-                        Для оперативной отправки посы- лок не забывайте
-                        своевременно пополнять баланс вашего счета
-                      </p>
-                    </div>
-                  </div>
+
+
                 </div>
               </div>
               <div
@@ -322,184 +307,7 @@
                 id="my-score"
                 role="tabpanel"
                 aria-labelledby="my-score-tab"
-              >
-                <div class="my-score-group">
-                  <div class="balance-item">
-                    <div class="balance__head">
-                      <h1 class="balance__title">Текущий остаток</h1>
-                    </div>
-                    <div class="balance__body">
-                      <div>
-                        <img src="/images/payment_bank.png" alt="bank" /><span
-                          class="balance"
-                          >$ 2.07</span
-                        >
-                      </div>
-                      <div>
-                        <select name="currency" class="currency">
-                          <option value="usd">USD</option>
-                          <option value="uzs">UZS</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="corin-item">
-                    <img
-                      class="coin__icon"
-                      src="/images/profile_coin.png"
-                      alt="coin"
-                    />
-                    <h1 class="coin__title">Как получить баллы ?</h1>
-                  </div>
-                  <div class="referral-item">
-                    <div class="referral__head">
-                      <h1 class="referral__title">Пригласить друга</h1>
-                    </div>
-                    <div class="referral__body">
-                      <form class="row g-3 p-3" action="#">
-                        <label class="referral_label" for="referral_input"
-                          >Номер телефона</label
-                        >
-                        <input
-                          class="referral_input"
-                          type="text"
-                          placeholder="+998 71 200 34 33"
-                        />
-                        <input
-                          class="referral-button"
-                          type="submit"
-                          value="Отправить приглашение"
-                        />
-                      </form>
-                    </div>
-                  </div>
-                  <div class="referral-link-item">
-                    <div class="referral-link__head">
-                      <h1 class="referral-link__title">
-                        Ваша реферальная ссылка
-                      </h1>
-                    </div>
-                    <div class="referral-link__body">
-                      <div class="row g-3 p-3">
-                        <label
-                          class="referral-link__label"
-                          for="referral-link__texarea"
-                        >
-                          Пригласите друзей и получайте бонусы от их
-                          заказов</label
-                        >
-                        <textarea
-                          name="referral-link__value"
-                          id="referral-link__texarea"
-                          rows="1"
-                        >
-https://my.turonexpress.com/invite/6922</textarea
-                        >
-                        <button
-                          class="referral-link-copy"
-                          onclick="referralLinkCopy()"
-                          title="copy"
-                        >
-                          Скопировать ссылку
-                        </button>
-                        <a class="referral-link-detail" href="#">Подробности</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="tab-pane fade show"
-                id="transaction-history"
-                role="tabpanel"
-                aria-labelledby="transaction-history-tab"
-              >
-                <div class="history-empty-item">
-                  <img
-                    class="item__icon"
-                    src="/images/payment_history.png"
-                    alt="history"
-                  />
-                  <p class="item__text">
-                    Никаких операций пока нет. <br />
-                    Отличный повод пополнить баланс
-                  </p>
-                  <button class="item__button">
-                    <i class="ri-add-line"></i> Пополнить баланс
-                  </button>
-                </div>
-              </div>
-              <div
-                class="tab-pane fade show"
-                id="my-account"
-                role="tabpanel"
-                aria-labelledby="my-account-tab"
-              >
-                <div class="my-account-group">
-                  <div class="my-account-item">
-                    <div class="account__head">
-                      <h1 class="account__title">Счет</h1>
-                    </div>
-                    <div class="account__body">
-                      <p class="account_text">Пополнение баланса № 6922</p>
-                      <form action="#" class="row g-3 p-3">
-                        <label for="payment-card">Банковской картой</label>
-                        <div class="input-group">
-                          <span class="input-group-text">
-                            <input
-                              class="form-check-input mt-0"
-                              type="radio"
-                              name="payment_type"
-                              value="card"
-                              id="payment-card"
-                            />
-                          </span>
-                          <input type="text" class="form-control" />
-                          <span class="input-group-text">
-                            <img src="/images/payment_visa.png" alt="visa" />
-                          </span>
-                          <span class="input-group-text">
-                            <img
-                              src="/images/payment_mastercard.png"
-                              alt="mastercard"
-                            />
-                          </span>
-                        </div>
-                        <label for="payment-paypal">Paypal</label>
-                        <div class="input-group">
-                          <span class="input-group-text">
-                            <input
-                              class="form-check-input mt-0"
-                              type="radio"
-                              name="payment_type"
-                              value="paypal"
-                              id="payment-paypal"
-                            />
-                          </span>
-                          <input type="text" class="form-control" />
-                          <span class="input-group-text">
-                            <img
-                              src="/images/payment_paypal.png"
-                              alt="paypal"
-                            />
-                          </span>
-                        </div>
-                        <div class="amount-group">
-                          <div class="title">Сумма оплаты</div>
-                          <h1 class="amount">$ 1.05</h1>
-                        </div>
-                        <input class="account-button" type="submit" />
-                      </form>
-                    </div>
-                    <div class="account__footer">
-                      <p class="account_text">
-                        В случае каких-либо проблем с оплатой, пожалуйс- та
-                        обратитесь в отдел по <a href="#">работе с клиентами</a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              ></div>
             </div>
           </div>
         </div>
@@ -684,7 +492,7 @@ https://my.turonexpress.com/invite/6922</textarea
   <script src="/js/jquery-3.6.0.min.js"></script>
   <script src="/js/bootstrap.bundle.min.js"></script>
   <script>
-        document.querySelector("body").addEventListener("click", (evt) => {
+    document.querySelector("body").addEventListener("click", (evt) => {
       if (evt.target.id == "lang-menu-id") {
         document.querySelector(".lang-menu").classList.toggle("act");
       } else {

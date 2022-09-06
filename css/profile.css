@@ -345,7 +345,7 @@ option:checked {
 
 .middle-item__head.mt-0 {
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -407,7 +407,6 @@ option:checked {
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   margin-top: 25px;
-
 }
 
 .profile-content .content-middle .content-middle-item {
@@ -416,7 +415,7 @@ option:checked {
 }
 
 .profile-content .content-middle .content-middle-item.right {
-  border-radius:10px;
+  border-radius: 10px;
 }
 
 .profile-content .content-middle .content-middle-item .middle-item__head {
@@ -609,7 +608,6 @@ option:checked {
 .accordion-button:focus {
   /* border-color: #e8c305; */
   box-shadow: 0px 0px 5px 0.5px rgb(0 0 0 / 13%);
-
 }
 
 .accordion-button::after {
@@ -682,7 +680,6 @@ option:checked {
   display: block;
   background: #e8c305;
 }
-
 
 .profile-content .tab-content .profile-info-group {
   background-color: #f4f4f4;
@@ -765,7 +762,7 @@ input.edit-input {
 
 .profile-content .tab-content .profile-password-group .password-item.right {
   margin: 10px;
-  padding:14px 20px 20px;
+  padding: 14px 20px 20px;
   background-color: #f4f4f4;
   border-radius: 10px;
 }
@@ -1131,6 +1128,134 @@ table thead th p {
   padding: 20px;
 }
 
+.tab-content {
+  margin-left: 0px;
+}
+
+.bonus {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.bonus .bonus-item {
+  max-height: 195px;
+  border-radius: 12px;
+}
+
+.bonus .bonus-card {
+  display: flex;
+  background: #e8c305;
+  border-radius: 12px;
+}
+
+.bonus .bonus-card img {
+  height: 100%;
+  margin-left: 15px;
+  max-height: 195px;
+}
+
+.bonus-card-right {
+  width: 100%;
+  padding-right: 17px;
+}
+
+.cart-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.bonus .bonus-card .cart {
+  /* margin-top: 14px; */
+  margin-left: 9px;
+  font-weight: 200;
+  font-size: 20.3799px;
+  line-height: 25px;
+  color: #ffe55c;
+  background: #e8c305;
+}
+
+.cart-div {
+  padding-top: 15px;
+}
+
+.bonus-card-right .bonus-title {
+  font-weight: 800;
+  font-size: 27.1732px;
+  line-height: 33px;
+  text-align: right;
+  color: #121212;
+  margin: 0;
+}
+
+.bonus-card-right span {
+  margin-bottom: 30px;
+  display: block;
+  font-weight: 400;
+  font-size: 13.5866px;
+  line-height: 16px;
+  text-align: right;
+  color: #ffd500;
+}
+
+.bonus-invite {
+  background: #f4f4f4;
+  padding: 16px;
+}
+
+.bonus-invite.link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bonus-invite h3 {
+  font-weight: 600;
+  font-size: 17.6px;
+  line-height: 21px;
+  margin-bottom: 16px;
+}
+
+.bonus-invite label {
+  font-weight: 500;
+  font-size: 14.08px;
+  line-height: 17px;
+  margin-bottom: 5px;
+}
+
+.bonus-item .form-number-input,
+.bonus-item .form-link-input {
+  border: 1px solid #a8a8a8;
+  height: 45px;
+  font-weight: 400;
+  font-size: 16.08px;
+  line-height: 17px;
+  border-radius: 10px !important;
+  padding-left: 80px ;
+  -webkit-appearance: none;
+  padding-bottom: 17px;
+}
+
+.bonus-item .form-link-input {
+  padding: 12px;
+}
+
+.bonus-item .bt.btt {
+  bottom: 11px;
+}
+
+.bonus-invite button.send {
+  background: #d3d3d3;
+  border-radius: 7.04px;
+  border: none;
+  height: 44px;
+  width: 100%;
+  margin-top: 14px;
+}
+
+/*
+
 .profile-content
   .tab-content
   .tab-pane
@@ -1350,9 +1475,10 @@ table thead th p {
   font-size: 16px;
   margin-bottom: 0;
 }
+*/
 
 /* Profile MyScore Start */
-.profile-content .tab-content .tab-pane .my-score-group {
+/*.profile-content .tab-content .tab-pane .my-score-group {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -1439,7 +1565,7 @@ table thead th p {
   padding: 20px;
   grid-column: 2;
   grid-row: 1 / 1;
-}
+} */
 
 .profile-content
   .tab-content
@@ -1897,8 +2023,8 @@ table thead th p {
   color: #000000;
   border-radius: 10px;
   padding: 0 10px 0 15px;
-  padding-left: 15px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .profile .nav-pills .nav-link.active,
@@ -2905,7 +3031,7 @@ input.register-number-input {
   line-height: 17px;
   background: #f4f4f4;
   border-radius: 6px;
-  padding: 5px 26px 5px 10px;
+  padding: 3px 26px 3px 10px;
 }
 
 .offers .modal-bottom {
@@ -4270,7 +4396,7 @@ td label:before {
   background-color: transparent;
   border: 2px solid #828282;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
-  inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
   padding: 7px;
   display: inline-block;
   position: relative;
@@ -4287,19 +4413,18 @@ td label.act:before {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  background: #E8C305;
+  background: #e8c305;
   width: 24px;
   height: 24px;
-  border:none;
+  border: none;
   border-radius: 50%;
   display: flex;
-  align-items:center;
+  align-items: center;
   margin-left: 12px;
 }
 
 .verified2 + td label {
   margin-left: 5px;
-
 }
 
 td input:checked + label:after {
@@ -4556,7 +4681,7 @@ input[type="number"]::-webkit-outer-spin-button {
   right: auto;
   left: auto;
   transition: all.3s ease;
-  z-index: -1 ;
+  z-index: -1;
 }
 
 .lang-menu ul li {
@@ -4606,7 +4731,7 @@ input[type="number"]::-webkit-outer-spin-button {
   top: 60px;
   opacity: 1;
   right: auto;
-  z-index: 999 ;
+  z-index: 999;
   transition: all.3s ease;
 }
 
