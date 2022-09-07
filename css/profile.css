@@ -1002,7 +1002,8 @@ input.edit-input {
 
 } */
 
-.parcles-content .parcles-list table > :not(:last-child) > :last-child > * {
+.parcles-content .parcles-list table > :not(:last-child) > :last-child > *,
+.profile-content .parcles-list table > :not(:last-child) > :last-child > * {
   background-color: #f4f4f4;
   border: none;
   font-weight: 700;
@@ -1014,6 +1015,9 @@ input.edit-input {
 .parcles-content .parcles-list table tbody td {
   vertical-align: middle;
   border: 1px solid #f4f4f4;
+}
+table tbody td {
+  vertical-align: middle;
 }
 
 .parcles-content .parcles-list table tbody {
@@ -1246,7 +1250,7 @@ table thead th p {
 }
 
 .bonus-invite button.send {
-  background: #E8C305;
+  background: #e8c305;
   color: #fff;
   border-radius: 7.04px;
   border: none;
@@ -1256,8 +1260,8 @@ table thead th p {
 }
 
 .bonus-invite button.send.disabled {
-  color: #9B9B9B;
-  background: #D3D3D3;
+  color: #9b9b9b;
+  background: #d3d3d3;
 }
 
 .bonus-btn {
@@ -4117,8 +4121,17 @@ input.login-btn {
   flex-wrap: nowrap;
 }
 
+.tab-pane .nav-pills {
+  display: flex;
+  align-items: center;
+}
+
 .tab-inner .nav-pills .nav-item {
   min-width: 130px;
+}
+
+.tab-pane .nav-pills .nav-item {
+  min-width: 90px;
 }
 
 /* .tab-inner .nav-pills .nav-item {
@@ -4165,7 +4178,8 @@ input.login-btn {
   border-radius: 50px;
 }
 
-.tab-inner .nav-link:after {
+.tab-inner .nav-link:after,
+.tab-pane .nav-link:after {
   transition: width 0.3s linear;
   border-radius: 2px 2px 0 0;
   position: absolute;
@@ -4324,13 +4338,9 @@ span .coutry-select {
   border-top-right-radius: 10px;
 }
 
-.table .table-body {
-  background-color: #5d3f3f;
+.table thead.table-body {
+  width: 100%;
   border-radius: 6px 6px 0px 0px;
-}
-
-.table .table-body th {
-  background-color: #5d3f3f;
 }
 
 .table > :not(caption) > * > * {
@@ -4539,6 +4549,14 @@ th.th-paymet {
 
 .th-totals div {
   margin-right: 120px;
+}
+
+.th-set-id {
+  width: 160px !important;
+}
+
+.th-set-bonus {
+  width: 160px !important;
 }
 
 .flex-ro div {
@@ -4813,4 +4831,25 @@ input[type="number"]::-webkit-outer-spin-button {
   top: -65px;
   visibility: visible;
   opacity: 1;
+}
+
+.dropdown-menu {
+  display: block;
+  position: absolute;
+  inset: 0px auto auto 0px;
+  margin: 0px;
+  transform: translate3d(19px, 10px, 0px);
+  opacity: 0;
+  z-index: -1;
+  transition: 0.3s;
+  box-shadow: 0 0 10px 5px #0d0d0d4b;
+}
+
+.dropdown-menu.show {
+  position: absolute;
+  inset: 0px auto auto 0px;
+  margin: 0px;
+  transform: translate3d(19px, 58px, 0px);
+  opacity: 1;
+  z-index: 9999;
 }
