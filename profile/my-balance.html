@@ -86,8 +86,9 @@
                 data-bs-toggle="modal"
                 data-bs-target="#parcelsCalculator"
                 href="#"
-                ><i class="ri-calculator-line"></i
-              ></a>
+              >
+                <i class="ri-calculator-line"></i>
+              </a>
             </li>
             <li>
               <div class="lang-menu">
@@ -296,7 +297,13 @@
                   </div>
                 </div>
 
-                <button class="bonus-btn">How to earn Bonus</button>
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#parcelsBonusHelp"
+                  class="bonus-btn"
+                >
+                  How to earn Bonus
+                </button>
               </div>
               <div
                 class="tab-pane tab-inner fade show"
@@ -604,6 +611,29 @@
                 <h5 class="calc-amount">14,743,3 Рубл</h5>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Bonus Help -->
+    <div
+      class="modal fade"
+      id="parcelsBonusHelp"
+      tabindex="-1"
+      aria-labelledby="parcelsListBonusHelpModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog bonus-help modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body bonus-help">
+            <h3>How to earn Bonus</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
         </div>
       </div>

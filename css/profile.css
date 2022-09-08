@@ -81,6 +81,7 @@ select {
   font-size: 16px;
   font-weight: 800;
   border: 1px solid transparent;
+  border-color: #a8a8a8 !important;
   box-sizing: border-box;
   outline: none;
   border-radius: 10px;
@@ -2289,7 +2290,7 @@ input.register-number-input {
   bottom: 12px;
   left: 20px;
   width: 44px;
-  z-index: 2000;
+  z-index: 2;
   border: none;
   background: #fff;
 }
@@ -3137,6 +3138,17 @@ input.register-number-input {
   padding: 15px;
 }
 
+/* *** ** Bonus Help Modall ** *** */
+.modal-dialog.bonus-help {
+  max-width: 770px;
+  width: 770px !important;
+}
+
+.bonus-help .btn-close {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
 /* Calullator & All Inputs */
 input[type="text"],
 input[type="email"],
@@ -3161,6 +3173,7 @@ select {
   line-height: 145%;
   color: #000000;
   border: 1px solid transparent;
+  border-color: #a8a8a8 !important;
   box-sizing: border-box;
   outline: none;
   border-radius: 8px;
