@@ -2159,7 +2159,7 @@
     </section>
     <!-- Section FooterNav Mobile End -->
 
-    <!--Modal group-->
+    <!--Modal parcelsListViewModal group-->
     <div
       class="modal fade"
       id="parcelsListViewModal"
@@ -2248,6 +2248,7 @@
       </div>
     </div>
 
+    <!-- Modall parcelsEdit  -->
     <div
       class="modal fade"
       id="parcelsEdit"
@@ -2358,6 +2359,7 @@
       </div>
     </div>
 
+    <!-- Modall deleteModal  -->
     <div
       class="modal fade"
       id="deleteModal"
@@ -2392,6 +2394,7 @@
       </div>
     </div>
 
+    <!-- Modal parcelsListAddModal -->
     <div
       class="modal"
       id="parcelsListAddModal"
@@ -2644,6 +2647,7 @@
       </div>
     </div>
 
+    <!--Modal Photos  -->
     <div
       class="modal fade"
       id="parcelsPhoto"
@@ -2699,6 +2703,62 @@
       </div>
     </div>
 
+    <!--Modal parcelsOffersItem  -->
+    <div
+      class="modal fade s"
+      id="parcelsOffersItem"
+      tabindex="-1"
+      aria-labelledby="parcelsListOffersItemModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog photo offers-item modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <i class="ri-shield-keyhole-fill"></i>
+            <div>
+              <h4 class="modal-item-title">Save packing</h4>
+              <div class="modal-item-selects">
+                <p class="modal-item-desc">$3</p>
+                <select class="modal-item-select" name="save-packing" id="">
+                  <option value="Bubble">Bubble list</option>
+                  <option value="Bubble">Bubble list</option>
+                </select>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              eu commodo lorem. Aliquam bibendum vestibulum leo. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Morbi tristique ex
+              eget risus laoreet bibendum. Nullam eget est eget dui euismod
+              ultrices ut id mauris. Suspendisse tincidunt gravida erat a
+              fringilla.
+            </p>
+            <textarea type="text" placeholder="Enter description here" ></textarea>
+          </div>
+          <div class="modal-bottom">
+            <button
+              class="cancel-btn"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--Modal parcelsOffers  -->
     <div
       class="modal fade"
@@ -2717,120 +2777,158 @@
           <div class="modal-body offers">
             <ul class="modal-list">
               <li class="modal-item">
-                <input type="checkbox" />
-                <i class="ri-close-circle-fill"></i>
-                <div>
-                  <h4 class="modal-item-title">Holding in the storage</h4>
-                  <p class="modal-item-desc">$3</p>
-                </div>
-              </li>
-
-              <li class="modal-item">
-                <input type="checkbox" />
-                <i class="ri-scissors-cut-fill"></i>
-                <div>
-                  <h4 class="modal-item-title">Do not pack</h4>
-                  <p class="modal-item-desc">free</p>
-                </div>
-              </li>
-
-              <li class="modal-item">
-                <input type="checkbox" />
-                <i class="ri-lock-fill"></i>
-                <div>
-                  <h4 class="modal-item-title">Save packing</h4>
-                  <div class="modal-item-selects">
+                <input id="1" type="checkbox" class="form-check-input" />
+                <label for="1">
+                  <i class="ri-close-circle-fill"></i>
+                  <div>
+                    <h4 class="modal-item-title">Holding in the storage</h4>
                     <p class="modal-item-desc">$3</p>
-                    <select class="modal-item-select" name="save-packing" id="">
-                      <option value="Bubble">Bubble list</option>
-                      <option value="Bubble">Bubble list</option>
-                    </select>
                   </div>
-                </div>
+                </label>
               </li>
 
               <li class="modal-item">
-                <input type="checkbox" />
-                <i class="ri-dv-fill"></i>
-                <div>
-                  <h4 class="modal-item-title">Take a shot inside</h4>
-                  <div class="modal-item-selects">
-                    <p class="modal-item-desc">$5</p>
-                    <select class="modal-item-select" name="save-packing" id="">
-                      <option value="Bubble">3</option>
-                      <option value="Bubble">4</option>
-                    </select>
+                <input id="2" type="checkbox" class="form-check-input" />
+                <label for="2">
+                  <i class="ri-scissors-cut-fill"></i>
+                  <div>
+                    <h4 class="modal-item-title">Do not pack</h4>
+                    <p class="modal-item-desc">free</p>
                   </div>
-                </div>
+                </label>
               </li>
 
-              <li class="modal-item">
-                <input type="checkbox" />
-                <i class="ri-camera-fill"></i>
-                <div>
-                  <h4 class="modal-item-title">Take a shot outside</h4>
-                  <p class="modal-item-desc">$2</p>
-                </div>
-              </li>
-
-              <li class="modal-item">
-                <input type="checkbox" />
-                <i class="ri-arrow-go-back-line"></i>
-                <div>
-                  <h4 class="modal-item-title">Get back</h4>
-                  <p class="modal-item-desc">$3</p>
-                </div>
-              </li>
-
-              <li class="modal-item">
-                <input type="checkbox" />
-                <i class="ri-exchange-fill"></i>
-                <div>
-                  <h4 class="modal-item-title">Change the receiver</h4>
-                  <p class="modal-item-desc">free</p>
-                </div>
-              </li>
-
-              <li class="modal-item">
-                <input type="checkbox" />
-                <i class="ri-search-eye-fill"></i>
-                <div>
-                  <h4 class="modal-item-title">Check the order</h4>
-                  <p class="modal-item-desc">$3</p>
-                </div>
-              </li>
-
-              <li class="modal-item">
-                <input type="checkbox" />
-                <i class="ri-folder-shared-fill"></i>
-                <div>
-                  <h4 class="modal-item-title">Consolidation</h4>
-                  <p class="modal-item-desc">$20</p>
-                </div>
-              </li>
-
-              <li class="modal-item">
-                <input type="checkbox" />
-                <i class="ri-folder-shield-2-fill"></i>
-                <div>
-                  <h4 class="modal-item-title">Repacking</h4>
-                  <p class="modal-item-desc">$6</p>
-                </div>
-              </li>
-
-              <li class="modal-item">
-                <input type="checkbox" />
-                <i class="ri-folder-received-fill"></i>
-                <div>
-                  <h4 class="modal-item-title">Deconsolidation</h4>
-                  <div class="modal-item-selects">
-                    <p class="modal-item-desc">$5</p>
-                    <select class="modal-item-select" name="save-packing" id="">
-                      <option value="Bubble">Part 2</option>
-                      <option value="Bubble">Part 3</option>
-                    </select>
+              <li
+                class="modal-item"
+                data-bs-toggle="modal"
+                data-bs-target="#parcelsOffersItem"
+              >
+                <input id="3" type="checkbox" class="form-check-input" />
+                <label>
+                  <i class="ri-shield-keyhole-fill"></i>
+                  <div>
+                    <h4 class="modal-item-title">Save packing</h4>
+                    <div class="modal-item-selects">
+                      <p class="modal-item-desc">$3</p>
+                      <select
+                        class="modal-item-select"
+                        name="save-packing"
+                        id=""
+                      >
+                        <option value="Bubble">Bubble list</option>
+                        <option value="Bubble">Bubble list</option>
+                      </select>
+                    </div>
                   </div>
-                </div>
+                </label>
+              </li>
+
+              <li class="modal-item">
+                <input id="5" type="checkbox" class="form-check-input" />
+                <label for="5">
+                  <i class="ri-dv-fill"></i>
+                  <div>
+                    <h4 class="modal-item-title">Take a shot inside</h4>
+                    <div class="modal-item-selects">
+                      <p class="modal-item-desc">$5</p>
+                      <select
+                        class="modal-item-select"
+                        name="save-packing"
+                        id=""
+                      >
+                        <option value="Bubble">3</option>
+                        <option value="Bubble">4</option>
+                      </select>
+                    </div>
+                  </div>
+                </label>
+              </li>
+
+              <li class="modal-item">
+                <input id="6" type="checkbox" class="form-check-input" />
+                <label for="6">
+                  <i class="ri-camera-fill"></i>
+                  <div>
+                    <h4 class="modal-item-title">Take a shot outside</h4>
+                    <p class="modal-item-desc">$2</p>
+                  </div>
+                </label>
+              </li>
+
+              <li class="modal-item">
+                <input id="7" type="checkbox" class="form-check-input" />
+                <label for="7">
+                  <i class="ri-arrow-go-back-line"></i>
+                  <div>
+                    <h4 class="modal-item-title">Get back</h4>
+                    <p class="modal-item-desc">$3</p>
+                  </div>
+                </label>
+              </li>
+
+              <li class="modal-item">
+                <input id="8" type="checkbox" class="form-check-input" />
+                <label for="8">
+                  <i class="ri-exchange-fill"></i>
+                  <div>
+                    <h4 class="modal-item-title">Change the receiver</h4>
+                    <p class="modal-item-desc">free</p>
+                  </div>
+                </label>
+              </li>
+
+              <li class="modal-item">
+                <input id="9" type="checkbox" class="form-check-input" />
+                <label for="9">
+                  <i class="ri-search-eye-fill"></i>
+                  <div>
+                    <h4 class="modal-item-title">Check the order</h4>
+                    <p class="modal-item-desc">$3</p>
+                  </div>
+                </label>
+              </li>
+
+              <li class="modal-item">
+                <input id="10" type="checkbox" class="form-check-input" />
+                <label for="10">
+                  <i class="ri-folder-shared-fill"></i>
+                  <div>
+                    <h4 class="modal-item-title">Consolidation</h4>
+                    <p class="modal-item-desc">$20</p>
+                  </div>
+                </label>
+              </li>
+
+              <li class="modal-item">
+                <input id="11" type="checkbox" class="form-check-input" />
+                <label for="11">
+                  <i class="ri-folder-shield-2-fill"></i>
+                  <div>
+                    <h4 class="modal-item-title">Repacking</h4>
+                    <p class="modal-item-desc">$6</p>
+                  </div>
+                </label>
+              </li>
+
+              <li class="modal-item">
+                <input id="12" type="checkbox" class="form-check-input" />
+                <label for="12">
+                  <i class="ri-folder-received-fill"></i>
+                  <div>
+                    <h4 class="modal-item-title">Deconsolidation</h4>
+                    <div class="modal-item-selects">
+                      <p class="modal-item-desc">$5</p>
+                      <select
+                        class="modal-item-select"
+                        name="save-packing"
+                        id=""
+                      >
+                        <option value="Bubble">Part 2</option>
+                        <option value="Bubble">Part 3</option>
+                      </select>
+                    </div>
+                  </div>
+                </label>
               </li>
 
               <li class="modal-item"></li>

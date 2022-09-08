@@ -81,7 +81,7 @@ select {
   font-size: 16px;
   font-weight: 800;
   border: 1px solid transparent;
-  border-color: #a8a8a8 !important;
+  /* border-color: #a8a8a8 !important; */
   box-sizing: border-box;
   outline: none;
   border-radius: 10px;
@@ -2055,6 +2055,11 @@ table thead th p {
   color: #000000;
   border-radius: 10px;
   padding: 0 10px 0 15px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+}
+
+.bonus-content .nav-pills .nav-link {
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -2117,7 +2122,7 @@ table thead th p {
 .register-content .content-left {
   position: relative;
   background-image: url(../images/loginimg/opa2.png);
-  background-position: 70% 55px;
+  background-position: 50% 55px;
   background-size: contain;
   background-repeat: no-repeat;
   height: 100vh;
@@ -2222,6 +2227,18 @@ input.register-number-input {
   border-color: #a8a8a8 !important;
 }
 
+.register-content input[type="text"],
+.register-content input[type="email"],
+.register-content input[type="search"],
+.register-content input[type="number"],
+.register-content .number-input,
+.register-content .content-right-body-input {
+  border-color: #a8a8a8 !important;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
 .input-margin-b {
   margin-bottom: 20px;
 }
@@ -2280,7 +2297,7 @@ input.register-number-input {
 
 .register-content .content-right .content-body span {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 22px;
 }
 
@@ -2290,7 +2307,7 @@ input.register-number-input {
   bottom: 12px;
   left: 20px;
   width: 44px;
-  z-index: 2;
+  z-index: 5;
   border: none;
   background: #fff;
 }
@@ -2939,18 +2956,21 @@ input.register-number-input {
 }
 
 .modal-body.photo ul {
-  width: 700px;
+  max-width: 700px;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
   padding: 35px 15px;
-  display: flex;
-  grid-template-columns: 1fr, 1fr;
+  display: grid;
+  grid-template-columns: auto auto;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
   list-style: none;
 }
+
+
 
 .modal-body.photo ul li {
   padding: 5px;
@@ -2960,16 +2980,20 @@ input.register-number-input {
 }
 
 .modal-body.photo ul li img {
-  width: 315px;
-  object-fit: contain;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius:8px;
+  height: 100%;
 }
 
 /* Photo Modal Start */
-.offers .modal-content,
+/* .offers .modal-content, */
 .offers {
   max-width: 1000px;
-  width: 1000px;
   margin: 40px auto;
+}
+.offers .modal-content {
+  margin: 20px;
 }
 
 .offers .modal-title {
@@ -2981,6 +3005,7 @@ input.register-number-input {
 }
 
 .offers {
+  width: 100%;
   margin-top: 0;
   padding-top: 40px;
 }
@@ -3002,6 +3027,10 @@ input.register-number-input {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.offers .modal-list .modal-item label {
+  display: flex;
+  align-items: center;
+}
 .offers .modal-list .modal-item:nth-child(even) {
   border-left: 1px solid #cdcdcd;
   padding-left: 20px;
@@ -3019,6 +3048,7 @@ input.register-number-input {
   font-size: 16px;
   line-height: 19px;
   color: #828282;
+  transition: 0.3s;
 }
 
 .modal-item-desc {
@@ -3027,20 +3057,24 @@ input.register-number-input {
   font-size: 16px;
   line-height: 19px;
   color: #828282;
+  transition: 0.3s;
 }
 
 .offers .modal-list .modal-item input {
   width: 20px;
   height: 20px;
-  background: #828282;
+  /* background: #828282; */
+  margin: 0;
   margin-right: 25px;
+  transition: 0.3s;
 }
 
-.offers .modal-list .modal-item input:checked + i {
+.offers .modal-list .modal-item input:checked + label i {
   color: #e8c305;
 }
 
-.offers .modal-list .modal-item input:checked + div h4 {
+.offers .modal-list .modal-item input:checked + label div h4,
+.offers .modal-list .modal-item input:checked + label div p {
   color: #000;
 }
 
@@ -3089,17 +3123,20 @@ input.register-number-input {
   font-weight: 600;
 }
 
-.offers .modal-bottom .cancel-btn {
+.offers .modal-bottom .cancel-btn,
+.offers-item .modal-bottom .cancel-btn {
   margin-right: 13px;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   background: #e0e0e0;
   border-radius: 8px;
+  padding: 10px 20px;
   border: none;
 }
 
-.offers .modal-bottom .add-btn {
+.offers .modal-bottom .add-btn,
+.offers-item .modal-bottom .add-btn {
   border-radius: 8px;
   font-weight: 400;
   font-size: 18px;
@@ -3107,6 +3144,72 @@ input.register-number-input {
   background: #e8c305;
   padding: 10px 20px;
   border: none;
+}
+
+/* Modall offers item */
+
+#parcelsOffersItem {
+  z-index: 2000;
+}
+
+#parcelsOffersItem.show + #parcelsOffers {
+  z-index: 1050;
+}
+
+.offers-item .btn-close {
+  margin-bottom: 50px;
+}
+
+.modal-backdrop + .modal-backdrop {
+  z-index: 1051;
+}
+
+.offers-item i {
+  color: #e8c305;
+  font-size: 80px;
+  margin-right: 24px;
+}
+
+.offers-item h4 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
+  color: #121212;
+}
+
+.offers-item p {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #121212;
+}
+
+.offers-item select {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #121212;
+}
+
+.offers-item .modal-body {
+  padding: 30px 30px 25px;
+}
+
+.offers-item textarea {
+  text-align: start;
+  overflow-y: auto;
+  overflow-x: none;
+  min-height: 100px;
+  border: 1px solid #828282 !important;
+  border-radius: 8px;
+}
+
+.offers-item .modal-bottom {
+  display: flex;
+  align-items: center;
+  padding: 0px 30px 30px;
+  justify-content: flex-end;
 }
 
 /* *** ** Calculator Modall ** *** */
@@ -3140,8 +3243,22 @@ input.register-number-input {
 
 /* *** ** Bonus Help Modall ** *** */
 .modal-dialog.bonus-help {
-  max-width: 770px;
-  width: 770px !important;
+  max-width: 1200px;
+  /* width: 770px ; */
+}
+
+.bonus-help .modal-header {
+  position: relative;
+}
+
+.bonus-help .modal-content {
+  margin: 20px;
+}
+
+.bonus-help h3 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
 }
 
 .bonus-help .btn-close {
@@ -3149,6 +3266,18 @@ input.register-number-input {
   right: 30px;
   top: 30px;
 }
+
+.bonus-help .video {
+  margin-bottom: 20px;
+}
+
+.bonus-help p  {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+
 /* Calullator & All Inputs */
 input[type="text"],
 input[type="email"],
@@ -3173,7 +3302,7 @@ select {
   line-height: 145%;
   color: #000000;
   border: 1px solid transparent;
-  border-color: #a8a8a8 !important;
+  /* border-color: #a8a8a8 !important; */
   box-sizing: border-box;
   outline: none;
   border-radius: 8px;
@@ -4134,7 +4263,7 @@ input.login-btn {
   flex-wrap: nowrap;
 }
 
-.tab-pane .nav-pills {
+.bonus-content .nav-pills {
   display: flex;
   align-items: center;
 }
@@ -4866,3 +4995,85 @@ input[type="number"]::-webkit-outer-spin-button {
   opacity: 1;
   z-index: 9999;
 }
+
+.form-check-input:checked,
+.form-check-input {
+  /* background: #e8c305; */
+  border-color: #a8a8a8 !important;
+  border-width: 2px;
+  border-radius: 2px !important;
+}
+
+.form-check-input:checked {
+  background: #e8c305;
+  border-color: #e8c305 !important;
+}
+
+/* Video Player */
+.video {
+  border-radius: 20px;
+  position: relative;
+}
+.video-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 9;
+  transition: opacity 0.8s ease-in-out;
+}
+.playing .video-layer {
+  opacity: 1;
+}
+.video-layer iframe {
+  width: 100%;
+  height: 100%;
+}
+.video-preview img {
+  width: 100%;
+}
+.playing .video-preview {
+  opacity: 1;
+}
+.video-preview .video-preview-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(/images/line_slider.png), url(/images/line_slider.png);
+  background-position: 50px, 66px;
+  background-size: 8px 100%;
+  background-repeat: no-repeat, no-repeat;
+  z-index: 2;
+}
+.video-preview .video-preview-overlay {
+  border-radius: 15px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.video-preview svg {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 3;
+}
+
+iframe {
+  border-radius: 20px;
+}
+
+.bonus-help iframe,
+.bonus-help .video-preview .video-preview-overlay {
+  border-radius: 0px;
+}
+

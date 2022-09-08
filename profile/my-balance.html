@@ -181,7 +181,7 @@
             </ul>
           </div>
           <!-- Profile Dinamic Contents -->
-          <div class="profile-content col">
+          <div class="profile-content bonus-content col">
             <div class="profile-content-row row m-0 p-0 mb-4">
               <ul class="nav nav-pills" role="tablist">
                 <li class="nav-item" role="presentation">
@@ -626,7 +626,7 @@
     >
       <div class="modal-dialog bonus-help modal-dialog-centered">
         <div class="modal-content">
-          <div class="modal-body bonus-help">
+          <div class="modal-header">
             <h3>How to earn Bonus</h3>
             <button
               type="button"
@@ -634,6 +634,37 @@
               data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
+            
+          </div>
+          <div class="modal-body bonus-help">
+            <div class="video" data-video-id="30LEYoVoFpM">
+              <div class="video-layer">
+                <div class="video-placeholder"></div>
+              </div>
+              <div class="video-preview">
+                <img src="/images/how_section.png" alt="video" />
+                <svg viewBox="0 0 74 74">
+                  <circle
+                    style="opacity: 0.64; stroke: #ffffff"
+                    cx="37"
+                    cy="37"
+                    r="36.5"
+                  ></circle>
+                  <circle
+                    fill="none"
+                    stroke="#FFFFFF"
+                    cx="37"
+                    cy="37"
+                    r="36.5"
+                  ></circle>
+                  <polygon fill="#FFFFFF" points="33,22 33,52 48,37"></polygon>
+                </svg>
+                <div class="video-preview-line"></div>
+                <div class="video-preview-overlay"></div>
+              </div>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel sollicitudin risus. Ut non mattis elit. Maecenas ante nibh, pulvinar vel volutpat sit amet, condimentum sit amet libero. Donec blandit tortor in tempus molestie. Quisque lacinia dolor non nunc fringilla varius. Suspendisse sagittis, odio lacinia volutpat tristique, est elit congue orci, et varius turpis mauris id massa. Donec pellentesque velit sem, vel accumsan urna elementum ac. In pretium imperdiet nunc vitae mollis. Maecenas ornare ipsum nec nisi rhoncus tempus. Nam dapibus mattis lobortis. Aliquam ex mi, euismod sed suscipit et, varius aliquam enim. Donec aliquam sodales lacinia. Pellentesque porttitor quam urna, ac gravida diam commodo sed. Vivamus eget tellus finibus, aliquam tellus blandit, hendrerit metus. Sed neque sem, pretium non consequat quis, ullamcorper et metus. Mauris vulputate ante convallis accumsan cursus.</p>
           </div>
         </div>
       </div>
@@ -642,6 +673,7 @@
   <!-- Bootstrap Js -->
   <script src="/js/jquery-3.6.0.min.js"></script>
   <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/iframe_api.js"></script>
   <script>
     document.querySelector("body").addEventListener("click", (evt) => {
       if (evt.target.id == "lang-menu-id") {
