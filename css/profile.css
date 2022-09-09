@@ -2055,8 +2055,6 @@ table thead th p {
   color: #000000;
   border-radius: 10px;
   padding: 0 10px 0 15px;
-  /* padding-left: 20px;
-  padding-right: 20px; */
 }
 
 .bonus-content .nav-pills .nav-link {
@@ -2066,7 +2064,7 @@ table thead th p {
 
 .profile .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  background-color: #e8c305;
+  background-color: #e8c305 ;
 }
 
 /* Desktop & Mobile */

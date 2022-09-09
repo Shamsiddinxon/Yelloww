@@ -46,7 +46,7 @@ jQuery(document).ready(function ($) {
         // spaceBetween: 30
       },
     },
-  };
+  }; 
 
 
   let mySwiper = new Swiper(".swipers", options);
