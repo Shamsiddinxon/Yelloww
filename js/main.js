@@ -1,26 +1,21 @@
+// /// calculator modall
+document.querySelector(".calculator-bottom")?.classList.add("none");
+document.querySelector("#formCheckCalc").addEventListener("click", () => {
+  document.querySelector(".calculator-bottom").classList.toggle("none");
+});
 
-  
-  
-  // /// calculator modall
-  document.querySelector(".calculator-bottom")?.classList.add("none")
-  document.querySelector("#formCheckCalc").addEventListener("click", ()=> {
-    document.querySelector(".calculator-bottom").classList.toggle("none")
-  })
-  
-  // searchForms.addEventListener("submit", (evt)=> {
-  //     console.log("alik");
-  // })
+// searchForms.addEventListener("submit", (evt)=> {
+//     console.log("alik");
+// })
 
-  document.querySelector("body").addEventListener("click", (evt) => {
-    if(evt.target.id == 'lang-menu-id'){
-      document.querySelector(".lang-menu").classList.toggle("act");
-    } else {
-      document.querySelector(".lang-menu").classList.remove("act");
-    }
-    console.log("salom");
-  });
-  
-
+document.querySelector("body").addEventListener("click", (evt) => {
+  if (evt.target.id == "lang-menu-id") {
+    document.querySelector(".lang-menu").classList.toggle("act");
+  } else {
+    document.querySelector(".lang-menu").classList.remove("act");
+  }
+  console.log("salom");
+});
 
 jQuery(document).ready(function ($) {
   let autoPlayDelay = 5000;
@@ -46,8 +41,7 @@ jQuery(document).ready(function ($) {
         // spaceBetween: 30
       },
     },
-  }; 
-
+  };
 
   let mySwiper = new Swiper(".swipers", options);
   let slidersCount = mySwiper.params.loop
@@ -161,13 +155,10 @@ jQuery(document).ready(function ($) {
   });
 });
 
-const myCountdown = new countdown({
-    target: '.countdown',
-    dayWord: ' Days',
-    hourWord: ' Hours',
-    minWord: ' Mins',
-    secWord: ' Seconds'
-  });
-
-
-  
+// const myCountdown = new countdown({
+//   target: ".countdown",
+//   dayWord: " Days",
+//   hourWord: " Hours",
+//   minWord: " Mins",
+//   secWord: " Seconds",
+// });

@@ -155,7 +155,7 @@
           <button class="countdown-btn-send btn">Send a shipment</button>
         </div>
       </div>
-    </section> 
+    </section>
     <!-- Section Slider Start -->
 
     <!-- Section Track id works Start -->
@@ -189,7 +189,7 @@
       </div>
     </div>
     <!-- STEEP-1 -->
-    <div id="steep-1"  class="track container-fluid">
+    <div id="steep-1" class="track container-fluid">
       <div class="container">
         <div class="steep-1">
           <form class="track-search">
@@ -200,7 +200,7 @@
                 id="search-id"
                 placeholder="Enter your Box ID here"
               />
-              <button type="button" id="track-id">Track</button>
+              <button type="submit" id="track-id">Track</button>
             </div>
           </form>
 
@@ -278,7 +278,7 @@
       </div>
     </div>
     <!-- STEEP-2 -->
-    <div id="steep-2"  class="track container-fluid">
+    <div id="steep-2" class="track container-fluid">
       <div class="container">
         <div class="steep-1">
           <form class="track-search">
@@ -289,7 +289,7 @@
                 id="search-id"
                 placeholder="Enter your Box ID here"
               />
-              <button type="button" id="track-id">Track</button>
+              <button type="submit" id="track-id">Track</button>
             </div>
           </form>
 
@@ -367,7 +367,7 @@
       </div>
     </div>
     <!-- STEEP-3 -->
-    <div id="steep-3"  class="track container-fluid">
+    <div id="steep-3" class="track container-fluid">
       <div class="container">
         <div class="steep-1">
           <form class="track-search">
@@ -378,7 +378,7 @@
                 id="search-id"
                 placeholder="Enter your Box ID here"
               />
-              <button type="button" id="track-id">Track</button>
+              <button type="submit" id="track-id">Track</button>
             </div>
           </form>
 
@@ -456,7 +456,7 @@
       </div>
     </div>
     <!-- STEEP-4 -->
-    <div id="steep-4"  class="track container-fluid">
+    <div id="steep-4" class="track container-fluid">
       <div class="container">
         <div class="steep-1">
           <form class="track-search">
@@ -467,7 +467,7 @@
                 id="search-id"
                 placeholder="Enter your Box ID here"
               />
-              <button type="button" id="track-id">Track</button>
+              <button type="submit" id="track-id">Track</button>
             </div>
           </form>
 
@@ -1128,58 +1128,57 @@
   <script src="/js/main.js"></script>
   <script>
     let searchInputs = document.querySelectorAll(".search-id");
-  let searchForms = document.querySelectorAll(".track-search");
-  let steep0 = document.querySelector("#steep-0");
-  let steep1 = document.querySelector("#steep-1");
-  let steep2 = document.querySelector("#steep-2");
-  let steep3 = document.querySelector("#steep-3");
-  let steep4 = document.querySelector("#steep-4");
-  
-  steep0.classList.remove("none");
-  steep1.classList.add("none");
-  steep2.classList.add("none");
-  steep3.classList.add("none");
-  steep4.classList.add("none");
-  console.log(steep1);
-  
-  for (item of searchForms) {
-    item.addEventListener("submit", (evt) => {
-      evt.preventDefault();
-      let inputValue = evt.srcElement[0].value;
-      if (inputValue == 1) {
-        steep0.classList.add("none");
-        steep2.classList.add("none");
-        steep3.classList.add("none");
-        steep4.classList.add("none");
-        steep1.classList.remove("none");
-      } else if (inputValue == 2) {
-        steep0.classList.add("none");
-        steep1.classList.add("none");
-        steep3.classList.add("none");
-        steep4.classList.add("none");
-        steep2.classList.remove("none");
-      } else if (inputValue == 3) {
-        steep0.classList.add("none");
-        steep1.classList.add("none");
-        steep3.classList.remove("none");
-        steep4.classList.add("none");
-        steep2.classList.add("none");
-      } else if (inputValue == 4) {
-        steep0.classList.add("none");
-        steep1.classList.add("none");
-        steep3.classList.add("none");
-        steep4.classList.remove("none");
-        steep2.classList.add("none");
-      } else if (inputValue == 0) {
+    let searchForms = document.querySelectorAll(".track-search");
+    let steep0 = document.querySelector("#steep-0");
+    let steep1 = document.querySelector("#steep-1");
+    let steep2 = document.querySelector("#steep-2");
+    let steep3 = document.querySelector("#steep-3");
+    let steep4 = document.querySelector("#steep-4");
+
+    steep0.classList.remove("none");
+    steep1.classList.add("none");
+    steep2.classList.add("none");
+    steep3.classList.add("none");
+    steep4.classList.add("none");
+    console.log(steep1);
+
+    for (item of searchForms) {
+      item.addEventListener("submit", (evt) => {
+        evt.preventDefault();
+        console.log(searchForms);
+        let inputValue = evt.srcElement[0].value;
+        if (inputValue == 1) {
+          steep0.classList.add("none");
+          steep2.classList.add("none");
+          steep3.classList.add("none");
+          steep4.classList.add("none");
+          steep1.classList.remove("none");
+        } else if (inputValue == 2) {
+          steep0.classList.add("none");
+          steep1.classList.add("none");
+          steep3.classList.add("none");
+          steep4.classList.add("none");
+          steep2.classList.remove("none");
+        } else if (inputValue == 3) {
+          steep0.classList.add("none");
+          steep1.classList.add("none");
+          steep3.classList.remove("none");
+          steep4.classList.add("none");
+          steep2.classList.add("none");
+        } else if (inputValue == 4) {
+          steep0.classList.add("none");
+          steep1.classList.add("none");
+          steep3.classList.add("none");
+          steep4.classList.remove("none");
+          steep2.classList.add("none");
+        } else if (inputValue == 0) {
           steep0.classList.remove("none");
           steep1.classList.add("none");
           steep3.classList.add("none");
           steep4.classList.add("none");
           steep2.classList.add("none");
         }
-    });
-  }
-
-
+      });
+    }
   </script>
 </html>
