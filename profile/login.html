@@ -14,6 +14,8 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="../css/fontfase.css" />
     <link rel="stylesheet" href="../css/profile.css" />
+    <!-- RemixIcon link -->
+    <link rel="stylesheet" href="/fonts/remixicon.css" />
     <title>Yellow - Login</title>
   </head>
   <body>
@@ -42,14 +44,29 @@
                   placeholder="Phone or Email"
                 />
               </div>
-              <div class="col-12">
+              <div class="col-12 position-relative">
                 <label for="password">Password</label>
                 <input
-                  class="content-right-body-input"
+                  class="content-right-body-input password-input"
                   type="password"
                   id="password"
                   placeholder="* * * * * *"
                 />
+
+                <button
+                  class="password-btn-eye"
+                  type="button"
+                  onclick="myFunction()"
+                >
+                  <i class="ri-eye-off-line"></i>
+                </button>
+                <button
+                  class="password-btn-eye-off"
+                  type="button"
+                  onclick="myFunction()"
+                >
+                  <i class="ri-eye-line"></i>
+                </button>
               </div>
               <div class="col-12 mt-1 d-flex justify-content-between">
                 <div class="d-flex align-items-center">
@@ -94,5 +111,25 @@
         </div>
       </div>
     </section>
+
+    <script>
+      var x = document.querySelector(".password-input");
+      let eyeBtn = document.querySelector(".password-btn-eye");
+      let eyeOffBtn = document.querySelector(".password-btn-eye-off");
+      eyeOffBtn.classList.add("none");
+      function myFunction() {
+        if (x.type === "password") {
+          eyeBtn.classList.add("none");
+          eyeOffBtn.classList.remove("none");
+          x.type = "text";
+          x.placeholder = "Password";
+        } else {
+          eyeBtn.classList.remove("none");
+          eyeOffBtn.classList.add("none");
+          x.type = "password";
+          x.placeholder = "* * * * * *";
+        }
+      }
+    </script>
   </body>
 </html>

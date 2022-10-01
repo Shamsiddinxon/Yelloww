@@ -14,6 +14,8 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="../css/profile.css" />
     <link rel="stylesheet" href="../css/fontfase.css" />
+    <!-- RemixIcon link -->
+    <link rel="stylesheet" href="/fonts/remixicon.css" />
     <title>Yellow - Register</title>
   </head>
   <body>
@@ -27,159 +29,193 @@
           /> -->
         </div>
 
-        <div class="content-right">
-          <div class="content-header">
-            <img class="phoneContent mb-2" src="/images/logo.svg" alt="logo" />
-            <h1 class="content-right-title">Registration</h1>
-            <p class="content-right-text">
-              Sign Up to use the full capabilities of the system you need to
-              pass
-            </p>
-          </div>
-          <div class="content-body">
-            <form class="row" action="#">
-              <div class="col-12">
-                <label for="email"
-                  >Full name <span class="required">*</span></label
-                >
-                <input
-                  class="content-right-body-input"
-                  type="text"
-                  id="email"
-                  placeholder="Name"
-                />
-              </div>
-
-              <div class="col-12 input-margin-b">
-                <div class="input-group">
-                  <label class="col-12" for="number"
-                    >phone <span class="required">*</span></label
+        <div class="box">
+          <div class="content-right">
+            <div class="content-header">
+              <img
+                class="phoneContent mb-2"
+                src="/images/logo.svg"
+                alt="logo"
+              />
+              <h1 class="content-right-title">Registration</h1>
+              <p class="content-right-text">
+                Sign Up to use the full capabilities of the system you need to
+                pass
+              </p>
+            </div>
+            <div class="content-body">
+              <form class="row" action="#">
+                <div class="col-12">
+                  <label for="email"
+                    >Full name <span class="required">*</span></label
                   >
-                  <button
-                    class="bt btt btn-outline-secondar"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <span class="d-flex"
-                      ><img src="../images/usa.svg" alt="" width="44" />
-                      <div class="coutry-select"></div>
-                      +1</span
-                    >
-                  </button>
                   <input
-                    type="number"
-                    id="number"
-                    class="form-control register-number-input"
-                    value="+1"
+                    class="content-right-body-input"
+                    type="text"
+                    id="email"
+                    placeholder="Name"
                   />
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item active" href="#"
-                        ><span
-                          ><img
-                            src="../images/usa.svg"
-                            alt=""
-                            class="mx-2" /></span
-                        >United States</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"
-                        ><span
-                          ><img
-                            src="../images/uzb.svg"
-                            alt=""
-                            class="mx-2" /></span
-                        >Uzbekistan</a
-                      >
-                    </li>
-                  </ul>
                 </div>
-              </div>
 
-              <div class="col-12">
-                <label for="email">Email <span class="required">*</span></label>
-                <input
-                  class="content-right-body-input"
-                  type="text"
-                  id="email"
-                  placeholder="Name"
-                />
-              </div>
+                <div class="col-12 input-margin-b">
+                  <div class="input-group">
+                    <label class="col-12" for="number"
+                      >phone <span class="required">*</span></label
+                    >
+                    <button
+                      class="bt btt btn-outline-secondar"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span class="d-flex"
+                        ><img src="../images/usa.svg" alt="" width="44" />
+                        <div class="coutry-select"></div>
+                        +1</span
+                      >
+                    </button>
+                    <input
+                      type="number"
+                      id="number"
+                      class="form-control register-number-input"
+                      value="+1"
+                    />
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item active" href="#"
+                          ><span
+                            ><img
+                              src="../images/usa.svg"
+                              alt=""
+                              class="mx-2" /></span
+                          >United States</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><span
+                            ><img
+                              src="../images/uzb.svg"
+                              alt=""
+                              class="mx-2" /></span
+                          >Uzbekistan</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
 
-              <div class="col-12">
-                <label for="password"
-                  >Password <span class="required">*</span></label
-                >
-                <input
-                  class="content-right-body-input"
-                  type="password"
-                  id="password"
-                  placeholder="* * * * * *"
-                />
-              </div>
-
-              <div class="col-12">
-                <!-- <input
-                  class="checkbox"
-                  type="checkbox"
-                  value=""
-                  id="loginCheckbox"
-                /> -->
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="loginCheckbox"
-                />
-                <label
-                  class="checkbox-label content-right-body-checkbox-label"
-                  for="loginCheckbox"
-                >
-                  Remember me
-                </label>
-              </div>
-              <div class="col-12">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="loginOffertaCheckbox"
-                />
-                <label
-                  class="checkbox-label content-right-body-checkbox-label"
-                  for="loginOffertaCheckbox"
-                >
-                  I agree to all the <a href="#">Term, Privacy</a> and
-                  <a href="#">Fees</a>
-                </label>
-              </div>
-              <div class="col-12" style="margin-top: 42px">
-                <input class="login-btn btn" type="submit" value="Log In" />
-                <button class="google-btn btn">
-                  <img
-                    src="/images/new/login-link-google.svg"
-                    alt="google"
-                    width="26"
-                    height="26"
+                <div class="col-12">
+                  <label for="email"
+                    >Email <span class="required">*</span></label
+                  >
+                  <input
+                    class="content-right-body-input"
+                    type="text"
+                    id="email"
+                    placeholder="Name"
                   />
-                </button>
-                <button class="facebook-btn btn">
-                  <img
-                    src="/images/new/login-link-fasebook.svg"
-                    alt="facebook"
-                    width="36"
-                    height="28"
+                </div>
+
+                <div class="col-12 position-relative">
+                  <label for="password"
+                    >Password <span class="required">*</span></label
+                  >
+                  <input
+                    class="content-right-body-input password-input"
+                    type="password"
+                    id="password"
+                    placeholder="* * * * * *"
                   />
-                </button>
-              </div>
-            </form>
+                  <button
+                    class="password-btn-eye"
+                    type="button"
+                    onclick="myFunction()"
+                  >
+                    <i class="ri-eye-line"></i>
+                  </button>
+                  <button
+                    class="password-btn-eye-off"
+                    type="button"
+                    onclick="myFunction()"
+                  >
+                    <i class="ri-eye-off-line"></i>
+                  </button>
+                </div>
+
+                <div class="col-12">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="loginCheckbox"
+                  />
+                  <label
+                    class="checkbox-label content-right-body-checkbox-label"
+                    for="loginCheckbox"
+                  >
+                    Remember me
+                  </label>
+                </div>
+                <div class="col-12">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="loginOffertaCheckbox"
+                  />
+                  <label
+                    class="checkbox-label content-right-body-checkbox-label"
+                    for="loginOffertaCheckbox"
+                  >
+                    I agree to all the <a href="#">Term, Privacy</a> and
+                    <a href="#">Fees</a>
+                  </label>
+                </div>
+                <div class="col-12" style="margin-top: 42px">
+                  <input class="login-btn btn" type="submit" value="Log In" />
+                  <button class="google-btn btn">
+                    <img
+                      src="/images/new/login-link-google.svg"
+                      alt="google"
+                      width="26"
+                      height="26"
+                    />
+                  </button>
+                  <button class="facebook-btn btn">
+                    <img
+                      src="/images/new/login-link-fasebook.svg"
+                      alt="facebook"
+                      width="36"
+                      height="28"
+                    />
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <script src="../js/bootstrap.bundle.min.js"></script>
-    <script></script>
+    <script>
+      var x = document.querySelector(".password-input");
+      let eyeBtn = document.querySelector(".password-btn-eye");
+      let eyeOffBtn = document.querySelector(".password-btn-eye-off");
+      eyeOffBtn.classList.add("none");
+      function myFunction() {
+        if (x.type === "password") {
+          eyeBtn.classList.add("none");
+          eyeOffBtn.classList.remove("none");
+          x.type = "text";
+          x.placeholder = "Password";
+        } else {
+          eyeBtn.classList.remove("none");
+          eyeOffBtn.classList.add("none");
+          x.type = "password";
+          x.placeholder = "* * * * * *";
+        }
+      }
+    </script>
   </body>
 </html>

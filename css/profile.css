@@ -2064,7 +2064,7 @@ table thead th p {
 
 .profile .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  background-color: #e8c305 ;
+  background-color: #e8c305;
 }
 
 /* Desktop & Mobile */
@@ -2126,7 +2126,18 @@ table thead th p {
   height: 100vh;
   z-index: 1;
 }
-.login-content .content-right,
+.login-content .content-right {
+  align-self: start;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 50px 55px;
+  width: 90%;
+  max-width: 620px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
 .register-content .content-right {
   align-self: start;
   background-color: #ffffff;
@@ -2137,6 +2148,12 @@ table thead th p {
   margin-top: 80px;
   margin-bottom: 30px;
   color: #000000;
+}
+
+.register-content .box {
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
 }
 
 .content-right .input-group .btn {
@@ -2253,6 +2270,21 @@ input.register-number-input {
   box-shadow: none;
   border-color: #e8c305;
 }
+
+.password-btn-eye,
+.password-btn-eye-off {
+  position: absolute;
+  right: 27px;
+  bottom: 23px;
+  font-size: 24px;
+  color: #a8a8a8;
+  border: none;
+  background-color: transparent;
+}
+
+/* .password-btn-eye-off {
+  display: none;
+} */
 
 .content-right .required {
   color: red;
@@ -2968,8 +3000,6 @@ input.register-number-input {
   list-style: none;
 }
 
-
-
 .modal-body.photo ul li {
   padding: 5px;
   /* margin: 15px; */
@@ -2980,7 +3010,7 @@ input.register-number-input {
 .modal-body.photo ul li img {
   max-width: 100%;
   object-fit: cover;
-  border-radius:8px;
+  border-radius: 8px;
   height: 100%;
 }
 
@@ -3269,12 +3299,11 @@ input.register-number-input {
   margin-bottom: 20px;
 }
 
-.bonus-help p  {
+.bonus-help p {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
 }
-
 
 /* Calullator & All Inputs */
 input[type="text"],
@@ -5074,4 +5103,3 @@ iframe {
 .bonus-help .video-preview .video-preview-overlay {
   border-radius: 0px;
 }
-
