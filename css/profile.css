@@ -2415,6 +2415,52 @@ input.register-number-input {
   margin-top: 2px;
 }
 
+@media only screen and (max-height: 837px) {
+  .register-content .content-right {
+    margin-top: 40px;
+  }
+  .register-content .content-right {
+    padding: 45px 50px;
+  }
+
+  .content-right-text {
+    margin-bottom: 35px;
+  }
+
+  .content-right-title {
+    margin-bottom: 15px;
+  }
+
+  .content-right-body-input {
+    margin-bottom: 15px;
+  }
+
+  .password-btn-eye,
+  .password-btn-eye-off {
+    bottom: 19px;
+  }
+
+  .content-body div.btns {
+    margin-top: 30px !important;
+  }
+}
+
+@media only screen and (max-height: 770px) {
+  .register-content .content-right {
+    padding: 40px 45px;
+  }
+  .content-right-title {
+    font-size: 28px;
+    line-height: 29px;
+  }
+  .content-right-title {
+    margin-bottom: 10px;
+  }
+  .content-body div.btns {
+    margin-top: 20px !important;
+  }
+}
+
 /* Parcels Modal Start */
 #parcelsModal .modal-header {
   border-bottom: none;
