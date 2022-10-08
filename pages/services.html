@@ -16,7 +16,7 @@
     <!-- RemixIcon link -->
     <link rel="stylesheet" href="/fonts/remixicon.css" />
     <!-- Custom links -->
-    <title>Yellow - service page</title> 
+    <title>Yellow - service page</title>
   </head>
   <body>
     <!-- Section Navbar Start -->
@@ -69,10 +69,11 @@
           <!-- navbar-right -->
           <ul class="navbar-nav navbar-right ml-auto">
             <li class="nav-item">
-              <a class="nav-link" 
-              data-bs-toggle="modal"
-              data-bs-target="#parcelsCalculator"
-              href="#"
+              <a
+                class="nav-link"
+                data-bs-toggle="modal"
+                data-bs-target="#parcelsCalculator"
+                href="#"
                 ><i class="ri-calculator-line"></i
               ></a>
             </li>
@@ -139,19 +140,21 @@
             </p>
           </div>
           <div class="service-right">
-            <div class="service-right-item">
-              <img src="/images/service_target.png" alt="target" />
-              <h3 class="service-title">Консолидация</h3>
+            <div class="service-right-item item-1">
+              <div>
+                <img src="/images/service_target.png" alt="target" />
+                <h3 class="service-title">Консолидация</h3>
+              </div>
             </div>
-            <div class="service-right-item">
+            <div class="service-right-item item-2">
               <img src="/images/service_hand.png" alt="hand" />
               <h3 class="service-title">Доставка посылок</h3>
             </div>
-            <div class="service-right-item">
+            <div class="service-right-item item-3">
               <img src="/images/service_bag.png" alt="bag" />
               <h3 class="service-title">Cклад</h3>
             </div>
-            <div class="service-right-item">
+            <div class="service-right-item item-4">
               <img src="/images/service_rocket.png" alt="rocket" />
               <h3 class="service-title">Крупногабаритные грузы</h3>
             </div>
@@ -250,134 +253,147 @@
     </section>
     <!-- Section Footer End -->
 
-            <!-- Modal Calculator -->
-            <div
-            class="modal fade"
-            id="parcelsCalculator"
-            tabindex="-1"
-            aria-labelledby="parcelsListCalculatorModalLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog calculator-m modal-dialog-centered">
-              <div class="modal-content">
-              <div class="modal-body calculator-m">
-                <h3 class="">Калкулятор</h3>
-                <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                <div class="calculator-rows">
-                  <div class="calculator-item">
-                    <div class="row" style="margin-right: 11px">
-                      <div class="col-6 ">
-                        <label for="inputFrom" class="form-label top-lable">Откуда?</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="inputFrom"
-                          value="Нев Йорк"
-                        />
-                      </div>
-                      <div class="col-6">
-                        <label for="inputTo" class="form-label top-lable">Куда?</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="inputTo"
-                          value="Ташкент"
-                        />
-                      </div>
-                      <div class="col-9 bottom">
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="inputAddress"
-                          value="0 кг"
-                        />
-                        <input
-                          type="range"
-                          class="istyle"
-                          value="0"
-                          min="0"
-                          max="40"
-                          oninput="this.previousElementSibling.value = this.value +' кг'"
-                        />
-                      </div>
-                      <div class="col-3 bottom">
-                        <select id="inputCurrency" class="calc-select">
-                          <option value="rub" selected>Руб</option>
-                          <option value="usd">Usd</option>
-                          <option value="uzs">Uzs</option>
-                        </select>
-                      </div>
-                      <div
-                      class="col-12 d-flex align-items-center"
-                      style="margin-top: 30px"
+    <!-- Modal Calculator -->
+    <div
+      class="modal fade"
+      id="parcelsCalculator"
+      tabindex="-1"
+      aria-labelledby="parcelsListCalculatorModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog calculator-m modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body calculator-m">
+            <h3 class="">Калкулятор</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="calculator-rows">
+              <div class="calculator-item">
+                <div class="row" style="margin-right: 11px">
+                  <div class="col-6">
+                    <label for="inputFrom" class="form-label top-lable"
+                      >Откуда?</label
                     >
-                      <input
-                        class="form-check-input m-0 "
-                        type="checkbox"
-                        value=""
-                        id="formCheckCalc"
-                      />
-                      <label class="form-check-label top-lable mx-2" for="formCheckCalc">
-                        Расчет стаимости даставки крупногабартных посылок
-                      </label>
-                    </div>
-                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputFrom"
+                      value="Нев Йорк"
+                    />
                   </div>
-                  <div class="calculator-item calculator-bottom">
-                    <div class="row">
-                      <div class="col-3">
-                        <label for="inputLength" class="form-label top-lable">Длина</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="inputLength"
-                          value="0"
-                        />
-                      </div>
-                      <div class="col-3">
-                        <label for="inputWidth" class="form-label top-lable">Ширина</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="inputWidth"
-                          value="0"
-                        />
-                      </div>
-                      <div class="col-3">
-                        <label for="inputHeight" class="form-label top-lable">Высота</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="inputHeight"
-                          value="0"
-                        />
-                      </div>
-                      <div class="col-3">
-                        <label for="inputMeasurement" class="form-label"
-                          >&nbsp;</label
-                        >
-                        <select id="inputMeasurement" class="calc-select">
-                          <option value="sm" selected>см</option>
-                          <option value="m">м</option>
-                          <option value="km">км</option>
-                        </select>
-                      </div>
-                    </div>
+                  <div class="col-6">
+                    <label for="inputTo" class="form-label top-lable"
+                      >Куда?</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputTo"
+                      value="Ташкент"
+                    />
                   </div>
-                  <div class="calculator-total-amount">
-                    <h5 class="calc-title">Bce сумма:</h5>
-                    <h5 class="calc-amount">14,743,3 Рубл</h5>
+                  <div class="col-9 bottom">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputAddress"
+                      value="0 кг"
+                    />
+                    <input
+                      type="range"
+                      class="istyle"
+                      value="0"
+                      min="0"
+                      max="40"
+                      oninput="this.previousElementSibling.value = this.value +' кг'"
+                    />
+                  </div>
+                  <div class="col-3 bottom">
+                    <select id="inputCurrency" class="calc-select">
+                      <option value="rub" selected>Руб</option>
+                      <option value="usd">Usd</option>
+                      <option value="uzs">Uzs</option>
+                    </select>
+                  </div>
+                  <div
+                    class="col-12 d-flex align-items-center"
+                    style="margin-top: 30px"
+                  >
+                    <input
+                      class="form-check-input m-0"
+                      type="checkbox"
+                      value=""
+                      id="formCheckCalc"
+                    />
+                    <label
+                      class="form-check-label top-lable mx-2"
+                      for="formCheckCalc"
+                    >
+                      Расчет стаимости даставки крупногабартных посылок
+                    </label>
                   </div>
                 </div>
               </div>
-            </div>
+              <div class="calculator-item calculator-bottom">
+                <div class="row">
+                  <div class="col-3">
+                    <label for="inputLength" class="form-label top-lable"
+                      >Длина</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputLength"
+                      value="0"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <label for="inputWidth" class="form-label top-lable"
+                      >Ширина</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputWidth"
+                      value="0"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <label for="inputHeight" class="form-label top-lable"
+                      >Высота</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputHeight"
+                      value="0"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <label for="inputMeasurement" class="form-label"
+                      >&nbsp;</label
+                    >
+                    <select id="inputMeasurement" class="calc-select">
+                      <option value="sm" selected>см</option>
+                      <option value="m">м</option>
+                      <option value="km">км</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="calculator-total-amount">
+                <h5 class="calc-title">Bce сумма:</h5>
+                <h5 class="calc-amount">14,743,3 Рубл</h5>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
   </body>
   <!-- Bootstrap Js -->
   <script src="/js/bootstrap.bundle.min.js"></script>

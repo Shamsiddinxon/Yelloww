@@ -1076,15 +1076,15 @@
   <script src="/js/main.js"></script>
   <!-- Swiperjs costum -->
   <script>
-    const swiper = new Swiper(".swiper", {
+    const swiper = new Swiper('.swiper', {
       loop: true,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
       pagination: {
-        el: ".swiper-pagination",
-        type: "bullets",
+        el: '.swiper-pagination',
+        type: 'bullets',
         clickable: true,
         // dynamicBullets:true,
         renderBullet: function (index, className) {
@@ -1095,7 +1095,7 @@
       },
       keyboard: true,
 
-      effect: "creative",
+      effect: 'creative',
       creativeEffect: {
         prev: {
           // will set `translateZ(-400px)` on previous slides
@@ -1103,7 +1103,7 @@
         },
         next: {
           // will set `translateX(100%)` on next slides
-          translate: ["100%", 0, 0],
+          translate: ['100%', 0, 0],
         },
       },
     });
