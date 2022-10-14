@@ -425,7 +425,7 @@
             ></button>
             <div class="calculator-rows">
               <div class="calculator-item">
-                <div class="row" style="margin-right: 11px">
+                <div class="row">
                   <div class="col-6">
                     <label for="inputFrom" class="form-label top-lable"
                       >Откуда?</label
@@ -448,7 +448,7 @@
                       value="Ташкент"
                     />
                   </div>
-                  <div class="col-9 bottom">
+                  <div class="col-9 bottom position-relative">
                     <input
                       type="text"
                       class="form-control"
@@ -463,6 +463,18 @@
                       max="40"
                       oninput="this.previousElementSibling.value = this.value +' кг'"
                     />
+
+                    <ul class="calculator-line">
+                      <li><span>0-kg</span></li>
+                      <li><span>5 kg</span></li>
+                      <li><span>10 kg</span></li>
+                      <li><span>15 kg</span></li>
+                      <li><span>20 kg</span></li>
+                      <li><span>25 kg</span></li>
+                      <li><span>30 kg</span></li>
+                      <li><span>35 kg</span></li>
+                      <li><span>40 kg</span></li>
+                    </ul>
                   </div>
                   <div class="col-3 bottom">
                     <select id="inputCurrency" class="calc-select">
@@ -492,7 +504,7 @@
               </div>
               <div class="calculator-item calculator-bottom">
                 <div class="row">
-                  <div class="col-3">
+                  <div class="col-sm-3 col-6">
                     <label for="inputLength" class="form-label top-lable"
                       >Длина</label
                     >
@@ -503,7 +515,7 @@
                       value="0"
                     />
                   </div>
-                  <div class="col-3">
+                  <div class="col-sm-3 col-6">
                     <label for="inputWidth" class="form-label top-lable"
                       >Ширина</label
                     >
@@ -514,7 +526,7 @@
                       value="0"
                     />
                   </div>
-                  <div class="col-3">
+                  <div class="col-sm-3 col-6">
                     <label for="inputHeight" class="form-label top-lable"
                       >Высота</label
                     >
@@ -525,7 +537,7 @@
                       value="0"
                     />
                   </div>
-                  <div class="col-3">
+                  <div class="col-sm-3 col-6">
                     <label for="inputMeasurement" class="form-label"
                       >&nbsp;</label
                     >

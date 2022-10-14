@@ -786,7 +786,7 @@
                   value="Ташкент"
                 />
               </div>
-              <div class="col-9 bottom">
+              <div class="col-9 bottom position-relative">
                 <input
                   type="text"
                   class="form-control"
@@ -801,6 +801,17 @@
                   max="40"
                   oninput="this.previousElementSibling.value = this.value +' кг'"
                 />
+                <ul class="calculator-line">
+                  <li><span>0-kg</span></li>
+                  <li><span>5 kg</span></li>
+                  <li><span>10 kg</span></li>
+                  <li><span>15 kg</span></li>
+                  <li><span>20 kg</span></li>
+                  <li><span>25 kg</span></li>
+                  <li><span>30 kg</span></li>
+                  <li><span>35 kg</span></li>
+                  <li><span>40 kg</span></li>
+                </ul>
               </div>
               <div class="col-3 bottom">
                 <select id="inputCurrency" class="calc-select">
@@ -1127,56 +1138,56 @@
   <script src="/js/countdown.js"></script>
   <script src="/js/main.js"></script>
   <script>
-    let searchInputs = document.querySelectorAll(".search-id");
-    let searchForms = document.querySelectorAll(".track-search");
-    let steep0 = document.querySelector("#steep-0");
-    let steep1 = document.querySelector("#steep-1");
-    let steep2 = document.querySelector("#steep-2");
-    let steep3 = document.querySelector("#steep-3");
-    let steep4 = document.querySelector("#steep-4");
+    let searchInputs = document.querySelectorAll('.search-id');
+    let searchForms = document.querySelectorAll('.track-search');
+    let steep0 = document.querySelector('#steep-0');
+    let steep1 = document.querySelector('#steep-1');
+    let steep2 = document.querySelector('#steep-2');
+    let steep3 = document.querySelector('#steep-3');
+    let steep4 = document.querySelector('#steep-4');
 
-    steep0.classList.remove("none");
-    steep1.classList.add("none");
-    steep2.classList.add("none");
-    steep3.classList.add("none");
-    steep4.classList.add("none");
+    steep0.classList.remove('none');
+    steep1.classList.add('none');
+    steep2.classList.add('none');
+    steep3.classList.add('none');
+    steep4.classList.add('none');
     console.log(steep1);
 
     for (item of searchForms) {
-      item.addEventListener("submit", (evt) => {
+      item.addEventListener('submit', (evt) => {
         evt.preventDefault();
         console.log(searchForms);
         let inputValue = evt.srcElement[0].value;
         if (inputValue == 1) {
-          steep0.classList.add("none");
-          steep2.classList.add("none");
-          steep3.classList.add("none");
-          steep4.classList.add("none");
-          steep1.classList.remove("none");
+          steep0.classList.add('none');
+          steep2.classList.add('none');
+          steep3.classList.add('none');
+          steep4.classList.add('none');
+          steep1.classList.remove('none');
         } else if (inputValue == 2) {
-          steep0.classList.add("none");
-          steep1.classList.add("none");
-          steep3.classList.add("none");
-          steep4.classList.add("none");
-          steep2.classList.remove("none");
+          steep0.classList.add('none');
+          steep1.classList.add('none');
+          steep3.classList.add('none');
+          steep4.classList.add('none');
+          steep2.classList.remove('none');
         } else if (inputValue == 3) {
-          steep0.classList.add("none");
-          steep1.classList.add("none");
-          steep3.classList.remove("none");
-          steep4.classList.add("none");
-          steep2.classList.add("none");
+          steep0.classList.add('none');
+          steep1.classList.add('none');
+          steep3.classList.remove('none');
+          steep4.classList.add('none');
+          steep2.classList.add('none');
         } else if (inputValue == 4) {
-          steep0.classList.add("none");
-          steep1.classList.add("none");
-          steep3.classList.add("none");
-          steep4.classList.remove("none");
-          steep2.classList.add("none");
+          steep0.classList.add('none');
+          steep1.classList.add('none');
+          steep3.classList.add('none');
+          steep4.classList.remove('none');
+          steep2.classList.add('none');
         } else if (inputValue == 0) {
-          steep0.classList.remove("none");
-          steep1.classList.add("none");
-          steep3.classList.add("none");
-          steep4.classList.add("none");
-          steep2.classList.add("none");
+          steep0.classList.remove('none');
+          steep1.classList.add('none');
+          steep3.classList.add('none');
+          steep4.classList.add('none');
+          steep2.classList.add('none');
         }
       });
     }

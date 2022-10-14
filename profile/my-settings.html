@@ -96,7 +96,7 @@
 
                 <ul>
                   <li>
-                     <a class="en" href="#">Eng</a>
+                    <a class="en" href="#">Eng</a>
                   </li>
 
                   <li>
@@ -523,7 +523,7 @@
                       value="Ташкент"
                     />
                   </div>
-                  <div class="col-9 bottom">
+                  <div class="col-9 bottom position-relative">
                     <input
                       type="text"
                       class="form-control"
@@ -538,6 +538,17 @@
                       max="40"
                       oninput="this.previousElementSibling.value = this.value +' кг'"
                     />
+                    <ul class="calculator-line">
+                      <li><span>0-kg</span></li>
+                      <li><span>5 kg</span></li>
+                      <li><span>10 kg</span></li>
+                      <li><span>15 kg</span></li>
+                      <li><span>20 kg</span></li>
+                      <li><span>25 kg</span></li>
+                      <li><span>30 kg</span></li>
+                      <li><span>35 kg</span></li>
+                      <li><span>40 kg</span></li>
+                    </ul>
                   </div>
                   <div class="col-3 bottom">
                     <select id="inputCurrency" class="calc-select">
@@ -618,28 +629,28 @@
   <script src="/js/jquery-3.6.0.min.js"></script>
   <script src="/js/bootstrap.bundle.min.js"></script>
   <script>
-    document.querySelector(".calculator-bottom").classList.add("none");
-    document.querySelector("#formCheckCalc").addEventListener("click", () => {
-      document.querySelector(".calculator-bottom").classList.toggle("none");
+    document.querySelector('.calculator-bottom').classList.add('none');
+    document.querySelector('#formCheckCalc').addEventListener('click', () => {
+      document.querySelector('.calculator-bottom').classList.toggle('none');
     });
 
-    var element = document.getElementById("phoneMasked");
+    var element = document.getElementById('phoneMasked');
     var maskOptions = {
-      mask: "+{998} 00 000 00 00",
+      mask: '+{998} 00 000 00 00',
     };
     var mask = IMask(element, maskOptions);
 
     jQuery(document).ready(function ($) {
-      $(".search-button").click(function () {
-        $(".search-input").val("").toggle();
+      $('.search-button').click(function () {
+        $('.search-input').val('').toggle();
       });
     });
 
-    document.querySelector("body").addEventListener("click", (evt) => {
-      if (evt.target.id == "lang-menu-id") {
-        document.querySelector(".lang-menu").classList.toggle("act");
+    document.querySelector('body').addEventListener('click', (evt) => {
+      if (evt.target.id == 'lang-menu-id') {
+        document.querySelector('.lang-menu').classList.toggle('act');
       } else {
-        document.querySelector(".lang-menu").classList.remove("act");
+        document.querySelector('.lang-menu').classList.remove('act');
       }
     });
   </script>

@@ -3296,7 +3296,8 @@ input.register-number-input {
 /* *** ** Calculator Modall ** *** */
 .modal-dialog.calculator {
   max-width: 770px;
-  width: 770px !important;
+  /* width: 770px !important; */
+  margin: auto;
 }
 
 .modal .calculator .modal-content {
@@ -3313,13 +3314,14 @@ input.register-number-input {
   line-height: 29px;
 }
 .calculator .calculator-row .calculator-item {
-  padding: 10px;
+  padding: 10px 0;
   padding-right: 0;
   font-size: 18px;
 }
 
 .modal-content {
   padding: 15px;
+  margin: 10px;
 }
 
 /* *** ** Bonus Help Modall ** *** */
@@ -3456,6 +3458,47 @@ input[type='range']::-webkit-slider-thumb {
   border-top: 1px solid #e7e7e7;
   padding-top: 23px;
   margin-top: 15px;
+}
+
+.calculator-line {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 57px;
+  padding: 0 22px;
+  bottom: 0;
+  list-style: none;
+}
+
+.calculator-line li {
+  position: relative;
+  display: inline-block;
+  width: 1px;
+  height: 9px;
+  background: rgba(0, 0, 0, 0.675);
+  color: rgba(0, 0, 0, 0.792);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.calculator-line li span {
+  position: absolute;
+  min-width: 38px;
+  bottom: -17px;
+  right: -14px;
+  text-align: right;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  color: #b7b7b7;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 .calc-title {
@@ -4214,6 +4257,65 @@ input.login-btn {
 
   #profile .tab-inner .nav-link .tab-counter.unread {
     padding: 0px 7px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .calculator-line {
+    top: 54px;
+    padding: 0 16px 0 16px;
+  }
+
+  .calculator-line li {
+    height: 5px;
+  }
+
+  .calculator-line li span {
+    min-width: 23px;
+    bottom: -14px;
+    right: -9px;
+    font-size: 7px;
+  }
+
+  /* Calculator Modall */
+  .modal-content {
+    padding: 0px;
+  }
+
+  label[for='formCheckCalc'] {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .modal-body h3 {
+    font-size: 18px;
+    line-height: 29px;
+    margin-bottom: 10px;
+  }
+
+  .calculator-total-amount .calc-amount {
+    font-weight: 700;
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 19px;
+  }
+
+  .calculator-total-amount .calc-title {
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .calculator .row {
+    --bs-gutter-x: 0.5rem;
+    --bs-gutter-y: 0;
+  }
+  input[type='text'],
+  input[type='email'],
+  input[type='search'],
+  .number-input,
+  textarea,
+  select {
+    padding: 8px 7px;
   }
 }
 
