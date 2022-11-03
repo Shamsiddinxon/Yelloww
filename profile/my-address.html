@@ -12,7 +12,8 @@
     <!-- Bootstrap Styles -->
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="../css/profile.css" />
+    <link rel="stylesheet" href="/css/profile.css" />
+    <!-- <link rel="stylesheet" href="/css/main.css" /> -->
     <link rel="stylesheet" href="../css/fontfase.css" />
     <!-- RemixIcon link -->
     <link rel="stylesheet" href="../fonts/remixicon.css" />
@@ -25,9 +26,7 @@
     <section id="navbar" class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-light container">
         <!-- navbar logo -->
-        <a class="navbar-brand" href="../index.html"
-          ><img src="/images/logo.svg" alt="logo"
-        /></a>
+        <a class="navbar-brand" href="../index.html"><img src="/images/logo.svg" alt="logo" /></a>
         <button
           class="me-auto navbar-toggler"
           type="button"
@@ -62,9 +61,7 @@
               <a class="nav-link" href="/pages/help.html">Помощь</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/franchayzing.html"
-                >Франчайзинг</a
-              >
+              <a class="nav-link" href="/pages/franchayzing.html">Франчайзинг</a>
             </li>
           </ul>
           <!-- navbar-right -->
@@ -74,19 +71,11 @@
                 <button class="search-button">
                   <i class="ri-search-line"></i>
                 </button>
-                <input
-                  type="search"
-                  class="search-input"
-                  placeholder="search.."
-                />
+                <input type="search" class="search-input" placeholder="search.." />
               </div>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#"
-                data-bs-toggle="modal"
-                data-bs-target="#parcelsCalculator"
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#parcelsCalculator"
                 ><i class="ri-calculator-line"></i
               ></a>
             </li>
@@ -111,11 +100,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link btn-profile-icon" href="#">
-                <img
-                  class="profile_avatar"
-                  src="/images/profil_avatar.png"
-                  alt="profile"
-                />
+                <img class="profile_avatar" src="/images/profil_avatar.png" alt="profile" />
               </a>
             </li>
           </ul>
@@ -159,10 +144,7 @@
                 >
               </li>
               <li>
-                <a
-                  class="sidebar-item"
-                  style="margin-bottom: 317px"
-                  href="/profile/my-balance.html"
+                <a class="sidebar-item" style="margin-bottom: 317px" href="/profile/my-balance.html"
                   ><i class="ri-wallet-3-line"></i> Mой баланс</a
                 >
               </li>
@@ -174,9 +156,7 @@
               </li>
 
               <li>
-                <a class="sidebar-item" href="/index.html"
-                  ><i class="ri-logout-circle-line"></i> Выйти</a
-                >
+                <a class="sidebar-item" href="/index.html"><i class="ri-logout-circle-line"></i> Выйти</a>
               </li>
             </ul>
           </div>
@@ -222,11 +202,7 @@
                 aria-labelledby="my-receives-tab"
               >
                 <div class="address-empty-item">
-                  <img
-                    class="item-icon"
-                    src="/images/user_icon.png"
-                    alt="icon"
-                  />
+                  <img class="item-icon" src="/images/user_icon.png" alt="icon" />
                   <p class="item-text">
                     Здесь пока нет ни одного получателя :( <br />
                     Пожалуйста укажите адреса получателей ваших посылок
@@ -248,11 +224,7 @@
                 aria-labelledby="my-sendings-tab"
               >
                 <div class="address-empty-item">
-                  <img
-                    class="item-icon"
-                    src="/images/user_icon.png"
-                    alt="icon"
-                  />
+                  <img class="item-icon" src="/images/user_icon.png" alt="icon" />
                   <p class="item-text">
                     Здесь пока нет ни одного получателя :( <br />
                     Пожалуйста укажите адреса получателей ваших посылок
@@ -276,9 +248,7 @@
     <section id="contacsUs" class="container-fluid">
       <div class="contact-us container">
         <h3 class="contact-title">Звоните, если есть вопросы</h3>
-        <button class="btn contact-button">
-          <i class="ri-phone-line">&nbsp;</i>+998 71 200 34 33
-        </button>
+        <button class="btn contact-button"><i class="ri-phone-line">&nbsp;</i>+998 71 200 34 33</button>
       </div>
     </section>
     <!-- Section Contacts End -->
@@ -287,9 +257,7 @@
       <nav class="footer-nav phoneContent">
         <ul class="footer-nav-list">
           <li>
-            <a class="footer-nav-item" href="/profile/my-profile.html"
-              ><i class="ri-home-4-line"></i> Main</a
-            >
+            <a class="footer-nav-item" href="/profile/my-profile.html"><i class="ri-home-4-line"></i> Main</a>
           </li>
           <li>
             <a class="footer-nav-item" href="/profile/my-parcels.html"
@@ -325,15 +293,8 @@
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title" id="parcelsModalLabel">
-              Добавить получателя
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+            <h1 class="modal-title" id="parcelsModalLabel">Добавить получателя</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div class="parcels-body">
@@ -342,14 +303,12 @@
                   Если у вас нет данных получателя, <br />
                   вы можете запросить необходимые данные по SMS
                 </p>
-                <button class="parcels-request-btn btn">
-                  <i class="ri-mail-line"></i> Запросить данные
-                </button>
+                <button class="parcels-request-btn btn"><i class="ri-mail-line"></i> Запросить данные</button>
               </div>
               <div class="body-item">
                 <p>
-                  Ф.И.О необходимо заполнять латинскими буквами. Поля со *
-                  звёздочками обязательны для заполнения.
+                  Ф.И.О необходимо заполнять латинскими буквами. Поля со * звёздочками обязательны для
+                  заполнения.
                 </p>
               </div>
             </div>
@@ -359,79 +318,35 @@
               </div>
               <div class="col-md-4">
                 <label for="firstName" class="form-label">Имя</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  name="first-name"
-                  id="name"
-                />
+                <input type="text" class="form-control" name="first-name" id="name" />
               </div>
               <div class="col-md-4">
                 <label for="lastName" class="form-label">Фамилия</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  name="lastName"
-                  id="lastName"
-                />
+                <input type="text" class="form-control" name="lastName" id="lastName" />
               </div>
               <div class="col-md-4">
                 <label for="secondName" class="form-label">Отчество</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  name="secondName"
-                  id="secondName"
-                />
+                <input type="text" class="form-control" name="secondName" id="secondName" />
               </div>
               <div class="col-md-4">
-                <label for="serialNumber" class="form-label"
-                  >Серия и номер паспорта</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  name="serialNumber"
-                  id="serialNumber"
-                />
+                <label for="serialNumber" class="form-label">Серия и номер паспорта</label>
+                <input type="text" class="form-control" name="serialNumber" id="serialNumber" />
               </div>
               <div class="col-md-4">
                 <label for="phone" class="form-label">Номер телефона</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  name="phone"
-                  id="phone"
-                />
+                <input type="text" class="form-control" name="phone" id="phone" />
               </div>
               <div class="col-md-4">
-                <label for="primaryPhone" class="form-label"
-                  >Дополнительный номер</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  name="primaryPhone"
-                  id="primaryPhone"
-                />
+                <label for="primaryPhone" class="form-label">Дополнительный номер</label>
+                <input type="text" class="form-control" name="primaryPhone" id="primaryPhone" />
               </div>
               <div class="col-md-4">
                 <label for="zipCode" class="form-label">ZIP-код</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  name="zipCode"
-                  id="zipCode"
-                />
+                <input type="text" class="form-control" name="zipCode" id="zipCode" />
               </div>
               <div class="col-md-4">
                 <label for="email" class="form-label">E-mail</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  name="email"
-                  id="email"
-                />
+                <input type="text" class="form-control" name="email" id="email" />
               </div>
               <div class="col-md-12">
                 <h1>Адрес</h1>
@@ -456,56 +371,27 @@
               </div>
               <div class="col-md-4">
                 <label for="address" class="form-label">Улица</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  name="address"
-                  id="address"
-                />
+                <input type="text" class="form-control" name="address" id="address" />
               </div>
               <div class="col-md-2">
                 <label for="house" class="form-label">Дом</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  name="house"
-                  id="house"
-                />
+                <input type="number" class="form-control" name="house" id="house" />
               </div>
               <div class="col-md-2">
                 <label for="apartment" class="form-label">Квартира</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  name="apartment"
-                  id="apartment"
-                />
+                <input type="number" class="form-control" name="apartment" id="apartment" />
               </div>
               <div class="col-md-2">
                 <label for="entrance" class="form-label">Подъезд</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  name="entrance"
-                  id="entrance"
-                />
+                <input type="number" class="form-control" name="entrance" id="entrance" />
               </div>
               <div class="col-md-2">
                 <label for="floor" class="form-label">Этаж</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  name="floor"
-                  id="floor"
-                />
+                <input type="number" class="form-control" name="floor" id="floor" />
               </div>
               <div class="col-12 text-end mt-3 mb-3">
-                <button type="submit" class="btn reciever-add-btn">
-                  Добавить
-                </button>
-                <button type="submit" class="btn reciever-cancel-btn">
-                  Отменить
-                </button>
+                <button type="submit" class="btn reciever-add-btn">Добавить</button>
+                <button type="submit" class="btn reciever-cancel-btn">Отменить</button>
               </div>
             </form>
           </div>
@@ -525,44 +411,20 @@
         <div class="modal-content">
           <div class="modal-body calculator">
             <h3>Калкулятор</h3>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             <div class="calculator-row row">
               <div class="calculator-item">
                 <div class="row" style="margin-right: 11px">
                   <div class="col-6 mb-36px">
-                    <label for="inputFrom" class="form-label top-lable"
-                      >Откуда?</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="inputFrom"
-                      value="Нев Йорк"
-                    />
+                    <label for="inputFrom" class="form-label top-lable">Откуда?</label>
+                    <input type="text" class="form-control" id="inputFrom" value="Нев Йорк" />
                   </div>
                   <div class="col-6">
-                    <label for="inputTo" class="form-label top-lable"
-                      >Куда?</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="inputTo"
-                      value="Ташкент"
-                    />
+                    <label for="inputTo" class="form-label top-lable">Куда?</label>
+                    <input type="text" class="form-control" id="inputTo" value="Ташкент" />
                   </div>
                   <div class="col-9 bottom">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="inputAddress"
-                      value="0 кг"
-                    />
+                    <input type="text" class="form-control" id="inputAddress" value="0 кг" />
                     <input
                       type="range"
                       class="istyle"
@@ -579,16 +441,8 @@
                       <option value="uzs">Uzs</option>
                     </select>
                   </div>
-                  <div
-                    class="col-12 d-flex align-items-center"
-                    style="margin-top: 30px"
-                  >
-                    <input
-                      class="form-check-input m-0"
-                      type="checkbox"
-                      value=""
-                      id="formCheckCalc"
-                    />
+                  <div class="col-12 d-flex align-items-center" style="margin-top: 30px">
+                    <input class="form-check-input m-0" type="checkbox" value="" id="formCheckCalc" />
                     <label class="form-check-label mx-2" for="formCheckCalc">
                       Расчет стаимости даставки крупногабартных посылок
                     </label>
@@ -599,35 +453,18 @@
                 <div class="row">
                   <div class="col-3">
                     <label for="inputLength" class="form-label">Длина</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="inputLength"
-                      value="0"
-                    />
+                    <input type="text" class="form-control" id="inputLength" value="0" />
                   </div>
                   <div class="col-3">
                     <label for="inputWidth" class="form-label">Ширина</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="inputWidth"
-                      value="0"
-                    />
+                    <input type="text" class="form-control" id="inputWidth" value="0" />
                   </div>
                   <div class="col-3">
                     <label for="inputHeight" class="form-label">Высота</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="inputHeight"
-                      value="0"
-                    />
+                    <input type="text" class="form-control" id="inputHeight" value="0" />
                   </div>
                   <div class="col-3">
-                    <label for="inputMeasurement" class="form-label"
-                      >&nbsp;</label
-                    >
+                    <label for="inputMeasurement" class="form-label">&nbsp;</label>
                     <select id="inputMeasurement" class="calc-select">
                       <option value="sm" selected>см</option>
                       <option value="m">м</option>
@@ -650,22 +487,22 @@
   <script src="/js/jquery-3.6.0.min.js"></script>
   <script src="/js/bootstrap.bundle.min.js"></script>
   <script>
-    document.querySelector("body").addEventListener("click", (evt) => {
-      if (evt.target.id == "lang-menu-id") {
-        document.querySelector(".lang-menu").classList.toggle("act");
+    document.querySelector('body').addEventListener('click', (evt) => {
+      if (evt.target.id == 'lang-menu-id') {
+        document.querySelector('.lang-menu').classList.toggle('act');
       } else {
-        document.querySelector(".lang-menu").classList.remove("act");
+        document.querySelector('.lang-menu').classList.remove('act');
       }
     });
 
-    document.querySelector(".calculator-bottom").classList.add("none");
-    document.querySelector("#formCheckCalc").addEventListener("click", () => {
-      document.querySelector(".calculator-bottom").classList.toggle("none");
+    document.querySelector('.calculator-bottom').classList.add('none');
+    document.querySelector('#formCheckCalc').addEventListener('click', () => {
+      document.querySelector('.calculator-bottom').classList.toggle('none');
     });
 
     jQuery(document).ready(function ($) {
-      $(".search-button").click(function () {
-        $(".search-input").val("").toggle();
+      $('.search-button').click(function () {
+        $('.search-input').val('').toggle();
       });
     });
   </script>

@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <!-- Custom Styles -->
     <link rel="stylesheet" href="../css/fontfase.css" />
-    <link rel="stylesheet" href="../css/profile.css" />
+    <link rel="stylesheet" href="/css/profile.css" />
+    <!-- <link rel="stylesheet" href="/css/main.css" /> -->
     <!-- RemixIcon link -->
     <link rel="stylesheet" href="/fonts/remixicon.css" />
     <title>Yellow - Login</title>
@@ -37,12 +38,7 @@
             <form class="row" action="#">
               <div class="col-12">
                 <label for="email">Phone or Email</label>
-                <input
-                  class="content-right-body-input"
-                  type="text"
-                  id="email"
-                  placeholder="Phone or Email"
-                />
+                <input class="content-right-body-input" type="text" id="email" placeholder="Phone or Email" />
               </div>
               <div class="col-12 position-relative">
                 <label for="password">Password</label>
@@ -53,18 +49,10 @@
                   placeholder="* * * * * *"
                 />
 
-                <button
-                  class="password-btn-eye"
-                  type="button"
-                  onclick="myFunction()"
-                >
+                <button class="password-btn-eye" type="button" onclick="myFunction()">
                   <i class="ri-eye-off-line"></i>
                 </button>
-                <button
-                  class="password-btn-eye-off"
-                  type="button"
-                  onclick="myFunction()"
-                >
+                <button class="password-btn-eye-off" type="button" onclick="myFunction()">
                   <i class="ri-eye-line"></i>
                 </button>
               </div>
@@ -77,10 +65,7 @@
                     value=""
                     id="loginCheckbox"
                   />
-                  <label
-                    class="checkbox-label content-right-body-checkbox-label"
-                    for="loginCheckbox"
-                  >
+                  <label class="checkbox-label content-right-body-checkbox-label" for="loginCheckbox">
                     Remember me
                   </label>
                 </div>
@@ -90,20 +75,10 @@
                 <!-- <input class="login-btn btn" type="submit" value="Log In" /> -->
                 <a class="login-btn btn" href="./my-parcels.html">Log In</a>
                 <button class="google-btn btn">
-                  <img
-                    src="/images/new/login-link-google.svg"
-                    alt="google"
-                    width="26"
-                    height="26"
-                  />
+                  <img src="/images/new/login-link-google.svg" alt="google" width="26" height="26" />
                 </button>
                 <button class="facebook-btn btn">
-                  <img
-                    src="/images/new/login-link-fasebook.svg"
-                    alt="facebook"
-                    width="36"
-                    height="28"
-                  />
+                  <img src="/images/new/login-link-fasebook.svg" alt="facebook" width="36" height="28" />
                 </button>
               </div>
             </form>
@@ -113,21 +88,21 @@
     </section>
 
     <script>
-      var x = document.querySelector(".password-input");
-      let eyeBtn = document.querySelector(".password-btn-eye");
-      let eyeOffBtn = document.querySelector(".password-btn-eye-off");
-      eyeOffBtn.classList.add("none");
+      var x = document.querySelector('.password-input');
+      let eyeBtn = document.querySelector('.password-btn-eye');
+      let eyeOffBtn = document.querySelector('.password-btn-eye-off');
+      eyeOffBtn.classList.add('none');
       function myFunction() {
-        if (x.type === "password") {
-          eyeBtn.classList.add("none");
-          eyeOffBtn.classList.remove("none");
-          x.type = "text";
-          x.placeholder = "Password";
+        if (x.type === 'password') {
+          eyeBtn.classList.add('none');
+          eyeOffBtn.classList.remove('none');
+          x.type = 'text';
+          x.placeholder = 'Password';
         } else {
-          eyeBtn.classList.remove("none");
-          eyeOffBtn.classList.add("none");
-          x.type = "password";
-          x.placeholder = "* * * * * *";
+          eyeBtn.classList.remove('none');
+          eyeOffBtn.classList.add('none');
+          x.type = 'password';
+          x.placeholder = '* * * * * *';
         }
       }
     </script>
